@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624-2048_ViewProjection\Subpatches\PerschMeter.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150622_Homography\Subpatches\PerfMeter (Debug).v4p" scrollx="0" scrolly="0">
    <BOUNDS height="8685" left="7020" top="3150" type="Window" width="11760">
    </BOUNDS>
    <NODE componentmode="InABox" id="30" nodename="IOBox (Node)">
@@ -65,7 +65,7 @@
    <NODE id="27" nodename="FormatValue (String)">
    <BOUNDS height="0" left="4005" top="3330" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="37">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -233,13 +233,13 @@
    </BOUNDS>
    <PIN pinname="Input" slicecount="2" visible="1" encoded="0" values="CPU,GPU">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="1">
+   <PIN pinname="Index" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Bin Size" slicecount="1" values="1">
-   </PIN>
    </NODE>
+   <LINK dstnodeid="10" dstpinname="Index" srcnodeid="12" srcpinname="Output">
+   </LINK>
    <NODE id="9" nodename="Transform (Transform 2d)">
    <BOUNDS height="0" left="255" top="4650" type="Node" width="0">
    </BOUNDS>
@@ -269,7 +269,7 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" encoded="0" values="ML?">
    </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="CPU">
+   <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -277,7 +277,7 @@
    <NODE id="7" nodename="GE (Value)">
    <BOUNDS height="0" left="5100" top="2205" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="0.01">
+   <PIN pinname="Input 2" slicecount="1" values="0.001">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -287,6 +287,8 @@
    <LINK dstnodeid="7" dstpinname="Input 1" srcnodeid="29" srcpinname="Windows Time">
    </LINK>
    <LINK dstnodeid="8" dstpinname="Switch" srcnodeid="7" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="8" dstpinname="Input 1" srcnodeid="10" srcpinname="Output">
    </LINK>
    <NODE componentmode="InABox" id="6" nodename="IOBox (Node)">
    <BOUNDS height="0" left="2850" top="7170" type="Node" width="0">
@@ -335,6 +337,8 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="4" dstpinname="Y Input Value" srcnodeid="29" srcpinname="frames per second">
+   </LINK>
+   <LINK dstnodeid="27" dstpinname="Input" srcnodeid="29" srcpinname="frames per second">
    </LINK>
    <NODE id="3" nodename="Multiply (Value)">
    <BOUNDS height="270" left="6390" top="1815" type="Node" width="300">
@@ -599,9 +603,9 @@
    <LINK dstnodeid="38" dstpinname="TranslateY" srcnodeid="51" srcpinname="Output">
    </LINK>
    <NODE nodename="QUEUE (SPREADS)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="6795" top="3015" width="100" height="100">
+   <BOUNDS type="Node" left="6795" top="3300" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6795" top="3015" width="0" height="0">
+   <BOUNDS type="Box" left="6795" top="3300" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Window" left="13935" top="11940" width="0" height="0">
    </BOUNDS>
@@ -643,7 +647,7 @@
    </PIN>
    <PIN pinname="TranslateX" visible="1" slicecount="50" values="2,6,10,14,18,22,26,30,34,38,42,46,50,54,58,62,66,70,74,78,82,86,90,94,98,102,106,110,114,118,122,126,130,134,138,142,146,150,154,158,162,166,170,174,178,182,186,190,194,198">
    </PIN>
-   <PIN pinname="TranslateY" visible="1" slicecount="50" values="-90.4185697280939,-93.0162690340644,-94.2533587644517,-91.8451317429586,-90.4153025445617,-88.7440813428421,-85.6622729912327,-83.953659385635,-82.0382746014382,-81.6635769061099,-81.3708630831409,-80.9879618917645,-80.9938900617214,-80.9141548398652,-80.703175783148,-80.7988946026093,-80.7850742879334,-81.0419816095132,-81.3573512391677,-82.2606418245681,-82.2034868723814,-82.4961166479264,-81.8803893454821,-81.5856886286841,-81.5349555019595,-81.4085105066913,-81.7909034492382,-81.8295833204581,-81.7590442442526,-81.8021166822902,-81.8150403231029,-82.0157638543552,-82.0546047709943,-81.8604159195383,-81.6426131307713,-81.7163207569204,-81.7646033227693,-82.0877276357445,-82.0815107603507,-82.2477783161431,-81.9784778746439,-81.7787869304883,-81.6336111425628,-81.708963861864,-82.1886039317693,-81.8928095206727,-81.5707553625505,-81.5011828561084,-81.2380665346905,-81.054706825171">
+   <PIN pinname="TranslateY" visible="1">
    </PIN>
    <PIN pinname="ScaleX" visible="1" slicecount="1" values="3">
    </PIN>
@@ -655,13 +659,13 @@
    <LINK srcnodeid="46" srcpinname="Transform Out" dstnodeid="56" dstpinname="Transform In">
    </LINK>
    <NODE nodename="Map (Value)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="6810" top="3825" width="100" height="100">
+   <BOUNDS type="Node" left="6810" top="3720" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6810" top="3825" width="0" height="0">
+   <BOUNDS type="Box" left="6810" top="3720" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Window" left="14220" top="11400" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="50" values="77.5557538025973,53.1209703272802,13.9656037981462,73.4024111287623,18.6707498407287,-31.7275130336901,-106.022728728044,-95.7302669901099,-47.6811873705253,-62.2229314024642,3.57329146534759,9.17024823452423,8.30135032683796,8.6459662342929,5.24254003553034,4.39521272074465,-6.86995279672936,-3.92425682655723,8.78282588472501,13.5852597495063,14.4156703844771,19.8417034724009,17.8968557091788,9.46478362663781,-4.93388587285844,-6.95199132349792,-2.78409058697434,-5.16963802588766,5.16627532734726,10.5490021355838,1.38145671100601,-5.7320478540907,21.5224574447798,19.1579318838615,-3.61058639587296,-12.1473308797161,3.29697805665822,-19.1207820267202,-41.5454697348908,-37.0416780254786,14.5551101162292,23.815653818573,36.5561865788472,66.7276865933613,52.6076621547701,34.6548376520805,41.0287037031635,11.2134015285686,-23.4574623160769,-72.4488033106145">
+   <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" values="60">
    </PIN>
@@ -672,6 +676,10 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="58" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="56" dstpinname="TranslateY">
+   </LINK>
    <NODE componentmode="Hidden" id="60" nodename="Quad (DX9)">
    <BOUNDS height="100" left="90" top="5835" type="Node" width="100">
    </BOUNDS>
@@ -792,38 +800,4 @@
    </LINK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="10" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="8" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="6795" top="3435" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Go To Position" visible="1" slicecount="50" values="-94.5,-91.5,-84,-90.5,-81,-80,-80.5,-80.5,-81,-81.5,-81.5,-83.5,-82.5,-80.5,-82.5,-81.5,-80.5,-82,-79.5,-82,-82.5,-80,-79.5,-80.5,-81.5,-80,-78.5,-80.5,-80.5,-81.5,-79.5,-80,-82,-80.5,-81.5,-80,-81.5,-81.5,-84,-81.5,-81,-79.5,-81,-80.5,-79.5,-80,-81,-80.5,-79.5,-79">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   <PIN pinname="Velocity Out" visible="1">
-   </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="0.5">
-   </PIN>
-   </NODE>
-   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="3990" top="2790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="frames per second" dstnodeid="65" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Position Out" dstnodeid="27" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="56" dstpinname="TranslateY">
-   </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="63" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Position Out" dstnodeid="58" dstpinname="Input">
-   </LINK>
    </PATCH>

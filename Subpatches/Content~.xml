@@ -80,7 +80,7 @@
    </LINK>
    <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="75" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="NoCorners" filename="Content\NoCorners\NoCorners.v4p" nodename="Content\NoCorners\NoCorners.v4p" componentmode="InAWindow" id="92">
+   <NODE systemname="NoCorners" filename="Content\NoCorners\NoCorners.v4p" nodename="Content\NoCorners\NoCorners.v4p" componentmode="Hidden" id="92">
    <BOUNDS type="Node" left="6015" top="1275" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
