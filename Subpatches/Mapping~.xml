@@ -235,7 +235,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2625" top="4965" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen1 Out|">
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="10" dstpinname="Input Node">
@@ -245,7 +245,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5370" top="4965" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen2 Out|">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Transform Out" dstnodeid="11" dstpinname="Input Node">
@@ -255,7 +255,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8265" top="4965" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen3 Out|">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="12" dstpinname="Input Node">
