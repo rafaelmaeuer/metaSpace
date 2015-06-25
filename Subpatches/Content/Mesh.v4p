@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624-2137_ViewProjection\Subpatches\Content\Mesh.v4p" systemname="Mesh" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mesh.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150625-1235_PerspectiveLookAtRect\Subpatches\Content\Mesh.v4p" systemname="Mesh" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mesh.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="9750" top="1215" width="9000" height="6000">
    </BOUNDS>
    <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="0">
@@ -19,7 +19,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="540" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="4,0,0,4">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="8,0,0,8">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1470" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="3,3,3,3">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="5,5,5,5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -63,7 +63,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2370" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,4,4,0">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,8,8,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -101,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4080" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,-2,2,0">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,-4,4,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5910" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="2,0,0,-2">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="4,0,0,-4">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
