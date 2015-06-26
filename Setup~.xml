@@ -679,7 +679,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="12180" top="7545" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.19">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1459,7 +1459,7 @@
    </PIN>
    <PIN pinname="Power" slicecount="1" values="25">
    </PIN>
-   <PIN pinname="Ambient Color" slicecount="1" values="|0.74824,0.74824,0.74824,1.00000|">
+   <PIN pinname="Ambient Color" slicecount="1" values="|0.23798,0.23798,0.23798,1.00000|">
    </PIN>
    <PIN pinname="Specular Color" slicecount="1" values="|0.35391,0.35391,0.35391,1.00000|">
    </PIN>
