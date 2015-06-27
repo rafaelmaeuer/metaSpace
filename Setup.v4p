@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150627-1614\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150627-2153\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15600" left="0" top="0" type="Window" width="19440">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -286,7 +286,7 @@
    </LINK>
    <LINK srcnodeid="231" srcpinname="Layer" dstnodeid="228" dstpinname="Layers">
    </LINK>
-   <NODE systemname="Kinect" filename="Subpatches\Kinect.v4p" nodename="Subpatches\Kinect.v4p" componentmode="InAWindow" id="317">
+   <NODE systemname="Kinect" filename="Subpatches\Kinect.v4p" nodename="Subpatches\Kinect.v4p" componentmode="Hidden" id="317">
    <BOUNDS type="Node" left="510" top="915" width="100" height="100">
    </BOUNDS>
    <PIN pinname="EX9 Out" visible="1">
@@ -401,7 +401,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="0.157663480593608,-1.27755579436365,2.38788382212321" visible="1">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.157663480593608,-1.27755579436365,2.38788382212321">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
