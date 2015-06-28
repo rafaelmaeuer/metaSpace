@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1417_3Walls&amp;Floor\Subpatches\Content\Plate.v4p" scrollx="0" scrolly="0" systemname="Plate" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\Plate.v4p">
-   <BOUNDS type="Window" left="4935" top="5415" width="10410" height="8220">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\Plate.v4p" scrollx="0" scrolly="-360" systemname="Plate" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\Plate.v4p">
+   <BOUNDS type="Window" left="2385" top="6375" width="10410" height="8220">
    </BOUNDS>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="3495" top="3405" width="100" height="100">
+   <BOUNDS type="Node" left="3315" top="3570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -19,7 +19,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="4230" top="1065" width="100" height="100">
+   <BOUNDS type="Node" left="4050" top="1230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -29,7 +29,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="3915" top="1530" width="100" height="100">
+   <BOUNDS type="Node" left="3735" top="1695" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -45,7 +45,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="3495" top="2670" width="100" height="100">
+   <BOUNDS type="Node" left="3315" top="2835" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -57,7 +57,7 @@
    <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="19" dstpinname="Layers">
    </LINK>
    <NODE systemname="Line (EX9)" filename="%VVVV%\lib\nodes\modules\EX9\Line (EX9).v4p" nodename="Line (EX9)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="3735" top="2235" width="100" height="100">
+   <BOUNDS type="Node" left="3555" top="2400" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="17" dstpinname="TranslateY">
    </LINK>
    <NODE systemname="Line (EX9)" filename="%VVVV%\lib\nodes\modules\EX9\Line (EX9).v4p" nodename="Line (EX9)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="3510" top="1890" width="100" height="100">
+   <BOUNDS type="Node" left="3330" top="2055" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -95,7 +95,7 @@
    <LINK srcnodeid="14" srcpinname="Layer" dstnodeid="16" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="2340" top="1530" width="100" height="100">
+   <BOUNDS type="Node" left="2160" top="1695" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -109,7 +109,7 @@
    <LINK srcnodeid="13" srcpinname="Transform Out" dstnodeid="14" dstpinname="Transform">
    </LINK>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="2505" top="1065" width="100" height="100">
+   <BOUNDS type="Node" left="2325" top="1230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -121,9 +121,9 @@
    <LINK srcnodeid="12" srcpinname="Output" dstnodeid="13" dstpinname="TranslateX">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3390" top="600" width="795" height="240">
+   <BOUNDS type="Box" left="3210" top="765" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3390" top="600" width="0" height="0">
+   <BOUNDS type="Node" left="3210" top="765" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="50">
    </PIN>
@@ -141,9 +141,9 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Spread Count">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3735" top="3045" width="795" height="240">
+   <BOUNDS type="Box" left="3555" top="3210" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3735" top="3045" width="0" height="0">
+   <BOUNDS type="Node" left="3555" top="3210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2048">
    </PIN>
@@ -317,13 +317,15 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-0.73">
+   <PIN pinname="TranslateY" slicecount="1" values="-0.5">
    </PIN>
    <PIN pinname="Yaw" slicecount="1" visible="1" values="-0.17">
    </PIN>
    <PIN pinname="Roll" slicecount="1" values="0.05">
    </PIN>
    </NODE>
+   <LINK srcnodeid="19" srcpinname="Texture Out" dstnodeid="7" dstpinname="Texture">
+   </LINK>
    <LINK srcnodeid="4" srcpinname="Mesh" dstnodeid="7" dstpinname="Mesh">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="7" dstpinname="Transform">
@@ -360,16 +362,4 @@
    </LINK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <LINK srcnodeid="19" srcpinname="Texture Out" dstnodeid="7" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="5610" top="1455" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="14" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="15" dstpinname="Color">
-   </LINK>
    </PATCH>

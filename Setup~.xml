@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1417_3Walls&amp;Floor\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15450" left="0" top="-90" type="Window" width="19200">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -237,7 +237,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <PIN pinname="Inital Distance" slicecount="1" values="10">
+   <PIN pinname="Inital Distance" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Initial Pitch" slicecount="1" values="0.14">
    </PIN>
@@ -671,7 +671,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11445" top="735" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.1,0.44,-0.88">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.1,0.6,-0.88">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -755,13 +755,17 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Clear" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Kinect" filename="Subpatches\Kinect.v4p" nodename="Subpatches\Kinect.v4p" componentmode="Hidden" id="665">
    <BOUNDS type="Node" left="3105" top="900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Index" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|xBox 360|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="xBox360">
    </PIN>
    <PIN pinname="Kinect Depth" visible="1">
    </PIN>
@@ -776,6 +780,10 @@
    <PIN pinname="Image/Depth" visible="1">
    </PIN>
    <PIN pinname="User Head XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Motor Angle" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Skeleton Count" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="666" systemname="IOBox (Value Advanced)">
@@ -991,13 +999,25 @@
    </BOUNDS>
    <PIN pinname="Helper" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="7485" top="2385" width="10380" height="9780">
+   </BOUNDS>
+   <PIN pinname="Kinect Windows" visible="1">
+   </PIN>
+   <PIN pinname="Kinect xBox 360" visible="1">
+   </PIN>
+   <PIN pinname="Kinect Windows User" visible="1">
+   </PIN>
+   <PIN pinname="Kinect xBox360 User" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="692" srcpinname="Helper" dstnodeid="390" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
-   <BOUNDS type="Node" left="720" top="6975" width="100" height="100">
+   <BOUNDS type="Node" left="735" top="7245" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="7695" top="3780" width="10095" height="8220">
+   <BOUNDS type="Window" left="6945" top="4215" width="10095" height="8220">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1013,7 +1033,7 @@
    <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="581" dstpinname="Layers">
    </LINK>
    <NODE systemname="MultiFlipFlop (Animation)" nodename="MultiFlipFlop (Animation)" componentmode="Hidden" id="695">
-   <BOUNDS type="Node" left="720" top="6000" width="100" height="100">
+   <BOUNDS type="Node" left="735" top="6270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set Count" slicecount="1" values="5">
    </PIN>
@@ -1033,9 +1053,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="696" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="705" top="5025" width="480" height="480">
+   <BOUNDS type="Box" left="720" top="5295" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="705" top="5025" width="0" height="0">
+   <BOUNDS type="Node" left="720" top="5295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1055,9 +1075,9 @@
    <LINK srcnodeid="696" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 0">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="697" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1320" top="5025" width="480" height="480">
+   <BOUNDS type="Box" left="1335" top="5295" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1320" top="5025" width="0" height="0">
+   <BOUNDS type="Node" left="1335" top="5295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1077,9 +1097,9 @@
    <LINK srcnodeid="697" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="698" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2265" top="5025" width="480" height="480">
+   <BOUNDS type="Box" left="2025" top="5295" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2265" top="5025" width="0" height="0">
+   <BOUNDS type="Node" left="2025" top="5295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1099,9 +1119,9 @@
    <LINK srcnodeid="698" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="699" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3000" top="5070" width="480" height="480">
+   <BOUNDS type="Box" left="2760" top="5295" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3000" top="5070" width="0" height="0">
+   <BOUNDS type="Node" left="2760" top="5295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1121,9 +1141,9 @@
    <LINK srcnodeid="699" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 3">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="700" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3720" top="5070" width="480" height="480">
+   <BOUNDS type="Box" left="3480" top="5295" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3720" top="5070" width="0" height="0">
+   <BOUNDS type="Node" left="3480" top="5295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1217,6 +1237,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|User Head XYZ|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="665" srcpinname="User Head XYZ" dstnodeid="703" dstpinname="Y Input Value">
    </LINK>
@@ -1237,7 +1259,39 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|User Head XYZ|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="317" srcpinname="User Head XYZ" dstnodeid="704" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="705">
+   <BOUNDS type="Node" left="720" top="4470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Delay (Animation)" nodename="Delay (Animation)" componentmode="Hidden" id="706">
+   <BOUNDS type="Node" left="1320" top="4860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Time" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="705" srcpinname="Bang" dstnodeid="706" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="704" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect Windows">
+   </LINK>
+   <LINK srcnodeid="703" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360">
+   </LINK>
+   <LINK srcnodeid="317" srcpinname="Skeleton Count" dstnodeid="692" dstpinname="Kinect Windows tracking">
+   </LINK>
+   <LINK srcnodeid="665" srcpinname="Skeleton Count" dstnodeid="692" dstpinname="Kinect xBox360 tracking">
+   </LINK>
+   <LINK srcnodeid="706" srcpinname="Output" dstnodeid="697" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
