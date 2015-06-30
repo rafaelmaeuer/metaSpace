@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-1630\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="7020" top="2700" width="10080" height="10650">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p">
+   <BOUNDS type="Window" left="5100" top="2835" width="10080" height="10650">
    </BOUNDS>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="4140" top="6180" width="100" height="100">
@@ -231,13 +231,13 @@
    </BOUNDS>
    <PIN pinname="Light Direction Out" visible="1">
    </PIN>
-   <PIN pinname="Pitch" slicecount="1" visible="1" values="0.09">
+   <PIN pinname="Pitch" slicecount="1" visible="1" values="-0.19">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Yaw" slicecount="1" visible="1" values="-0.42">
+   <PIN pinname="Yaw" slicecount="1" visible="1" values="-0.38">
    </PIN>
-   <PIN pinname="Distance" slicecount="1" visible="1" values="2">
+   <PIN pinname="Distance" slicecount="1" visible="1" values="2.54">
    </PIN>
    <PIN pinname="Scale" slicecount="1" visible="1" values="1">
    </PIN>
@@ -392,6 +392,8 @@
    </NODE>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
+   <LINK srcnodeid="29" srcpinname="Texture Out" dstnodeid="17" dstpinname="Texture">
+   </LINK>
    <LINK srcnodeid="7" srcpinname="Mesh" dstnodeid="17" dstpinname="Mesh">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform">
@@ -468,84 +470,4 @@
    </LINK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2790" top="2910" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2790" top="2910" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.13">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Yaw">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Yaw">
-   </LINK>
-   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="6015" top="6660" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="texture_old_brick_wall.jpg">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="35">
-   <BOUNDS type="Node" left="5700" top="7080" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="5685" top="7485" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Width" slicecount="1" values="2048">
-   </PIN>
-   <PIN pinname="Height" slicecount="1" values="2048">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="35" srcpinname="Layer" dstnodeid="36" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Texture Out" dstnodeid="35" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="5850" top="6315" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="ScaleX" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="35" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Texture Out" dstnodeid="17" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="5865" top="5715" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" values="0.5">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="38" srcpinname="Transform Out" dstnodeid="37" dstpinname="Transform In">
-   </LINK>
    </PATCH>

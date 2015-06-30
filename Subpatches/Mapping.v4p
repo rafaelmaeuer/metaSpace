@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Mapping.v4p" systemname="Mapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mapping.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-2255_4BeamerSetup\Subpatches\Mapping.v4p" systemname="Mapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mapping.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="2025" top="4095" width="15150" height="9030">
    </BOUNDS>
    <NODE systemname="Homography (Transform 2d)" nodename="Homography (Transform 2d)" componentmode="Hidden" id="9">
@@ -39,9 +39,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.794871794871795,0.726495726495727,-1,-1">
+   <PIN pinname="Y Input Value" slicecount="4" values="1,0.880341880341881,-1,-0.948717948717949">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.530179742530971,0.527447170269613,0.679378188000969,-0.572258869585103">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.619565217391307,0.851469516638328,0.869322322079181,-0.572258869585103">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
@@ -216,8 +216,6 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Original Points XY">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Original Points XY">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="10" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="2565" top="5100" width="795" height="240">
    </BOUNDS>
@@ -347,5 +345,7 @@
    <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="13" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Original Points XY">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Original Points XY">
    </LINK>
    </PATCH>
