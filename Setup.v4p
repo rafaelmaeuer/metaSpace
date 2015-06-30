@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-1509_4BeamerSetup\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15450" left="4185" top="1650" type="Window" width="21960">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-1547_4Beamer\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="15450" left="0" top="-90" type="Window" width="19200">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="9825" top="7905" type="Node" width="100">
@@ -511,14 +511,16 @@
    </PIN>
    <PIN pinname="ID Screen 3" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="32775" top="2925" width="12900" height="7080">
+   <BOUNDS type="Window" left="1860" top="7110" width="15405" height="6510">
    </BOUNDS>
+   <PIN pinname="ID Screen Floor" visible="1" slicecount="1" values="719">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="12" srcpinname="ID" dstnodeid="522" dstpinname="ID Screen 1">
+   <LINK srcnodeid="12" srcpinname="ID" dstnodeid="522" dstpinname="ID Screen Left">
    </LINK>
-   <LINK srcnodeid="209" srcpinname="ID" dstnodeid="522" dstpinname="ID Screen 2">
+   <LINK srcnodeid="209" srcpinname="ID" dstnodeid="522" dstpinname="ID Screen Middle">
    </LINK>
-   <LINK srcnodeid="218" srcpinname="ID" dstnodeid="522" dstpinname="ID Screen 3">
+   <LINK srcnodeid="218" srcpinname="ID" dstnodeid="522" dstpinname="ID Screen Right">
    </LINK>
    <LINK srcnodeid="390" srcpinname="Layer" dstnodeid="231" dstpinname="Layer 4">
    </LINK>
@@ -1487,5 +1489,33 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="718" srcpinname="Y Output Value" dstnodeid="648" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="684" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="719">
+   <BOUNDS type="Node" left="13260" top="12915" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13260" top="12915" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="112410" top="3060" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen Floor|">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="689" srcpinname="Layer" dstnodeid="719" dstpinname="Layers">
    </LINK>
    </PATCH>
