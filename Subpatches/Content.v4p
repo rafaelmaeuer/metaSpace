@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-2255_4BeamerSetup\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="6945" top="4215" width="10095" height="8220">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-0114_4Beamer720p\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="660" top="2160" width="10095" height="8220">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -77,7 +77,7 @@
    </PIN>
    <BOUNDS type="Box" left="6540" top="1980">
    </BOUNDS>
-   <BOUNDS type="Window" left="4875" top="2310" width="12195" height="10845">
+   <BOUNDS type="Window" left="15420" top="1785" width="12195" height="10845">
    </BOUNDS>
    <PIN pinname="Spread Width" slicecount="1" visible="1" values="100">
    </PIN>
@@ -139,7 +139,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6525" top="1455" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="100">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="12">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -187,7 +187,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3315" top="1170" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.75">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.7906976744186">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -229,7 +229,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3705" top="1620" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-2255_4BeamerSetup\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15450" left="-45" top="-90" type="Window" width="19245">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-0114_4Beamer720p\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="15450" left="1215" top="1170" type="Window" width="19245">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="9825" top="7905" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="9825" top="7905" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="10800" left="19200" top="0" type="Window" width="19200">
+   <BOUNDS height="10800" left="28800" top="0" type="Window" width="19200">
    </BOUNDS>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13155" top="7920" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="38400" top="0" width="19200" height="10800">
+   <BOUNDS type="Window" left="48000" top="0" width="19200" height="10800">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="16635" top="7920" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="57600" top="0" width="19200" height="10800">
+   <BOUNDS type="Window" left="67200" top="0" width="19200" height="10800">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -241,9 +241,9 @@
    </PIN>
    <PIN pinname="Inital Distance" slicecount="1" values="4.79">
    </PIN>
-   <PIN pinname="Initial Pitch" slicecount="1" values="0.2">
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.1">
    </PIN>
-   <PIN pinname="Initial Yaw" slicecount="1" values="-0.02">
+   <PIN pinname="Initial Yaw" slicecount="1" values="-0.04">
    </PIN>
    <PIN pinname="Initial FOV" slicecount="1" values="0.2">
    </PIN>
@@ -621,7 +621,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6870" top="7680" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -633,7 +633,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Calibrate">
    </PIN>
@@ -1439,7 +1439,7 @@
    </BOUNDS>
    <PIN pinname="ID" visible="1">
    </PIN>
-   <PIN pinname="Windowed_Left" slicecount="1" values="1280">
+   <PIN pinname="Windowed_Left" slicecount="1" values="1920">
    </PIN>
    <PIN pinname="Windowed_Top" slicecount="1" values="0">
    </PIN>
@@ -1473,7 +1473,7 @@
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="721">
    <BOUNDS type="Node" left="12165" top="8325" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="1280">
+   <PIN pinname="Input 1" slicecount="1" values="1920">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="1280">
    </PIN>
@@ -1513,52 +1513,6 @@
    <LINK srcnodeid="721" srcpinname="Output" dstnodeid="723" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="723" srcpinname="Output" dstnodeid="722" dstpinname="Windowed_Left">
-   </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="724" border="0">
-   <BOUNDS type="Node" left="13260" top="12945" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13260" top="12945" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="76800" top="0" width="19200" height="10800">
-   </BOUNDS>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
-   </PIN>
-   <PIN pinname="ID" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D24X8">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen Floor|">
-   </PIN>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Refresh Rate" slicecount="1" values="60">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="SetRenderer (EX9)" filename="Subpatches\SetRenderer (EX9).v4p" nodename="SetRenderer (EX9)" componentmode="Hidden" id="725">
-   <BOUNDS type="Node" left="13380" top="13770" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="ID" visible="1">
-   </PIN>
-   <PIN pinname="Windowed_Left" visible="1" slicecount="1" values="1500">
-   </PIN>
-   <PIN pinname="Windowed_Top" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Windowed_Width" slicecount="1" values="1280">
-   </PIN>
-   <PIN pinname="Windowed_Height" slicecount="1" values="720">
-   </PIN>
-   <PIN pinname="Windowed_Border" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="724" srcpinname="ID" dstnodeid="725" dstpinname="ID">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="726">
    <BOUNDS type="Node" left="15960" top="9390" width="100" height="100">
@@ -1644,13 +1598,7 @@
    </LINK>
    <LINK srcnodeid="691" srcpinname="Helper Screen Floor" dstnodeid="648" dstpinname="Layer 4">
    </LINK>
-   <LINK srcnodeid="341" srcpinname="Screen Floor Out" dstnodeid="724" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="726" srcpinname="Output" dstnodeid="725" dstpinname="Windowed_Left">
-   </LINK>
    <LINK srcnodeid="686" srcpinname="Output" dstnodeid="689" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="689" srcpinname="Layer" dstnodeid="724" dstpinname="Layers">
    </LINK>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="733">
    <BOUNDS type="Node" left="13845" top="11220" width="100" height="100">
