@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-0114_4Beamer720p\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5070" top="2730" width="12195" height="10845">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2175" top="1530" width="12195" height="10845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -107,11 +107,11 @@
    </PIN>
    <PIN pinname="Diffuse Color" slicecount="1" visible="1" values="|0.05133,0.00000,0.31813,1.00000|">
    </PIN>
-   <PIN pinname="Specular Color" slicecount="1" visible="1" values="|1.00000,0.93181,0.00000,1.00000|">
+   <PIN pinname="Specular Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Power" slicecount="1" visible="1" values="50">
    </PIN>
-   <PIN pinname="Light Direction XYZ" visible="1" slicecount="3" values="0,-5,2">
+   <PIN pinname="Light Direction XYZ" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -119,9 +119,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   <PIN pinname="Texture Transform" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="21">
@@ -148,6 +146,8 @@
    <PIN pinname="X" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
+   <LINK srcnodeid="22" srcpinname="XYZ" dstnodeid="20" dstpinname="Light Direction XYZ">
+   </LINK>
    <LINK srcnodeid="11" srcpinname="Y" dstnodeid="3" dstpinname="TranslateY">
    </LINK>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="33">
@@ -249,8 +249,6 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="Acceleration" slicecount="1" values="0.2">
-   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="49" dstpinname="Go To Position">
    </LINK>
@@ -263,8 +261,6 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="Acceleration" slicecount="1" values="0.2">
-   </PIN>
    </NODE>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="50" dstpinname="Go To Position">
    </LINK>
@@ -276,8 +272,6 @@
    <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Position Out" visible="1">
-   </PIN>
-   <PIN pinname="Acceleration" slicecount="1" values="0.2">
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="51" dstpinname="Go To Position">
@@ -331,8 +325,6 @@
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.93181,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Color Output" visible="1">
-   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4560" top="7500" width="795" height="240">
@@ -354,8 +346,6 @@
    <BOUNDS type="Node" left="5220" top="5760" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="60">
@@ -380,17 +370,21 @@
    <PIN pinname="Rotate" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="62" srcpinname="Transform Out" dstnodeid="20" dstpinname="Texture Transform">
+   </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="9000" top="4845" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Pause" slicecount="1" values="0">
+   <PIN pinname="Period" slicecount="1" values="3">
    </PIN>
    </NODE>
    <LINK srcnodeid="63" srcpinname="Output" dstnodeid="62" dstpinname="Rotate">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="20" dstpinname="Specular Color">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="20" dstpinname="Ambient Color">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="64" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="3255" top="8460" width="795" height="240">
@@ -429,7 +423,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5115" top="1125" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -441,13 +435,5 @@
    <LINK srcnodeid="14" srcpinname="Mesh" dstnodeid="20" dstpinname="Mesh">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Layer" dstnodeid="64" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="20" dstpinname="Specular Color">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="20" dstpinname="Ambient Color">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="XYZ" dstnodeid="20" dstpinname="Light Direction XYZ">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Transform Out" dstnodeid="20" dstpinname="Texture Transform">
    </LINK>
    </PATCH>
