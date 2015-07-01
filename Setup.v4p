@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-0114_OSC\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-2356_BrickWall\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="360">
    <BOUNDS height="15450" left="-45" top="-90" type="Window" width="19245">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -1135,7 +1135,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2805" top="270" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1149,7 +1149,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="701" srcpinname="Y Output Value" dstnodeid="664" dstpinname="Enabled">
@@ -1445,13 +1445,13 @@
    </BOUNDS>
    <PIN pinname="ID" visible="1">
    </PIN>
-   <PIN pinname="Windowed_Left" slicecount="1" values="1280" visible="1">
+   <PIN pinname="Windowed_Left" slicecount="1" visible="1" values="1280">
    </PIN>
    <PIN pinname="Windowed_Top" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Windowed_Width" slicecount="1" values="1280" visible="1">
+   <PIN pinname="Windowed_Width" slicecount="1" visible="1" values="1280">
    </PIN>
-   <PIN pinname="Windowed_Height" slicecount="1" values="720" visible="1">
+   <PIN pinname="Windowed_Height" slicecount="1" visible="1" values="720">
    </PIN>
    <PIN pinname="Windowed_Border" slicecount="1" values="0">
    </PIN>
@@ -1467,9 +1467,9 @@
    </PIN>
    <PIN pinname="Windowed_Top" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Windowed_Width" slicecount="1" values="1280" visible="1">
+   <PIN pinname="Windowed_Width" slicecount="1" visible="1" values="1280">
    </PIN>
-   <PIN pinname="Windowed_Height" slicecount="1" values="720" visible="1">
+   <PIN pinname="Windowed_Height" slicecount="1" visible="1" values="720">
    </PIN>
    <PIN pinname="Windowed_Border" slicecount="1" values="0">
    </PIN>
@@ -1479,7 +1479,7 @@
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="721">
    <BOUNDS type="Node" left="14475" top="8895" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="1280" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="1280">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="1280">
    </PIN>
@@ -1497,9 +1497,9 @@
    </PIN>
    <PIN pinname="Windowed_Top" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Windowed_Width" slicecount="1" values="1280" visible="1">
+   <PIN pinname="Windowed_Width" slicecount="1" visible="1" values="1280">
    </PIN>
-   <PIN pinname="Windowed_Height" slicecount="1" values="720" visible="1">
+   <PIN pinname="Windowed_Height" slicecount="1" visible="1" values="720">
    </PIN>
    <PIN pinname="Windowed_Border" slicecount="1" values="0">
    </PIN>
@@ -1557,9 +1557,9 @@
    </PIN>
    <PIN pinname="Windowed_Top" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Windowed_Width" slicecount="1" values="1280" visible="1">
+   <PIN pinname="Windowed_Width" slicecount="1" visible="1" values="1280">
    </PIN>
-   <PIN pinname="Windowed_Height" slicecount="1" values="720" visible="1">
+   <PIN pinname="Windowed_Height" slicecount="1" visible="1" values="720">
    </PIN>
    <PIN pinname="Windowed_Border" slicecount="1" values="0">
    </PIN>
