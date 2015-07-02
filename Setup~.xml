@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-2356_BrickWall\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15450" left="-45" top="-90" type="Window" width="19245">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-2356_BrickWall\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="360">
+   <BOUNDS height="15450" left="2010" top="1230" type="Window" width="19245">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="8715" top="8460" type="Node" width="100">
    </BOUNDS>
    <BOUNDS height="1800" left="8715" top="8460" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="10800" left="19200" top="0" type="Window" width="19200">
+   <BOUNDS height="16200" left="28800" top="0" type="Window" width="28800">
    </BOUNDS>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12045" top="8475" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="38400" top="0" width="19200" height="10800">
+   <BOUNDS type="Window" left="48000" top="0" width="28800" height="16200">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="15525" top="8475" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="57600" top="0" width="19200" height="10800">
+   <BOUNDS type="Window" left="67200" top="0" width="28800" height="16200">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -380,7 +380,7 @@
    </LINK>
    <LINK srcnodeid="339" srcpinname="fps" dstnodeid="329" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Mapping" filename="Subpatches\Mapping.v4p" nodename="Subpatches\Mapping.v4p" componentmode="Hidden" id="341">
+   <NODE systemname="Mapping" filename="Subpatches\Mapping.v4p" nodename="Subpatches\Mapping.v4p" componentmode="InAWindow" id="341">
    <BOUNDS type="Node" left="6945" top="7590" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Screen1 Out" visible="1">
@@ -1520,70 +1520,12 @@
    </LINK>
    <LINK srcnodeid="723" srcpinname="Output" dstnodeid="722" dstpinname="Windowed_Left">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="724" border="0">
-   <BOUNDS type="Node" left="12390" top="13275" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12390" top="13275" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="76800" top="0" width="19200" height="10800">
-   </BOUNDS>
-   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
-   </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
-   </PIN>
-   <PIN pinname="ID" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D24X8">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Screen Floor|">
-   </PIN>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
-   </PIN>
-   <PIN pinname="Fullscreen Refresh Rate" slicecount="1" values="60">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="SetRenderer (EX9)" filename="Subpatches\SetRenderer (EX9).v4p" nodename="SetRenderer (EX9)" componentmode="Hidden" id="725">
-   <BOUNDS type="Node" left="14115" top="13740" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="ID" visible="1">
-   </PIN>
-   <PIN pinname="Windowed_Left" visible="1" slicecount="1" values="1500">
-   </PIN>
-   <PIN pinname="Windowed_Top" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Windowed_Width" slicecount="1" visible="1" values="1280">
-   </PIN>
-   <PIN pinname="Windowed_Height" slicecount="1" visible="1" values="720">
-   </PIN>
-   <PIN pinname="Windowed_Border" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="724" srcpinname="ID" dstnodeid="725" dstpinname="ID">
-   </LINK>
-   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="726">
-   <BOUNDS type="Node" left="14745" top="13305" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" visible="1" values="1280">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="1280">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="723" srcpinname="Output" dstnodeid="726" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="728" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="9540" top="4890" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="9540" top="4890" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1280">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1920">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="px">
    </PIN>
@@ -1601,7 +1543,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10560" top="4875" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="720">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1080">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="px">
    </PIN>
@@ -1649,12 +1591,6 @@
    <LINK srcnodeid="691" srcpinname="Helper Screen Right" dstnodeid="648" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="691" srcpinname="Helper Screen Floor" dstnodeid="648" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="341" srcpinname="Screen Floor Out" dstnodeid="724" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="726" srcpinname="Output" dstnodeid="725" dstpinname="Windowed_Left">
-   </LINK>
-   <LINK srcnodeid="689" srcpinname="Layer" dstnodeid="724" dstpinname="Layers">
    </LINK>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="733">
    <BOUNDS type="Node" left="12975" top="11550" width="100" height="100">
@@ -1750,48 +1686,12 @@
    </NODE>
    <LINK srcnodeid="785" srcpinname="Y Output Value" dstnodeid="781" dstpinname="Remote Port">
    </LINK>
-   <NODE id="776" componentmode="Hidden" systemname="ShiftRGB (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\ShiftRGB\ShiftRGB (EX9.Texture Filter).v4p" nodename="ShiftRGB (EX9.Texture Filter)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input" visible="1" slicecount="1" pintype="Input" values="||">
-   </PIN>
-   <PIN pinname="Shift" slicecount="1" pintype="Input" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Direction" slicecount="1" pintype="Input" visible="1" values="0.5">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Hue" slicecount="1" pintype="Input" visible="1" values="0">
-   </PIN>
-   <BOUNDS type="Window" left="2640" top="3540" width="15810" height="9330">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Node" left="13860" top="12690" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="0" top="195" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Control" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Mode" pintype="Input" visible="-1" slicecount="1" values="| Clamp|">
-   </PIN>
-   <PIN pinname="Border Color" pintype="Input" visible="-1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="786" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10965" top="8895" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="10965" top="8895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1280">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1920">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="px">
    </PIN>
@@ -1805,5 +1705,17 @@
    <LINK srcnodeid="786" srcpinname="Y Output Value" dstnodeid="719" dstpinname="Windowed_Left">
    </LINK>
    <LINK srcnodeid="786" srcpinname="Y Output Value" dstnodeid="721" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="719" dstpinname="Windowed_Width">
+   </LINK>
+   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="720" dstpinname="Windowed_Width">
+   </LINK>
+   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="722" dstpinname="Windowed_Width">
+   </LINK>
+   <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="719" dstpinname="Windowed_Height">
+   </LINK>
+   <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="720" dstpinname="Windowed_Height">
+   </LINK>
+   <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="722" dstpinname="Windowed_Height">
    </LINK>
    </PATCH>

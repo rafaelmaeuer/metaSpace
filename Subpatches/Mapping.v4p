@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150701-2356_BrickWall\Subpatches\Mapping.v4p" systemname="Mapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mapping.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2025" top="4095" width="15150" height="9030">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150702-1556_NewSetup\Subpatches\Mapping.v4p" systemname="Mapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mapping.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2025" top="4410" width="15150" height="9030">
    </BOUNDS>
    <NODE systemname="Homography (Transform 2d)" nodename="Homography (Transform 2d)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="5400" top="4305" width="100" height="100">
@@ -101,9 +101,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="1,0.943823681882231,-0.98290598290598,-0.768029940528972">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.965811965811966,0.926729664788214,-1,-0.768029940528972">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.943587563760023,0.974374544571289,0.768763662861303,-0.67281752880298">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.977107116832649,0.963201360213747,0.746417294146219,-0.67281752880298">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
@@ -297,9 +297,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.931623931623932,0.880341880341881,-0.829059829059828,-0.982905982905983">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.931623931623932,0.863247863247864,-0.829059829059828,-0.982905982905983">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.764816614039351,0.884989069710954,0.712897741073595,-0.695163897518064">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.764816614039351,0.888268156424581,0.712897741073595,-0.695163897518064">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
