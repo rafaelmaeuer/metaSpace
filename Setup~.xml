@@ -886,7 +886,7 @@
    </NODE>
    <LINK srcnodeid="692" srcpinname="Helper" dstnodeid="390" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="735" top="7245" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="17490" top="7725" width="10095" height="8220">
