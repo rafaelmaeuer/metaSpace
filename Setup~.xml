@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-2121_GeometryKinect\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="15" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-2353_GeometryKinect\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="765" top="1605" type="Window" width="23895">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -149,11 +149,11 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <PIN pinname="Inital Distance" slicecount="1" values="6">
+   <PIN pinname="Inital Distance" slicecount="1" values="5">
    </PIN>
-   <PIN pinname="Initial Pitch" slicecount="1" values="0.15">
+   <PIN pinname="Initial Pitch" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Initial Yaw" slicecount="1" values="0.17">
+   <PIN pinname="Initial Yaw" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Initial FOV" slicecount="1" values="0.2">
    </PIN>
@@ -1647,25 +1647,11 @@
    <LINK srcnodeid="813" srcpinname="Output" dstnodeid="811" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="814" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6435" top="4965" width="450" height="270">
+   <BOUNDS type="Node" left="6060" top="4560" width="450" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6435" top="4965" width="1125" height="495">
+   <BOUNDS type="Box" left="6060" top="4560" width="1125" height="495">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|y-Korrektur Fall: Setzen?|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="815" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6435" top="5580" width="1080" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6435" top="5580" width="1080" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|werte glätten|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -1725,17 +1711,17 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Motor Angle" slicecount="1" values="0" visible="1">
+   <PIN pinname="Motor Angle" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Microsoft">
    </PIN>
-   <PIN pinname="Flip Image" slicecount="1" values="1" visible="1">
+   <PIN pinname="Flip Image" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Kinect Depth" visible="1">
    </PIN>
    <PIN pinname="Index" visible="1">
    </PIN>
-   <PIN pinname="Depth Range" slicecount="1" values="Default" visible="1">
+   <PIN pinname="Depth Range" slicecount="1" visible="1" values="Default">
    </PIN>
    <PIN pinname="Kinect Image" visible="1">
    </PIN>
@@ -1747,7 +1733,7 @@
    </PIN>
    <PIN pinname="Smooth" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="15750" top="690" width="11685" height="14325">
+   <BOUNDS type="Window" left="14940" top="2475" width="11685" height="14325">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="667" srcpinname="Y Output Value" dstnodeid="317" dstpinname="Index">
@@ -1773,7 +1759,7 @@
    </PIN>
    <BOUNDS type="Box" left="3105" top="2055">
    </BOUNDS>
-   <PIN pinname="Depth Range" slicecount="1" values="Default" visible="1">
+   <PIN pinname="Depth Range" slicecount="1" visible="1" values="Default">
    </PIN>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -1781,7 +1767,7 @@
    </PIN>
    <PIN pinname="User Head XYZ" visible="1">
    </PIN>
-   <PIN pinname="Motor Angle" slicecount="1" values="0" visible="1">
+   <PIN pinname="Motor Angle" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
@@ -1805,7 +1791,7 @@
    </BOUNDS>
    <PIN pinname="Helper" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6840" top="585" width="21285" height="16200">
+   <BOUNDS type="Window" left="6465" top="1365" width="21285" height="16200">
    </BOUNDS>
    <PIN pinname="Kinect Windows" visible="1">
    </PIN>
@@ -2011,5 +1997,7 @@
    <LINK srcnodeid="826" srcpinname="Y Output Value" dstnodeid="317" dstpinname="Flip Image">
    </LINK>
    <LINK srcnodeid="826" srcpinname="Y Output Value" dstnodeid="665" dstpinname="Flip Image">
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="231" dstpinname="Layer 3">
    </LINK>
    </PATCH>
