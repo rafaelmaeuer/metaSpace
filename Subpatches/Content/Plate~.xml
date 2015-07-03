@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150630-2255_4BeamerSetup\Subpatches\Content\Plate.v4p" scrollx="0" scrolly="0" systemname="Plate" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\Plate.v4p">
-   <BOUNDS type="Window" left="4935" top="5415" width="10410" height="8220">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-2220_GeometryKinect\Subpatches\Content\Plate.v4p" scrollx="0" scrolly="0" systemname="Plate" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\Plate.v4p">
+   <BOUNDS type="Window" left="6180" top="4980" width="10410" height="8220">
    </BOUNDS>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="3495" top="3405" width="100" height="100">
@@ -297,7 +297,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1125" top="3150" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -321,7 +321,7 @@
    </PIN>
    <PIN pinname="Yaw" slicecount="1" visible="1" values="-0.17">
    </PIN>
-   <PIN pinname="Roll" slicecount="1" values="0.05">
+   <PIN pinname="Roll" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Mesh" dstnodeid="7" dstpinname="Mesh">
