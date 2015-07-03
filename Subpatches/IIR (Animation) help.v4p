@@ -1,0 +1,281 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv33beta13.dtd" >
+   <PATCH nodename="C:\Dokumente und Einstellungen\kalle\Desktop\IIR (Animation) help.v4p">
+   <BOUNDS height="9630" left="1155" top="2760" type="Window" width="10320">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="15" nodename="IIR (Animation).v4p">
+   <BOUNDS height="100" left="6210" top="3225" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="6210" top="3225" type="Box">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Factor">
+   </PIN>
+   <PIN pinname="Smooth Factor [0;1]" visible="1">
+   </PIN>
+   <BOUNDS height="5955" left="10845" top="5475" type="Window" width="9360">
+   </BOUNDS>
+   <PIN pinname="Smooth Constant [0;1]" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="14" nodename="RandomSpread (Spreads)">
+   <BOUNDS height="0" left="255" top="930" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="194">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Random Seed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="13" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="15" top="1635" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5370" top="10320" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1275" left="15" top="1635" type="Box" width="6030">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="12" nodename="LFO (Animation)">
+   <BOUNDS height="0" left="345" top="90" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="0.08">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="225" top="3600" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5670" top="10620" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1275" left="225" top="3600" type="Box" width="6030">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Y Input Value" srcnodeid="15" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="10" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="6330" top="2865" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7170" top="7950" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="6330" top="2865" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.93">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="9" nodename="IIR (Animation).v4p">
+   <BOUNDS height="100" left="6255" top="5145" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="6255" top="5145" type="Box">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Factor" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Factor [0;1]" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Constant [0;1]" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="270" top="5520" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5970" top="10920" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1275" left="270" top="5520" type="Box" width="6030">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Y Input Value" srcnodeid="9" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="6375" top="4785" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7470" top="8250" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="6375" top="4785" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.98">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="6" nodename="IIR (Animation).v4p">
+   <BOUNDS height="100" left="6300" top="7065" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="6300" top="7065" type="Box">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Factor" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Factor [0;1]" visible="1">
+   </PIN>
+   <PIN pinname="Smooth Constant [0;1]" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="315" top="7440" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6015" top="12840" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1275" left="315" top="7440" type="Box" width="6030">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="5" dstpinname="Y Input Value" srcnodeid="6" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="4" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="6420" top="6705" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7515" top="10170" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="6420" top="6705" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.995">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="13" dstpinname="Y Input Value" srcnodeid="14" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="15" dstpinname="Input" srcnodeid="14" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input" srcnodeid="14" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="6" dstpinname="Input" srcnodeid="14" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="3" nodename="IOBox (String)">
+   <BOUNDS height="270" left="3465" top="465" type="Node" width="4110">
+   </BOUNDS>
+   <BOUNDS height="270" left="3465" top="465" type="Box" width="4110">
+   </BOUNDS>
+   <BOUNDS height="160" left="300" top="300" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="http://en.wikipedia.org/wiki/Infinite_impulse_response">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="2" nodename="IOBox (String)">
+   <BOUNDS height="270" left="3480" top="45" type="Node" width="4110">
+   </BOUNDS>
+   <BOUNDS height="270" left="3480" top="45" type="Box" width="4110">
+   </BOUNDS>
+   <BOUNDS height="160" left="600" top="600" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|credits to tonfilm!!!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="Change (Animation)">
+   <BOUNDS height="0" left="1590" top="30" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="1" dstpinname="Input" srcnodeid="12" srcpinname="Cycles">
+   </LINK>
+   <NODE id="0" nodename="Random (Value)">
+   <BOUNDS height="0" left="2025" top="600" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Scale" slicecount="1" values="9999">
+   </PIN>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="0" dstpinname="Enabled" srcnodeid="1" srcpinname="OnChange">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Random Seed" srcnodeid="0" srcpinname="Output">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Smooth Constant [0;1]">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Smooth Constant [0;1]">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Smooth Constant [0;1]">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="7395" top="3480" width="1815" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7395" top="3480" width="2580" height="2265">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Smooth Constant = 0 means: signal is bypassed&cr;&lf;&cr;&lf;Smooth Constant = 1 means: signal is frozen...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   </PATCH>

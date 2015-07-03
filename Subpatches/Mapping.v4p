@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150702-2031_NewSetup\Subpatches\Mapping.v4p" systemname="Mapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mapping.v4p" scrollx="30" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-1845_GeometryKinect\Subpatches\Mapping.v4p" systemname="Mapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Subpatches\Mapping.v4p" scrollx="30" scrolly="0">
    <BOUNDS type="Window" left="5265" top="5550" width="19875" height="9615">
    </BOUNDS>
    <NODE systemname="Homography (Transform 2d)" nodename="Homography (Transform 2d)" componentmode="Hidden" id="9">
@@ -41,9 +41,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.811965811965812,0.931623931623932,-1,-0.726495726495727">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.726495726495726,0.777777777777778,-0.811965811965812,-0.743589743589744">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.720670391061452,0.776536312849163,0.810055865921788,-0.821229050279331">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.731843575418994,0.798882681564247,0.810055865921788,-0.832402234636873">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>

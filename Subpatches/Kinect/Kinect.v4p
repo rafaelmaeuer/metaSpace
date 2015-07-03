@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150627-1614\Subpatches\Kinect.v4p" systemname="Kinect" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\01_Kinect\01_Patches\Kinect.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-1845_GeometryKinect\Subpatches\Kinect\Kinect.v4p" systemname="Kinect" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\01_Kinect\01_Patches\Kinect.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="7335" top="195" width="11685" height="14325">
    </BOUNDS>
    <NODE componentmode="InABox" id="31" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -163,6 +163,8 @@
    </PIN>
    <PIN pinname="Kinect Status" visible="1">
    </PIN>
+   <PIN pinname="Enable Skeleton Smoothing" visible="1">
+   </PIN>
    </NODE>
    <LINK dstnodeid="22" dstpinname="Enabled" srcnodeid="31" srcpinname="Y Output Value">
    </LINK>
@@ -206,6 +208,16 @@
    <BOUNDS type="Node" left="4275" top="2940" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Correction" visible="1">
+   </PIN>
+   <PIN pinname="Jitter Radius" visible="1">
+   </PIN>
+   <PIN pinname="Max Deviation Radius" visible="1">
+   </PIN>
+   <PIN pinname="Prediction" visible="1">
+   </PIN>
+   <PIN pinname="Smoothing" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="22" dstpinname="Smooth Parameters">
@@ -751,6 +763,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Joint State" visible="1" slicecount="20" values=",,,,,,,,,,,,,,,,,,,">
+   </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="PositionXYZ" dstnodeid="94" dstpinname="PositionXYZ">
    </LINK>
@@ -877,5 +891,73 @@
    <LINK srcnodeid="75" srcpinname="Position Out" dstnodeid="91" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="63" srcpinname="Position Out" dstnodeid="91" dstpinname="Z">
+   </LINK>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="104">
+   <BOUNDS type="Node" left="4695" top="2490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output Count" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="105" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4710" top="990" width="870" height="1095">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4710" top="990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="0.5,0.1,0.5,0.1,0.1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Smooth">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output 1" dstnodeid="19" dstpinname="Correction">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output 2" dstnodeid="19" dstpinname="Jitter Radius">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output 3" dstnodeid="19" dstpinname="Max Deviation Radius">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output 4" dstnodeid="19" dstpinname="Prediction">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output 5" dstnodeid="19" dstpinname="Smoothing">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="107" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3900" top="540" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3900" top="540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Enable Skeleton Smoothing|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Enable Skeleton Smoothing">
    </LINK>
    </PATCH>

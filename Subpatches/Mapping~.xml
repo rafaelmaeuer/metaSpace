@@ -103,9 +103,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.982905982905983,0.965811965811967,-0.914529914529916,-0.914529914529915">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.965811965811966,0.965811965811967,-1,-0.760683760683761">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.955307262569832,0.988826815642458,0.776536312849161,-0.698324022346368">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.955307262569832,0.988826815642458,0.810055865921787,-0.687150837988826">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
@@ -165,9 +165,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.948717948717948,1,-0.846153846153847,-1">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.948717948717948,1,-0.777777777777779,-0.948717948717949">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-1,0.899441340782123,0.653631284916202,-1">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-1,0.921787709497207,0.553072625698325,-0.743016759776536">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
@@ -289,9 +289,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.982905982905983,0.965811965811966,-0.931623931623931,-0.982905982905983">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.982905982905983,0.965811965811966,-0.675213675213674,-0.982905982905983">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.910614525139666,0.776536312849162,0.58659217877095,-0.743016759776536">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.910614525139666,0.776536312849162,0.620111731843576,-0.743016759776536">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
