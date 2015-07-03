@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-2121_GeometryKinect\Subpatches\Kinect\KinectData.v4p" systemname="Kinect_Data" filename="C:\Users\Dominik Lischka\Desktop\Privat\Kinect_Data.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2550" top="5550" width="16725" height="10290">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\01_Kinect\01_Patches\Kinect_Data.v4p" systemname="Kinect_Data" filename="C:\Users\Dominik Lischka\Desktop\Privat\Kinect_Data.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="2550" top="5550" width="12990" height="7395">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2130" top="330" width="0" height="0">

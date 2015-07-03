@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150627-1614\Subpatches\KinectImage.v4p" filename="C:\Users\bryanebentley\Documents\vvvv\contributions\modules\vjPatch_kinectDepth\kinectDepth.v4p" systemname="kinectDepth">
-   <BOUNDS height="6945" left="180" top="690" type="Window" width="4590">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150703-2121_GeometryKinect\Subpatches\Kinect\KinectImage.v4p" filename="C:\Users\bryanebentley\Documents\vvvv\contributions\modules\vjPatch_kinectDepth\kinectDepth.v4p" systemname="kinectDepth" scrollx="0" scrolly="0">
+   <BOUNDS height="8655" left="9750" top="4755" type="Window" width="4830">
    </BOUNDS>
    <NODE componentmode="InABox" id="33" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="255" left="15" top="390" type="Node" width="570">
@@ -41,11 +41,15 @@
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Blend Mode" slicecount="1" values="| Off|">
+   </PIN>
    </NODE>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="59">
-   <BOUNDS type="Node" left="1323" top="4431" width="100" height="100">
+   <BOUNDS type="Node" left="1308" top="5451" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1323" top="4431" width="996" height="432">
+   <BOUNDS type="Box" left="1308" top="5451" width="996" height="432">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -77,7 +81,7 @@
    <LINK srcnodeid="86" srcpinname="Transform Out" dstnodeid="47" dstpinname="Transform">
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="87">
-   <BOUNDS type="Node" left="2085" top="2985" width="100" height="100">
+   <BOUNDS type="Node" left="2100" top="2970" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="0.5">
    </PIN>
@@ -89,9 +93,9 @@
    <LINK srcnodeid="87" srcpinname="Output" dstnodeid="86" dstpinname="Y">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="89" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2085" top="2355" width="480" height="480">
+   <BOUNDS type="Box" left="2100" top="2340" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2085" top="2355" width="0" height="0">
+   <BOUNDS type="Node" left="2100" top="2340" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -108,8 +112,6 @@
    </NODE>
    <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Switch">
    </LINK>
-   <LINK srcnodeid="47" srcpinname="Layer" dstnodeid="59" dstpinname="Input Node">
-   </LINK>
    <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.MSKinect.dll" id="91" nodename="RGB (Kinect Microsoft)" systemname="RGB (Kinect Microsoft)">
    <BOUNDS height="100" left="1305" top="2820" type="Node" width="100">
    </BOUNDS>
@@ -123,5 +125,7 @@
    <LINK srcnodeid="85" srcpinname="Output Node" dstnodeid="91" dstpinname="Kinect Runtime">
    </LINK>
    <LINK srcnodeid="91" srcpinname="Texture Out" dstnodeid="47" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Layer" dstnodeid="59" dstpinname="Input Node">
    </LINK>
    </PATCH>
