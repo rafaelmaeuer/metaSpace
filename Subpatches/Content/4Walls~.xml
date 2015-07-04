@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-0222_KinectGeometry\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
-   <BOUNDS type="Window" left="4545" top="300" width="8055" height="6165">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1121_TrailerContent\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
+   <BOUNDS type="Window" left="5205" top="3720" width="11790" height="10170">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -42,6 +42,8 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Yaw">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE id="72" systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden">
@@ -307,7 +309,7 @@
    </PIN>
    <BOUNDS type="Window" left="7455" top="2355" width="9000" height="6000">
    </BOUNDS>
-   <PIN pinname="Height" slicecount="5" values="2,2,2,2,0">
+   <PIN pinname="Height" slicecount="5" values="2,2,2,2,0.01">
    </PIN>
    </NODE>
    <LINK srcnodeid="70" srcpinname="Mesh" dstnodeid="72" dstpinname="Mesh">
@@ -407,5 +409,29 @@
    <LINK srcnodeid="97" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="89" srcpinname="Texture Out" dstnodeid="95" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="99" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3705" top="4530" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3705" top="4530" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Output" dstnodeid="99" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2400" top="4530" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="4530" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Y Output Value|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="100" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

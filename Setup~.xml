@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-0311_KinectGeometry\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1121_TrailerContent\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="765" top="1605" type="Window" width="23895">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -153,9 +153,9 @@
    </PIN>
    <PIN pinname="Inital Distance" slicecount="1" values="5">
    </PIN>
-   <PIN pinname="Initial Pitch" slicecount="1" values="0.18">
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.13">
    </PIN>
-   <PIN pinname="Initial Yaw" slicecount="1" values="-0.08">
+   <PIN pinname="Initial Yaw" slicecount="1" values="0.02">
    </PIN>
    <PIN pinname="Initial FOV" slicecount="1" values="0.2">
    </PIN>
@@ -409,6 +409,8 @@
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
    </PIN>
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="580">
    <BOUNDS type="Node" left="11145" top="5835" width="100" height="100">
@@ -435,6 +437,8 @@
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
    </PIN>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="581">
    <BOUNDS type="Node" left="14685" top="5835" width="100" height="100">
@@ -460,6 +464,8 @@
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Background Color" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="582">
@@ -531,7 +537,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11400" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.5,1.36,-0.5">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.116480157960321,0.572677199451967,-0.0986885705179255">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -613,7 +619,7 @@
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Clear" slicecount="1" values="1">
    </PIN>
@@ -665,7 +671,7 @@
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
@@ -698,6 +704,8 @@
    <PIN pinname="Clear" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Background Color" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="690" systemname="IOBox (Color)">
@@ -779,9 +787,23 @@
    </PIN>
    <PIN pinname="Helper Screen Floor" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="10095" top="1635" width="17715" height="13410">
+   <BOUNDS type="Window" left="10230" top="975" width="17715" height="13410">
    </BOUNDS>
-   <PIN pinname="Near Plane Screen Floor" slicecount="1" values="-1">
+   <PIN pinname="Near Plane Screen Floor" slicecount="1" values="-0.9" visible="1">
+   </PIN>
+   <PIN pinname="Near Plane Screen Left" visible="1">
+   </PIN>
+   <PIN pinname="Far PlaneScreen Left" visible="1">
+   </PIN>
+   <PIN pinname="Near Plane Screen Middle" visible="1">
+   </PIN>
+   <PIN pinname="Near Plane Screen Right" visible="1">
+   </PIN>
+   <PIN pinname="Far Plane Screen Middle" visible="1">
+   </PIN>
+   <PIN pinname="Far Plane Screen Right" visible="1">
+   </PIN>
+   <PIN pinname="Far Plane Screen Floor" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="632" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Translate Camera">
@@ -805,11 +827,15 @@
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="750" top="8130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="18105" top="9030" width="10095" height="8220">
+   <BOUNDS type="Window" left="12240" top="5685" width="14250" height="9420">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
+   <PIN pinname="Camera Planes" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="MultiFlipFlop (Animation)" nodename="MultiFlipFlop (Animation)" componentmode="Hidden" id="695">
@@ -966,10 +992,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="701" srcpinname="Y Output Value" dstnodeid="664" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="701" srcpinname="Y Output Value" dstnodeid="668" dstpinname="Enabled">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="703" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4560" top="2520" width="795" height="720">
    </BOUNDS>
@@ -1156,13 +1178,13 @@
    </LINK>
    <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="581" dstpinname="Backbuffer Width">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="579" dstpinname="Layers">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="579" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="580" dstpinname="Layers">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="580" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="581" dstpinname="Layers">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="581" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="684" dstpinname="Layers">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="684" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="690" srcpinname="Color Output" dstnodeid="689" dstpinname="Color">
    </LINK>
@@ -1859,9 +1881,9 @@
    <LINK srcnodeid="713" srcpinname="Y" dstnodeid="813" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="819" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9795" top="1020" width="795" height="720">
+   <BOUNDS type="Box" left="11385" top="1035" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="9795" top="1020" width="0" height="0">
+   <BOUNDS type="Node" left="11385" top="1035" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1990,8 +2012,112 @@
    </LINK>
    <LINK srcnodeid="826" srcpinname="Y Output Value" dstnodeid="665" dstpinname="Flip Image">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="231" dstpinname="Layer 3">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="231" dstpinname="Layer 3">
    </LINK>
-   <LINK srcnodeid="819" srcpinname="Y Output Value" dstnodeid="632" dstpinname="Y Input Value">
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="827" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="15000" top="3090" width="2280" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15000" top="3090" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="827" srcpinname="Color Output" dstnodeid="579" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="827" srcpinname="Color Output" dstnodeid="580" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="827" srcpinname="Color Output" dstnodeid="581" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="827" srcpinname="Color Output" dstnodeid="684" dstpinname="Background Color">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="828" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3255" top="2655" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3255" top="2655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="828" srcpinname="Y Output Value" dstnodeid="668" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="828" srcpinname="Y Output Value" dstnodeid="664" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="830" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12570" top="1800" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12570" top="1800" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.9">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Near Plane|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Near Plane Screen Left">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="831" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13575" top="1800" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13575" top="1800" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Far Plane|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="831" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Far PlaneScreen Left">
+   </LINK>
+   <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Near Plane Screen Middle">
+   </LINK>
+   <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Near Plane Screen Right">
+   </LINK>
+   <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Near Plane Screen Floor">
+   </LINK>
+   <LINK srcnodeid="831" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Far Plane Screen Middle">
+   </LINK>
+   <LINK srcnodeid="831" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Far Plane Screen Right">
+   </LINK>
+   <LINK srcnodeid="831" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Far Plane Screen Floor">
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="Background Color" dstnodeid="827" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="832">
+   <BOUNDS type="Node" left="12810" top="1290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="693" srcpinname="Camera Planes" dstnodeid="832" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="832" srcpinname="X" dstnodeid="830" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="832" srcpinname="Y" dstnodeid="831" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
