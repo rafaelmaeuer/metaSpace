@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1121_TrailerContent\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="765" top="1605" type="Window" width="23895">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -255,7 +255,7 @@
    <LINK srcnodeid="339" srcpinname="fps" dstnodeid="329" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Mapping" filename="Subpatches\Mapping.v4p" nodename="Subpatches\Mapping.v4p" componentmode="Hidden" id="341">
-   <BOUNDS type="Node" left="6705" top="6780" width="100" height="100">
+   <BOUNDS type="Node" left="14430" top="5040" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Screen1 Out" visible="1">
    </PIN>
@@ -537,7 +537,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11400" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.116480157960321,0.572677199451967,-0.0986885705179255">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.20444471099774,0.689373614498412,-0.0180633375695042">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -789,7 +789,7 @@
    </PIN>
    <BOUNDS type="Window" left="10230" top="975" width="17715" height="13410">
    </BOUNDS>
-   <PIN pinname="Near Plane Screen Floor" slicecount="1" values="-0.9" visible="1">
+   <PIN pinname="Near Plane Screen Floor" slicecount="1" visible="1" values="-0.9">
    </PIN>
    <PIN pinname="Near Plane Screen Left" visible="1">
    </PIN>
@@ -827,7 +827,7 @@
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="750" top="8130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="15315" top="6765" width="14250" height="9420">
+   <BOUNDS type="Window" left="11925" top="6210" width="14910" height="9810">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
