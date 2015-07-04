@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1444_TrailerContent\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1532_TrailerContent\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="15" scrolly="0">
    <BOUNDS height="15795" left="1350" top="1110" type="Window" width="23895">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -17,11 +17,11 @@
    </PIN>
    <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
    </PIN>
-   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -273,7 +273,7 @@
    </PIN>
    <PIN pinname="Screen Middle Out" visible="1">
    </PIN>
-   <PIN pinname="Screen Left mapped Points" slicecount="4" visible="1" values="0.982905982905983,0.965811965811966,-0.675213675213674,-0.982905982905983">
+   <PIN pinname="Screen Left mapped Points" slicecount="4" visible="1" values="1,1,-0.76068376068376,-0.948717948717949">
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="390">
@@ -407,7 +407,7 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
@@ -435,7 +435,7 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
    </PIN>
    <PIN pinname="Background Color" visible="1">
    </PIN>
@@ -463,7 +463,7 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
    </PIN>
    <PIN pinname="Background Color" visible="1">
    </PIN>
@@ -537,7 +537,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11400" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.41,0.49,-0.58">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.52,0.61,-0.29">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -687,7 +687,7 @@
    </BOUNDS>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="8">
    </PIN>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
@@ -827,7 +827,7 @@
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="750" top="8130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="12390" top="6210" width="14910" height="9810">
+   <BOUNDS type="Window" left="12795" top="6870" width="14910" height="9810">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
