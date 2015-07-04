@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-0143_KinectGeometry\Subpatches\Kinect\KinectMapping.v4p" systemname="KinectMapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\KinectMapping.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-0311_KinectGeometry\Subpatches\Kinect\KinectMapping.v4p" systemname="KinectMapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\KinectMapping.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="10200" top="465" width="17175" height="16200">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
@@ -879,7 +879,7 @@
    </PIN>
    <PIN pinname="Destination Minimum" slicecount="1" values="-0.5">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="1.5">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.5">
    </PIN>
    </NODE>
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="112">
@@ -905,9 +905,9 @@
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" values="1.5">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="0.75">
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.5">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.5">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.75">
    </PIN>
    </NODE>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="110">
