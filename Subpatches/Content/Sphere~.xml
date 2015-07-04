@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Subpatches\Content\Sphere.v4p" systemname="Sphere" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Subpatches\Content\Sphere.v4p">
-   <BOUNDS type="Window" left="7410" top="7440" width="11820" height="8850">
+   <BOUNDS type="Window" left="14610" top="7530" width="11820" height="8850">
    </BOUNDS>
    <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="2910" top="6285" width="100" height="100">

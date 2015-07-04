@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p">
-   <BOUNDS type="Window" left="5100" top="2835" width="10080" height="10650">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1429_TrailerContent\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="18405" top="4860" width="10080" height="10650">
    </BOUNDS>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="4140" top="6180" width="100" height="100">
+   <BOUNDS type="Node" left="4305" top="6150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -19,7 +19,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="4860" top="2685" width="100" height="100">
+   <BOUNDS type="Node" left="5025" top="2655" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -29,7 +29,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="4545" top="3150" width="100" height="100">
+   <BOUNDS type="Node" left="4710" top="3120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -57,7 +57,7 @@
    <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="29" dstpinname="Layers">
    </LINK>
    <NODE systemname="Line (EX9)" filename="%VVVV%\lib\nodes\modules\EX9\Line (EX9).v4p" nodename="Line (EX9)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="4380" top="5010" width="100" height="100">
+   <BOUNDS type="Node" left="4545" top="4980" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -79,7 +79,7 @@
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="27" dstpinname="TranslateY">
    </LINK>
    <NODE systemname="Line (EX9)" filename="%VVVV%\lib\nodes\modules\EX9\Line (EX9).v4p" nodename="Line (EX9)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="4125" top="4530" width="100" height="100">
+   <BOUNDS type="Node" left="4290" top="4500" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -95,7 +95,7 @@
    <LINK srcnodeid="24" srcpinname="Layer" dstnodeid="26" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="4305" top="2220" width="100" height="100">
+   <BOUNDS type="Node" left="4470" top="2190" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -109,7 +109,7 @@
    <LINK srcnodeid="23" srcpinname="Transform Out" dstnodeid="24" dstpinname="Transform">
    </LINK>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="4470" top="1755" width="100" height="100">
+   <BOUNDS type="Node" left="4635" top="1725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -121,9 +121,9 @@
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="TranslateX">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5775" top="2250" width="795" height="240">
+   <BOUNDS type="Box" left="5940" top="2220" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5775" top="2250" width="0" height="0">
+   <BOUNDS type="Node" left="5940" top="2220" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="50">
    </PIN>
@@ -139,9 +139,9 @@
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Spread Count">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5385" top="1335" width="795" height="240">
+   <BOUNDS type="Box" left="5550" top="1305" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5385" top="1335" width="0" height="0">
+   <BOUNDS type="Node" left="5550" top="1305" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="50">
    </PIN>
@@ -155,9 +155,9 @@
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Spread Count">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4380" top="5820" width="795" height="240">
+   <BOUNDS type="Box" left="4545" top="5790" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4380" top="5820" width="0" height="0">
+   <BOUNDS type="Node" left="4545" top="5790" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2048">
    </PIN>
@@ -227,7 +227,7 @@
    </PIN>
    </NODE>
    <NODE id="15" systemname="Light (EX9 Direction)" filename="%VVVV%\lib\nodes\modules\EX9\Light (EX9 Direction).v4p" nodename="Light (EX9 Direction)" componentmode="Hidden">
-   <BOUNDS type="Node" left="3555" top="6885" width="100" height="100">
+   <BOUNDS type="Node" left="3525" top="6900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Light Direction Out" visible="1">
    </PIN>
@@ -257,9 +257,9 @@
    <LINK srcnodeid="15" srcpinname="Light Direction Out" dstnodeid="17" dstpinname="Light Direction XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5355" top="4050" width="795" height="240">
+   <BOUNDS type="Box" left="5520" top="4020" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5355" top="4050" width="0" height="0">
+   <BOUNDS type="Node" left="5520" top="4020" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.94">
    </PIN>
@@ -319,7 +319,7 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="16" dstpinname="ScaleY">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="5400" top="885" width="100" height="100">
+   <BOUNDS type="Node" left="5565" top="855" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -333,7 +333,7 @@
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="20" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="5355" top="3615" width="100" height="100">
+   <BOUNDS type="Node" left="5520" top="3585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -351,7 +351,7 @@
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="5775" top="1830" width="100" height="100">
+   <BOUNDS type="Node" left="5940" top="1800" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -394,10 +394,6 @@
    </LINK>
    <LINK srcnodeid="29" srcpinname="Texture Out" dstnodeid="17" dstpinname="Texture">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Mesh" dstnodeid="17" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="30" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="3075" top="8535" width="795" height="240">
    </BOUNDS>
@@ -409,7 +405,7 @@
    <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="30" dstpinname="Input Node">
    </LINK>
    <NODE id="12" systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6375" top="4080" width="100" height="100">
+   <BOUNDS type="Node" left="6540" top="4050" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -485,5 +481,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Yaw">
+   </LINK>
+   <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="525" top="5160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Mesh" dstnodeid="17" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="17" dstpinname="Transform">
    </LINK>
    </PATCH>

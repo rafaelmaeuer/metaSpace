@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="360">
-   <BOUNDS type="Window" left="13515" top="6915" width="14250" height="9420">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="11925" top="6210" width="14910" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -79,11 +79,11 @@
    </PIN>
    </NODE>
    <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="6540" top="1980" width="100" height="100">
+   <BOUNDS type="Node" left="9045" top="1920" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="6540" top="1980">
+   <BOUNDS type="Box" left="9045" top="1920">
    </BOUNDS>
    <BOUNDS type="Window" left="16170" top="390" width="12195" height="10845">
    </BOUNDS>
@@ -95,9 +95,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="95" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6525" top="1455" width="795" height="240">
+   <BOUNDS type="Box" left="9330" top="1470" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6525" top="1455" width="0" height="0">
+   <BOUNDS type="Node" left="9330" top="1470" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
@@ -111,7 +111,7 @@
    <LINK srcnodeid="95" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Spread Width">
    </LINK>
    <NODE systemname="Plate" filename="Content\Plate.v4p" nodename="Content\Plate.v4p" componentmode="Hidden" id="117">
-   <BOUNDS type="Node" left="8145" top="1965" width="100" height="100">
+   <BOUNDS type="Node" left="7635" top="1950" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -191,9 +191,9 @@
    <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Yaw">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="122" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8265" top="1290" width="480" height="480">
+   <BOUNDS type="Box" left="7755" top="1275" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8265" top="1290" width="0" height="0">
+   <BOUNDS type="Node" left="7755" top="1275" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
@@ -339,5 +339,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="137" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Texture Switch">
+   </LINK>
+   <NODE systemname="Sphere" filename="Content\Sphere.v4p" nodename="Content\Sphere.v4p" componentmode="Hidden" id="155">
+   <BOUNDS type="Node" left="6180" top="1950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="14610" top="7530" width="11820" height="8850">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="155" srcpinname="Layer" dstnodeid="75" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Layer" dstnodeid="75" dstpinname="Input 4">
    </LINK>
    </PATCH>

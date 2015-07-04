@@ -537,7 +537,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11400" top="2025" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.116480157960321,0.572677199451967,-0.0986885705179255">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.20444471099774,0.689373614498412,-0.0180633375695042">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -827,7 +827,7 @@
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="750" top="8130" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="13515" top="6915" width="14250" height="9420">
+   <BOUNDS type="Window" left="11925" top="6210" width="14910" height="9810">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
