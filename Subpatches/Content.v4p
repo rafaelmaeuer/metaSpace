@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1429_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="10095" top="6480" width="14910" height="9810">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1444_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="30">
+   <BOUNDS type="Window" left="12390" top="6210" width="14910" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -125,72 +125,16 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Scale" visible="1">
+   <PIN pinname="Scale" visible="1" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="XYZ" visible="1">
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0.65,0">
    </PIN>
-   <PIN pinname="Yaw" visible="1">
+   <PIN pinname="Yaw" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="18405" top="4860" width="10080" height="10650">
+   <BOUNDS type="Window" left="12195" top="615" width="15600" height="13125">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="75" dstpinname="Input 2">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="119" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4710" top="1140" width="285" height="705">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4710" top="1140" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.75">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Show Slider" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0.75">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1.875">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Scale">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="120" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3840" top="1140" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3840" top="1140" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.1,0.46,-0.22">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="118" dstpinname="XYZ">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="121" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5100" top="1590" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5100" top="1590" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Yaw">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="122" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="7755" top="1275" width="480" height="480">
@@ -253,7 +197,7 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Input 3" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|" visible="1">
+   <PIN pinname="Input 3" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Input 5" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -275,13 +219,13 @@
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
-   <PIN pinname="Input 4" visible="1" slicecount="2" values="-0.9,3">
+   <PIN pinname="Input 4" visible="1" slicecount="2" values="-0.9,100">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="2" values="-0.9,3">
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="-0.9,100">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="2" values="-0.9,3">
+   <PIN pinname="Input 2" visible="1" slicecount="2" values="-0.9,100">
    </PIN>
    <PIN pinname="Input 3" visible="1" slicecount="2" values="-0.9,3">
    </PIN>
@@ -362,4 +306,22 @@
    </LINK>
    <LINK srcnodeid="155" srcpinname="Background Color" dstnodeid="132" dstpinname="Input 3">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="156" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5430" top="4095" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5430" top="4095" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.9,100">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
    </PATCH>

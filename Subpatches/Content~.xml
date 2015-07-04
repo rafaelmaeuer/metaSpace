@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="11925" top="6210" width="14910" height="9810">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1429_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="10095" top="6480" width="14910" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -131,6 +131,8 @@
    </PIN>
    <PIN pinname="Yaw" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="18405" top="4860" width="10080" height="10650">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="118" srcpinname="Layer" dstnodeid="75" dstpinname="Input 2">
    </LINK>
@@ -251,7 +253,7 @@
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Input 3" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="Input 3" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|" visible="1">
    </PIN>
    <PIN pinname="Input 5" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -345,11 +347,19 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="14610" top="7530" width="11820" height="8850">
+   <BOUNDS type="Window" left="4545" top="5220" width="13125" height="9030">
    </BOUNDS>
+   <PIN pinname="Camera Planes" visible="1" slicecount="2" values="-0.9,100">
+   </PIN>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="155" srcpinname="Layer" dstnodeid="75" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="117" srcpinname="Layer" dstnodeid="75" dstpinname="Input 4">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Camera Planes" dstnodeid="134" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Background Color" dstnodeid="132" dstpinname="Input 3">
    </LINK>
    </PATCH>
