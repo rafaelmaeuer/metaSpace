@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2110_Unterwasser\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="13395" top="7200" width="14910" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -129,11 +129,11 @@
    </PIN>
    <PIN pinname="Scale" visible="1" slicecount="1" values="0.5">
    </PIN>
-   <PIN pinname="XYZ" visible="1" slicecount="3" values="-0.12,0.8,-0.12">
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,3,0">
    </PIN>
    <PIN pinname="Yaw" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="1365" top="375" width="17745" height="12495">
+   <BOUNDS type="Window" left="1635" top="270" width="26730" height="17265">
    </BOUNDS>
    <PIN pinname="Switch Walls" visible="1">
    </PIN>
@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7755" top="1275" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -271,7 +271,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4005" top="1065" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -281,7 +281,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="158" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Switch Walls">
@@ -320,6 +320,8 @@
    <PIN pinname="Change Fish" visible="1">
    </PIN>
    <PIN pinname="Change Target" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Update Particles" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="159" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 3">
@@ -437,5 +439,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Floor">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Up Edge" dstnodeid="159" dstpinname="Update Particles">
    </LINK>
    </PATCH>

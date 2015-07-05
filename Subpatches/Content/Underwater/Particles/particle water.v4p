@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2110_Unterwasser\Subpatches\Content\Underwater\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="15">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Subpatches\Content\Underwater\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="0">
    <BOUNDS height="15525" left="3360" top="600" type="Window" width="25080">
    </BOUNDS>
    <NODE componentmode="InABox" id="67" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -375,6 +375,8 @@
    </PIN>
    <PIN pinname="Destination Blend Mode" slicecount="1" values="InvSrcColor">
    </PIN>
+   <PIN pinname="Source Blend Mode" slicecount="1" values="SrcAlpha">
+   </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="75" nodename="Grid (EX9.Geometry)" systemname="Grid (EX9.Geometry)">
    <BOUNDS height="0" left="9195" top="11955" type="Node" width="0">
@@ -382,6 +384,8 @@
    <PIN pinname="Mesh" visible="1">
    </PIN>
    <PIN pinname="Resolution X" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Resolution Y" slicecount="1" values="2">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="74" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
@@ -542,6 +546,8 @@
    <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Data Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="124" dstpinname="Render State" srcnodeid="21" srcpinname="Render State Out">
@@ -931,7 +937,7 @@
    </BOUNDS>
    <BOUNDS height="0" left="8235" top="12420" type="Box" width="0">
    </BOUNDS>
-   <PIN pinname="Enabled" slicecount="1" values="1">
+   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Position" visible="1">
    </PIN>
@@ -955,6 +961,8 @@
    </PIN>
    <PIN pinname="emitIndexPrev" visible="1" slicecount="1" values="1000">
    </PIN>
+   <PIN pinname="RG=Pos,BA=Vel Reset Value" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK dstnodeid="92" dstpinname="Layers" srcnodeid="282" srcpinname="Layer">
    </LINK>
@@ -973,8 +981,6 @@
    <LINK dstnodeid="282" dstpinname="XYres" srcnodeid="67" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="282" dstpinname="XYres XY" hiddenwhenlocked="1" srcnodeid="67" srcpinname="Y Output Value">
-   </LINK>
-   <LINK dstnodeid="282" dstpinname="RG=Pos,BA=Vel Reset Value" srcnodeid="143" srcpinname="Texture Out">
    </LINK>
    <LINK dstnodeid="282" dstpinname="emitterCount" hiddenwhenlocked="1" srcnodeid="43" srcpinname="Y Output Value">
    </LINK>
@@ -1057,7 +1063,7 @@
    </BOUNDS>
    <BOUNDS height="240" left="20910" top="6405" type="Box" width="930">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.09">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1135,6 +1141,8 @@
    </PIN>
    <PIN pinname="TranslateZ" slicecount="1" visible="1" values="0">
    </PIN>
+   <PIN pinname="Pitch" slicecount="1" values="0.01">
+   </PIN>
    </NODE>
    <LINK srcnodeid="475" srcpinname="Transform Out" dstnodeid="124" dstpinname="Post Transform">
    </LINK>
@@ -1176,10 +1184,6 @@
    </LINK>
    <LINK srcnodeid="97" srcpinname="mesh out" dstnodeid="124" dstpinname="Mesh">
    </LINK>
-   <LINK srcnodeid="384" srcpinname="Texture Out" dstnodeid="124" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Yaw">
-   </LINK>
    <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="479">
    <BOUNDS type="Node" left="19335" top="9390" width="100" height="100">
    </BOUNDS>
@@ -1193,5 +1197,11 @@
    <LINK srcnodeid="479" srcpinname="Output" dstnodeid="126" dstpinname="Up">
    </LINK>
    <LINK srcnodeid="478" srcpinname="Y Output Value" dstnodeid="479" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="384" srcpinname="Texture Out" dstnodeid="124" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Texture Out" dstnodeid="282" dstpinname="RG=Pos,BA=Vel Reset Value">
+   </LINK>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Yaw">
    </LINK>
    </PATCH>

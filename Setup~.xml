@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2110_Unterwasser\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15795" left="1425" top="930" type="Window" width="25965">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="15795" left="270" top="360" type="Window" width="25965">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="12195" top="11970" type="Node" width="100">
@@ -853,46 +853,54 @@
    <LINK srcnodeid="632" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Translate Camera">
    </LINK>
    <LINK srcnodeid="691" srcpinname="View Screen Left" dstnodeid="579" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="16920" y="4448">
+   <LINKPOINT x="16935" y="4440">
    </LINKPOINT>
-   <LINKPOINT x="14490" y="4448">
+   <LINKPOINT x="13800" y="4440">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="691" srcpinname="Projection Screen Left" dstnodeid="579" dstpinname="Projection" linkstyle="Bezier">
-   <LINKPOINT x="17205" y="4448">
+   <LINKPOINT x="17220" y="4440">
    </LINKPOINT>
-   <LINKPOINT x="14760" y="4448">
+   <LINKPOINT x="13950" y="4440">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="691" srcpinname="View Screen Middle" dstnodeid="580" dstpinname="View">
+   <LINK srcnodeid="691" srcpinname="View Screen Middle" dstnodeid="580" dstpinname="View" linkstyle="Bezier">
+   <LINKPOINT x="17790" y="4455">
+   </LINKPOINT>
+   <LINKPOINT x="17115" y="4455">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="691" srcpinname="Projection Screen Middle" dstnodeid="580" dstpinname="Projection">
+   <LINK srcnodeid="691" srcpinname="Projection Screen Middle" dstnodeid="580" dstpinname="Projection" linkstyle="Bezier">
+   <LINKPOINT x="18075" y="4455">
+   </LINKPOINT>
+   <LINKPOINT x="17265" y="4455">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="691" srcpinname="View Screen Right" dstnodeid="581" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="18675" y="4440">
+   <LINKPOINT x="18675" y="4448">
    </LINKPOINT>
-   <LINKPOINT x="21300" y="4440">
+   <LINKPOINT x="20625" y="4448">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="691" srcpinname="Projection Screen Right" dstnodeid="581" dstpinname="Projection" linkstyle="Bezier">
-   <LINKPOINT x="18960" y="4440">
+   <LINKPOINT x="18960" y="4448">
    </LINKPOINT>
-   <LINKPOINT x="21570" y="4440">
+   <LINKPOINT x="20775" y="4448">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="691" srcpinname="View Screen Floor" dstnodeid="684" dstpinname="View" linkstyle="Bezier">
    <LINKPOINT x="19530" y="4440">
    </LINKPOINT>
-   <LINKPOINT x="24720" y="4440">
+   <LINKPOINT x="24030" y="4440">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="691" srcpinname="Projection Screen Floor" dstnodeid="684" dstpinname="Projection" linkstyle="Bezier">
    <LINKPOINT x="19800" y="4440">
    </LINKPOINT>
-   <LINKPOINT x="24990" y="4440">
+   <LINKPOINT x="24180" y="4440">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="13395" top="7200" width="14910" height="9810">
@@ -949,7 +957,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Set 0|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Raum">
    </PIN>
    </NODE>
    <LINK srcnodeid="696" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 0">
@@ -971,7 +979,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Set 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mesh">
    </PIN>
    </NODE>
    <LINK srcnodeid="697" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 1">
@@ -993,7 +1001,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Set 2|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Wasser">
    </PIN>
    </NODE>
    <LINK srcnodeid="698" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 2">
@@ -1015,7 +1023,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Set 4|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Plate">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1037,7 +1045,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Set 3|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Space">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>

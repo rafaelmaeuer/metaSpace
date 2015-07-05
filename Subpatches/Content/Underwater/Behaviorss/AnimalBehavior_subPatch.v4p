@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2110_Unterwasser\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="15">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="15">
    <BOUNDS height="16005" left="4485" top="1455" type="Window" width="23640">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -447,7 +447,7 @@
    </PIN>
    <PIN pinname="XYZ" visible="1">
    </PIN>
-   <PIN pinname="Z" slicecount="1" values="-0.12" visible="1">
+   <PIN pinname="Z" slicecount="1" visible="1" values="-0.12">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="767" nodename="Transform (Transform 3d Vector)" systemname="Transform (Transform 3d Vector)">
@@ -479,7 +479,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="777" nodename="Polar (3d Vector)" systemname="Polar (3d Vector)">
-   <BOUNDS height="270" left="4680" top="8415" type="Node" width="1530">
+   <BOUNDS height="270" left="4680" top="8145" type="Node" width="1530">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -1103,6 +1103,8 @@
    </PIN>
    <PIN pinname="Period" slicecount="1" values="2">
    </PIN>
+   <PIN pinname="Pause" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1033" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="14280" top="2055" width="795" height="720">
@@ -1309,7 +1311,7 @@
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="1072">
    <BOUNDS type="Node" left="4665" top="10725" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="0.25" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.25">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1327,7 +1329,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.25" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.25">
    </PIN>
    </NODE>
    <LINK srcnodeid="777" srcpinname="Yaw" dstnodeid="1073" dstpinname="Input 1">
@@ -1352,7 +1354,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Light Direction XYZ|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1074" srcpinname="Y Output Value" dstnodeid="769" dstpinname="Light Direction XYZ">
+   <LINK srcnodeid="1074" srcpinname="Y Output Value" dstnodeid="769" dstpinname="Light Direction XYZ" linkstyle="Bezier">
+   <LINKPOINT x="5250" y="9810">
+   </LINKPOINT>
+   <LINKPOINT x="2670" y="9810">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1070" srcpinname="Texture Out" dstnodeid="769" dstpinname="Texture">
    </LINK>
@@ -1597,7 +1603,7 @@
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="1115">
    <BOUNDS type="Node" left="6375" top="8910" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="5" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="5">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1839,5 +1845,41 @@
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="1004" dstpinname="InitFlock">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1004" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1134" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11280" top="660" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11280" top="660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Pause">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1134" srcpinname="Y Output Value" dstnodeid="1032" dstpinname="Pause">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="1135">
+   <BOUNDS type="Node" left="11265" top="210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="1135" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3285" y="3120">
+   </LINKPOINT>
+   <LINKPOINT x="11265" y="3120">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1135" srcpinname="Output" dstnodeid="1134" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

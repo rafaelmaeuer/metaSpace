@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2110_Unterwasser\Subpatches\Content\Underwater\AnimalBehaviors.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\AnimalBehaviors(Help).v4p" systemname="AnimalBehaviors (Help)" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Subpatches\Content\Underwater\AnimalBehaviors.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\AnimalBehaviors(Help).v4p" systemname="AnimalBehaviors (Help)" scrollx="0" scrolly="0">
    <BOUNDS height="12900" left="6990" top="3735" type="Window" width="20985">
    </BOUNDS>
    <NODE componentmode="InABox" id="55" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -581,7 +581,7 @@
    </PIN>
    <PIN pinname="Z Position Depth" visible="1" slicecount="1" values="5">
    </PIN>
-   <PIN pinname="Update" slicecount="1" values="0">
+   <PIN pinname="Update" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Reset All" slicecount="1" visible="1" values="0">
    </PIN>
@@ -590,6 +590,10 @@
    <PIN pinname="Add Particles" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="pippet radius" slicecount="1" values="0.1">
+   </PIN>
+   <PIN pinname="repulsion  force (attraction if positive)" slicecount="1" values="-0.59">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="221" systemname="IOBox (Value Advanced)">
@@ -669,9 +673,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="224" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="16935" top="3840" width="480" height="480">
+   <BOUNDS type="Box" left="16335" top="3840" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16935" top="3840" width="0" height="0">
+   <BOUNDS type="Node" left="16335" top="3840" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -691,9 +695,9 @@
    <LINK srcnodeid="224" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Reset All">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="225" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="18120" top="3825" width="480" height="480">
+   <BOUNDS type="Box" left="17520" top="3825" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="18120" top="3825" width="0" height="0">
+   <BOUNDS type="Node" left="17520" top="3825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -751,5 +755,25 @@
    <LINK srcnodeid="229" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Change Fish">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Y Output Value" dstnodeid="99" dstpinname="InitFlock">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="230" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18765" top="3810" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18765" top="3810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Particles|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="230" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Update">
    </LINK>
    </PATCH>

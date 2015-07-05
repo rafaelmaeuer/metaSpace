@@ -39,9 +39,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="100" left="4515" top="5580" type="Node" width="100">
+   <BOUNDS height="100" left="4560" top="5565" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="4515" top="5580" type="Box" width="480">
+   <BOUNDS height="480" left="4560" top="5565" type="Box" width="480">
    </BOUNDS>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
@@ -601,7 +601,7 @@
    <LINK dstnodeid="837" dstpinname="Enabled_Target" hiddenwhenlocked="1" srcnodeid="860" srcpinname="Output">
    </LINK>
    <NODE componentmode="Hidden" id="863" nodename="XFile (EX9.Geometry Load)" systemname="XFile (EX9.Geometry Load)">
-   <BOUNDS height="100" left="2325" top="11325" type="Node" width="100">
+   <BOUNDS height="100" left="2310" top="10740" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
@@ -943,9 +943,9 @@
    </BOUNDS>
    <PIN pinname="Run" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="InitFlock" visible="1">
+   <PIN pinname="InitFlock" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="ArriveTarget" visible="1">
    </PIN>
@@ -1000,10 +1000,6 @@
    <PIN pinname="Enemy" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="1004" dstpinname="InitFlock" srcnodeid="6" srcpinname="Y Output Value">
-   </LINK>
-   <LINK dstnodeid="1004" dstpinname="Reset" srcnodeid="7" srcpinname="Y Output Value">
-   </LINK>
    <LINK dstnodeid="1004" dstpinname="ArriveTarget" srcnodeid="309" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="1004" dstpinname="SeekTarget" srcnodeid="481" srcpinname="Y Output Value">
@@ -1303,7 +1299,7 @@
    <LINK srcnodeid="769" srcpinname="Layer" dstnodeid="1065" dstpinname="Input Node">
    </LINK>
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="1070">
-   <BOUNDS type="Node" left="3570" top="11295" width="100" height="100">
+   <BOUNDS type="Node" left="3555" top="10710" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\..\..\..\150705-1758_Unterwasser\Subpatches\Content\Underwater\3D\TropicalFish_3ds\TropicalFish13.jpg">
    </PIN>
@@ -1439,7 +1435,7 @@
    <LINK srcnodeid="1083" srcpinname="Extension" dstnodeid="1087" dstpinname="Input 4">
    </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1090">
-   <BOUNDS type="Node" left="1275" top="10860" width="100" height="100">
+   <BOUNDS type="Node" left="1260" top="10275" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1531,7 +1527,7 @@
    <LINK srcnodeid="1100" srcpinname="Extension" dstnodeid="1098" dstpinname="Input 4">
    </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="1097">
-   <BOUNDS type="Node" left="2355" top="10830" width="100" height="100">
+   <BOUNDS type="Node" left="2340" top="10245" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1824,6 +1820,24 @@
    </LINK>
    <LINK srcnodeid="1132" srcpinname="Output" dstnodeid="1101" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="1133">
+   <BOUNDS type="Node" left="2520" top="11280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" visible="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" visible="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1133" srcpinname="Transform Out" dstnodeid="767" dstpinname="Transform In">
+   </LINK>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="1004" dstpinname="Run">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="1004" dstpinname="InitFlock">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1004" dstpinname="Reset">
    </LINK>
    </PATCH>
