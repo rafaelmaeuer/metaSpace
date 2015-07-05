@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Lennart\Desktop\vvvv\07_Swarming\Behaviorss\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="7920">
-   <BOUNDS height="12780" left="5625" top="390" type="Window" width="17490">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1632_Unterwasser\Subpatches\Content\Underwater\Behaviorss\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="0">
+   <BOUNDS height="12780" left="10350" top="1545" type="Window" width="17490">
    </BOUNDS>
    <NODE componentmode="InABox" id="67" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="105" top="2520" type="Node" width="0">
@@ -201,7 +201,7 @@
    </BOUNDS>
    <PIN pinname="Spread Count" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="8.86">
+   <PIN pinname="Width" slicecount="1" values="30">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -383,7 +383,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="13095" top="11325" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="10">
+   <PIN pinname="Y Input Value" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1058,40 +1058,6 @@
    </LINK>
    <LINK dstnodeid="282" dstpinname="inverse (Fields transform * scale 0.5)" srcnodeid="172" srcpinname="Transform Out">
    </LINK>
-   <NODE componentmode="Hidden" id="232" nodename="Group (EX9)" systemname="Group (EX9)">
-   <BOUNDS height="270" left="2205" top="22635" type="Node" width="900">
-   </BOUNDS>
-   <PIN pinname="Layer 1" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer Template Count" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Layer 3" visible="1">
-   </PIN>
-   <PIN pinname="Layer 4" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS height="0" left="2205" top="22635" type="Box" width="0">
-   </BOUNDS>
-   <BOUNDS height="0" left="10455" top="11370" type="Window" width="0">
-   </BOUNDS>
-   <PIN pinname="Priority 1">
-   </PIN>
-   <PIN pinname="Priority 2">
-   </PIN>
-   <PIN pinname="Priority 3">
-   </PIN>
-   <PIN pinname="Priority 4">
-   </PIN>
-   <PIN pinname="Priority 5">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="232" dstpinname="Layer 3" srcnodeid="124" srcpinname="Layer">
-   </LINK>
    <NODE componentmode="Hidden" id="384" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
    <BOUNDS height="100" left="4860" top="18690" type="Node" width="100">
    </BOUNDS>
@@ -1109,7 +1075,7 @@
    </BOUNDS>
    <BOUNDS height="240" left="13080" top="8415" type="Box" width="930">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.0009">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.09">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>

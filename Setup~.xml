@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1520_3Kinects\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1632_Unterwasser\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="960" top="720" type="Window" width="25965">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -561,7 +561,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="16950" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.52,0.61,-0.29">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.75,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -892,7 +892,7 @@
    <LINKPOINT x="24990" y="4440">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="13140" top="7515" width="14910" height="9810">
@@ -904,6 +904,8 @@
    <PIN pinname="Background Color" visible="1">
    </PIN>
    <PIN pinname="Camera Planes" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Layer" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="MultiFlipFlop (Animation)" nodename="MultiFlipFlop (Animation)" componentmode="Hidden" id="695">
@@ -1233,24 +1235,6 @@
    <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="580" dstpinname="Backbuffer Width">
    </LINK>
    <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="581" dstpinname="Backbuffer Width">
-   </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="579" dstpinname="Layers" linkstyle="Bezier">
-   <LINKPOINT x="10545" y="3993">
-   </LINKPOINT>
-   <LINKPOINT x="12600" y="4213">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="580" dstpinname="Layers" linkstyle="Bezier">
-   <LINKPOINT x="10545" y="3985">
-   </LINKPOINT>
-   <LINKPOINT x="15945" y="4205">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="581" dstpinname="Layers" linkstyle="Bezier">
-   <LINKPOINT x="10545" y="3985">
-   </LINKPOINT>
-   <LINKPOINT x="19485" y="4205">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="684" dstpinname="Layers" linkstyle="Bezier">
    <LINKPOINT x="10545" y="3985">
@@ -2570,6 +2554,22 @@
    <LINKPOINT x="7380" y="8275">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="819" srcpinname="Y Output Value" dstnodeid="632" dstpinname="Y Input Value">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="581" dstpinname="Layers" linkstyle="Bezier">
+   <LINKPOINT x="10545" y="3985">
+   </LINKPOINT>
+   <LINKPOINT x="19485" y="4205">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="580" dstpinname="Layers" linkstyle="Bezier">
+   <LINKPOINT x="10545" y="3985">
+   </LINKPOINT>
+   <LINKPOINT x="15945" y="4205">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="579" dstpinname="Layers" linkstyle="Bezier">
+   <LINKPOINT x="10545" y="3993">
+   </LINKPOINT>
+   <LINKPOINT x="12600" y="4213">
+   </LINKPOINT>
    </LINK>
    </PATCH>
