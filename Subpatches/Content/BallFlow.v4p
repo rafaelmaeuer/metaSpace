@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1121_TrailerContent\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
-   <BOUNDS type="Window" left="16170" top="390" width="12195" height="10845">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1520_3Kinects\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
+   <BOUNDS type="Window" left="13380" top="2295" width="12195" height="10845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -95,7 +95,7 @@
    </PIN>
    <PIN pinname="Resolution Y" slicecount="1" values="10">
    </PIN>
-   <PIN pinname="Radius" slicecount="1" values="0.2" visible="1">
+   <PIN pinname="Radius" slicecount="1" visible="1" values="0.2">
    </PIN>
    </NODE>
    <NODE systemname="PhongDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\PhongDirectional.fx" nodename="PhongDirectional (EX9.Effect)" componentmode="Hidden" id="20">
@@ -209,7 +209,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="100" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="100">
    </PIN>
    <PIN pinname="Width" slicecount="1" visible="1" values="50">
    </PIN>
@@ -221,7 +221,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="100" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="100">
    </PIN>
    <PIN pinname="Width" slicecount="1" visible="1" values="50">
    </PIN>
@@ -233,7 +233,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" values="100" visible="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="100">
    </PIN>
    <PIN pinname="Width" slicecount="1" visible="1" values="50">
    </PIN>
@@ -473,7 +473,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4905" top="5985" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.78982,0.78982,0.78982,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.00440,0.00897,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="70" srcpinname="Color Output" dstnodeid="20" dstpinname="Ambient Color">
@@ -510,8 +510,6 @@
    <PIN pinname="Hue" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="70" dstpinname="Color Input">
-   </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="74">
    <BOUNDS type="Node" left="5955" top="5130" width="100" height="100">
    </BOUNDS>
