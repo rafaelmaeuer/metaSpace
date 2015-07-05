@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1532_TrailerContent\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="15" scrolly="15">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1445_3Kinects\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="15" scrolly="15">
    <BOUNDS type="Window" left="1365" top="375" width="17745" height="12495">
    </BOUNDS>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="29">
@@ -951,7 +951,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.52" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.52">
    </PIN>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Y Input Value">
@@ -1085,13 +1085,13 @@
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="148">
    <BOUNDS type="Node" left="10845" top="2265" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="0.52">
+   <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="2">
+   <PIN pinname="Input 1" slicecount="1" values="0.52">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="149">
@@ -1101,7 +1101,7 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="5">
+   <PIN pinname="FilterTime" slicecount="1" values="7">
    </PIN>
    </NODE>
    <LINK srcnodeid="148" srcpinname="Output" dstnodeid="149" dstpinname="Go To Position">
@@ -1125,9 +1125,9 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Floor|">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="151" srcpinname="Y Output Value" dstnodeid="148" dstpinname="Switch">
-   </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="154">
    <BOUNDS type="Node" left="3000" top="1800" width="100" height="100">
    </BOUNDS>
@@ -1147,7 +1147,7 @@
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="5">
+   <PIN pinname="FilterTime" slicecount="1" values="7">
    </PIN>
    </NODE>
    <LINK srcnodeid="154" srcpinname="Output" dstnodeid="153" dstpinname="Go To Position">
@@ -1169,9 +1169,15 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Walls|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="152" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="153" srcpinname="Position Out" dstnodeid="1" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="152" srcpinname="Y Output Value" dstnodeid="148" dstpinname="Switch">
    </LINK>
    </PATCH>
