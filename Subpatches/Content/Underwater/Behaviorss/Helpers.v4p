@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Lennart\Desktop\vvvv\07_Swarming\Behaviorss\Helpers.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Helpers.v4p" systemname="Helpers" scrollx="0" scrolly="-360">
-   <BOUNDS height="13680" left="1695" top="660" type="Window" width="17340">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2022_Unterwasser\Subpatches\Content\Underwater\Behaviorss\Helpers.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Helpers.v4p" systemname="Helpers" scrollx="0" scrolly="-360">
+   <BOUNDS height="13905" left="7485" top="3330" type="Window" width="22095">
    </BOUNDS>
    <NODE componentmode="Hidden" id="0" nodename="Group (EX9)" systemname="Group (EX9)">
    <BOUNDS height="270" left="930" top="9870" type="Node" width="13215">
@@ -103,7 +103,7 @@
    </BOUNDS>
    <BOUNDS height="480" left="15330" top="8790" type="Box" width="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN encoded="0" pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -125,7 +125,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Mesh" visible="1">
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
@@ -135,7 +135,7 @@
    </PIN>
    <PIN pinname="Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="25" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
@@ -163,9 +163,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="26" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="12510" top="6330" type="Node" width="0">
+   <BOUNDS height="0" left="12465" top="6330" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="720" left="12510" top="6330" type="Box" width="795">
+   <BOUNDS height="720" left="12465" top="6330" type="Box" width="795">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
    </PIN>
@@ -336,24 +336,6 @@
    </LINK>
    <LINK dstnodeid="1" dstpinname="Input Node" srcnodeid="0" srcpinname="Layer">
    </LINK>
-   <NODE componentmode="Hidden" hiddenwhenlocked="1" id="47" nodename="Grid (EX9.Geometry)" systemname="Grid (EX9.Geometry)">
-   <BOUNDS height="100" left="11610" top="9570" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   </NODE>
-   <NODE componentmode="Hidden" id="58" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
-   <BOUNDS height="100" left="12255" top="5040" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN encoded="0" pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Reload" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="23" dstpinname="Mesh" hiddenwhenlocked="1" srcnodeid="47" srcpinname="Mesh">
-   </LINK>
    <NODE componentmode="Hidden" id="59" nodename="Billboard (Transform)" systemname="Billboard (Transform)">
    <BOUNDS height="100" left="11790" top="8130" type="Node" width="100">
    </BOUNDS>
@@ -369,7 +351,7 @@
    <LINK dstnodeid="23" dstpinname="Transform" srcnodeid="25" srcpinname="Transform Out">
    </LINK>
    <NODE componentmode="Hidden" id="60" nodename="Blend (EX9.RenderState)" systemname="Blend (EX9.RenderState)">
-   <BOUNDS height="100" left="11445" top="7110" type="Node" width="100">
+   <BOUNDS height="100" left="11460" top="6735" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Render State Out" visible="1">
    </PIN>
@@ -386,46 +368,14 @@
    </LINK>
    <LINK dstnodeid="0" dstpinname="Layer 2" srcnodeid="3" srcpinname="Layer">
    </LINK>
-   <NODE componentmode="Hidden" id="74" nodename="SystemFolder (File)" systemname="SystemFolder (File)">
-   <BOUNDS height="100" left="12270" top="3630" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Do Rescan" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE componentmode="Hidden" id="75" nodename="Add (String)" systemname="Add (String)">
-   <BOUNDS height="100" left="12255" top="4500" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="75" dstpinname="Input 1" srcnodeid="74" srcpinname="Output">
-   </LINK>
-   <NODE componentmode="InABox" id="76" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="12435" top="4035" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="315" left="12435" top="4035" type="Box" width="2025">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="1" values="|\girlpower\images\halo dot.bmp|">
-   </PIN>
-   <PIN encoded="0" pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN encoded="0" pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="75" dstpinname="Input 2" srcnodeid="76" srcpinname="Output String">
-   </LINK>
-   <LINK dstnodeid="23" dstpinname="Texture" srcnodeid="58" srcpinname="Texture Out">
-   </LINK>
-   <LINK dstnodeid="58" dstpinname="Filename" srcnodeid="75" srcpinname="Output">
-   </LINK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
+   <NODE systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" id="80" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11625" top="7185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Mesh" dstnodeid="23" dstpinname="Mesh" hiddenwhenlocked="1">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1632_Unterwasser\Subpatches\Content\Underwater\Behaviorss\Particles\ParticlesGPU_Mesh_Quad.v4p" scrollx="0" scrolly="0">
-   <BOUNDS height="8250" left="0" top="480" type="Window" width="11940">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2022_Unterwasser\Subpatches\Content\Underwater\Particles\ParticlesGPU_Mesh_Quad.v4p" scrollx="0" scrolly="-720">
+   <BOUNDS height="9255" left="1545" top="6705" type="Window" width="17340">
    </BOUNDS>
    <NODE componentmode="InABox" id="27" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
    <BOUNDS height="0" left="6000" top="345" type="Node" width="0">
@@ -26,6 +26,8 @@
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE id="25" nodename="Cross (2d)" systemname="Cross (2d)">
@@ -303,11 +305,11 @@
    </PIN>
    <PIN pinname="Normal XYZ" visible="1">
    </PIN>
-   <PIN pinname="Apply" visible="1">
+   <PIN pinname="Apply" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Enable Texture Coordinate 1" slicecount="1" values="|2D TexCoords|">
    </PIN>
-   <PIN pinname="Texture Coordinate 1 XY" visible="1">
+   <PIN pinname="Texture Coordinate 1 XY" visible="1" slicecount="8" values="0,1,1,1,1,0,0,0">
    </PIN>
    <PIN pinname="Enable Normal" slicecount="1" values="0">
    </PIN>
@@ -335,15 +337,11 @@
    </PIN>
    <PIN pinname="Mesh" visible="1">
    </PIN>
-   <PIN pinname="Apply" visible="1">
+   <PIN pinname="Apply" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Apply On Device Change" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK dstnodeid="5" dstpinname="Apply" hiddenwhenlocked="1" srcnodeid="18" srcpinname="Y Output Value">
-   </LINK>
-   <LINK dstnodeid="4" dstpinname="Apply" hiddenwhenlocked="1" srcnodeid="18" srcpinname="Y Output Value">
-   </LINK>
    <LINK dstnodeid="4" dstpinname="Indices" srcnodeid="13" srcpinname="Output">
    </LINK>
    <LINK dstnodeid="13" dstpinname="Set" hiddenwhenlocked="1" srcnodeid="18" srcpinname="Y Output Value">
@@ -353,8 +351,6 @@
    <LINK dstnodeid="5" dstpinname="Texture Coordinate 0 XY" srcnodeid="14" srcpinname="Output">
    </LINK>
    <LINK dstnodeid="5" dstpinname="Position XYZ" srcnodeid="7" srcpinname="Output">
-   </LINK>
-   <LINK dstnodeid="5" dstpinname="Texture Coordinate 1 XY" srcnodeid="20" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="22" dstpinname="Input Node" srcnodeid="4" srcpinname="Mesh">
    </LINK>
@@ -395,14 +391,12 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK dstnodeid="28" dstpinname="Input 2" srcnodeid="5" srcpinname="Vertex Buffer">
    </LINK>
    <LINK dstnodeid="4" dstpinname="Vertex Buffer" srcnodeid="28" srcpinname="Output">
-   </LINK>
-   <LINK dstnodeid="28" dstpinname="Switch" hiddenwhenlocked="1" srcnodeid="18" srcpinname="Y Output Value">
    </LINK>
    <NODE componentmode="InABox" id="29" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
    <BOUNDS height="100" left="780" top="225" type="Node" width="100">
@@ -536,4 +530,12 @@
    </LINK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Switch" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Apply" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Texture Coordinate 1 XY">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Apply" hiddenwhenlocked="1">
+   </LINK>
    </PATCH>

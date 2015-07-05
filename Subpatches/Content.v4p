@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-1758_Unterwasser\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="30">
-   <BOUNDS type="Window" left="13140" top="7515" width="14910" height="9810">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2022_Unterwasser\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="30">
+   <BOUNDS type="Window" left="13395" top="7200" width="14910" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -321,7 +321,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="5760" top="1980" width="20985" height="12900">
+   <BOUNDS type="Window" left="7425" top="3360" width="20985" height="12900">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -332,6 +332,16 @@
    <PIN pinname="Reset" visible="1">
    </PIN>
    <PIN pinname="Particle" visible="1">
+   </PIN>
+   <PIN pinname="Reset All" visible="1">
+   </PIN>
+   <PIN pinname="Add Particles" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Init Swarm" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reset Particles" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Helper" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="159" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 3">
@@ -350,7 +360,7 @@
    </NODE>
    <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="160" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="159" dstpinname="Run">
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="159" dstpinname="Run Swarm">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6555" top="855" width="480" height="480">
@@ -384,10 +394,24 @@
    <PIN pinname="Down Edge" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="176" srcpinname="Up Edge" dstnodeid="159" dstpinname="InitFlock">
-   </LINK>
-   <LINK srcnodeid="176" srcpinname="Down Edge" dstnodeid="159" dstpinname="Reset">
+   <LINK srcnodeid="176" srcpinname="Down Edge" dstnodeid="159" dstpinname="Reset Swarm">
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="176" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Up Edge" dstnodeid="159" dstpinname="Init Swarm">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Down Edge" dstnodeid="159" dstpinname="Reset Particles">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Up Edge" dstnodeid="159" dstpinname="Add Particles">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="177" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="7545" top="5325" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7545" top="5325" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Helper">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="Helper" dstnodeid="177" dstpinname="Input Node">
    </LINK>
    </PATCH>

@@ -119,7 +119,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="Hidden" id="118">
-   <BOUNDS type="Node" left="4065" top="1980" width="100" height="100">
+   <BOUNDS type="Node" left="3690" top="1980" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -293,9 +293,9 @@
    <LINK srcnodeid="117" srcpinname="Layer" dstnodeid="75" dstpinname="Input 4">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="158" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4380" top="1065" width="480" height="480">
+   <BOUNDS type="Box" left="4005" top="1065" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4380" top="1065" width="0" height="0">
+   <BOUNDS type="Node" left="4005" top="1065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -321,7 +321,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7815" top="1605" width="20985" height="12900">
+   <BOUNDS type="Window" left="5760" top="1980" width="20985" height="12900">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -330,6 +330,8 @@
    <PIN pinname="InitFlock" visible="1">
    </PIN>
    <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Particle" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="159" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 3">

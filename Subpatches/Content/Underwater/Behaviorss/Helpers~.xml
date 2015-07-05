@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Helpers.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Helpers.v4p" systemname="Helpers">
-   <BOUNDS height="18180" left="16635" top="4335" type="Window" width="17340">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Lennart\Desktop\vvvv\07_Swarming\Behaviorss\Helpers.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Helpers.v4p" systemname="Helpers" scrollx="0" scrolly="-360">
+   <BOUNDS height="13680" left="1695" top="660" type="Window" width="17340">
    </BOUNDS>
    <NODE componentmode="Hidden" id="0" nodename="Group (EX9)" systemname="Group (EX9)">
    <BOUNDS height="270" left="930" top="9870" type="Node" width="13215">
@@ -103,7 +103,7 @@
    </BOUNDS>
    <BOUNDS height="480" left="15330" top="8790" type="Box" width="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN encoded="0" pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -114,6 +114,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Enabled_FlockingArea">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="3" dstpinname="Enabled" hiddenwhenlocked="1" srcnodeid="21" srcpinname="Y Output Value">
@@ -424,4 +426,6 @@
    </LINK>
    <LINK dstnodeid="58" dstpinname="Filename" srcnodeid="75" srcpinname="Output">
    </LINK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
    </PATCH>
