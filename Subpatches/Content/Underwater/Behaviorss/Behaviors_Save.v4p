@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Lennart\Desktop\vvvv\07_Swarming\Behaviorss\Behaviors_Save.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Behaviors_Save.v4p" systemname="Behaviors_Save" scrollx="0" scrolly="0">
-   <BOUNDS height="6000" left="0" top="4980" type="Window" width="22470">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-1758_Unterwasser\Subpatches\Content\Underwater\Behaviorss\Behaviors_Save.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\Behaviors_Save.v4p" systemname="Behaviors_Save" scrollx="0" scrolly="0">
+   <BOUNDS height="6000" left="1200" top="9825" type="Window" width="22470">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="2610" top="1665" type="Node" width="100">
@@ -669,7 +669,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="10,12,10">
+   <PIN pinname="Y Input Value" slicecount="3" values="25,12,10">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -709,7 +709,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="0.002,0.001,0.002">
+   <PIN pinname="Y Input Value" slicecount="3" values="0.0005,0.001,0.002">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -759,7 +759,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="16,16,30">
+   <PIN pinname="Y Input Value" slicecount="3" values="3,16,30">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>

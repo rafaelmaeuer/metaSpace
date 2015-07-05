@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1632_Unterwasser\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-1758_Unterwasser\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="960" top="720" type="Window" width="25965">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -221,7 +221,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9570" top="9690" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -233,7 +233,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="337" srcpinname="Y Output Value" dstnodeid="228" dstpinname="Enabled">
@@ -629,7 +629,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10245" top="8775" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-0.93,0,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -906,6 +906,8 @@
    <PIN pinname="Camera Planes" visible="1">
    </PIN>
    <PIN pinname="EX9 Layer" visible="1">
+   </PIN>
+   <PIN pinname="Particle" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="MultiFlipFlop (Animation)" nodename="MultiFlipFlop (Animation)" componentmode="Hidden" id="695">
@@ -1555,6 +1557,8 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Layer" dstnodeid="798" dstpinname="Layer 1" linkstyle="Bezier">
    <LINKPOINT x="12240" y="11115">
@@ -1579,8 +1583,6 @@
    </LINKPOINT>
    <LINKPOINT x="12795" y="11108">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="798" srcpinname="Layer" dstnodeid="12" dstpinname="Layers">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="800" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="12870" top="8520" width="795" height="240">
@@ -2243,7 +2245,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3045" top="810" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2255,7 +2257,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Renderer">
    </PIN>
@@ -2571,5 +2573,7 @@
    </LINKPOINT>
    <LINKPOINT x="12600" y="4213">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="798" srcpinname="Layer" dstnodeid="12" dstpinname="Layers">
    </LINK>
    </PATCH>

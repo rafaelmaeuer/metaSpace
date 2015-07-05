@@ -892,7 +892,7 @@
    <LINKPOINT x="24990" y="4440">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="13140" top="7515" width="14910" height="9810">

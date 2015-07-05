@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1632_Unterwasser\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="5880">
-   <BOUNDS height="12990" left="5835" top="4680" type="Window" width="20895">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-1758_Unterwasser\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="0">
+   <BOUNDS height="16005" left="4050" top="1350" type="Window" width="20895">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="10365" top="6030" type="Node" width="100">
@@ -441,11 +441,13 @@
    <NODE componentmode="Hidden" id="766" nodename="Vector (3d Join)" systemname="Vector (3d Join)">
    <BOUNDS height="270" left="2700" top="10485" type="Node" width="1530">
    </BOUNDS>
-   <PIN pinname="X" visible="1">
+   <PIN pinname="X" visible="1" slicecount="25" values="-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25,-0.25">
    </PIN>
-   <PIN pinname="Y" visible="1">
+   <PIN pinname="Y" visible="1" slicecount="50" values="-0.358629362276143,-0.357354806644147,-0.372022882677062,-0.383749722614516,-0.34605404908517,-0.339123183885592,-0.376055559088712,-0.351733871406284,-0.40551748509424,-0.3808220509046,-0.364730867836006,-0.379402745279016,-0.411443525972562,-0.369510406252796,-0.289478168511482,-0.356674154138438,-0.340692812197198,-0.349541580268935,-0.371510153601755,-0.412623135279861,-0.317496971242852,-0.372929897221227,-0.408684085168118,-0.386586549803441,-0.362351193167096,-0.316738951368317,-0.353084840092528,-0.355862662759255,-0.381704610905953,-0.353919883132842,-0.34597803393857,-0.380448053188845,-0.36657563970862,-0.357082053101799,-0.399081555551408,-0.378776564458872,-0.34043090200237,-0.323372005259902,-0.378730125929374,-0.365639583905706,-0.32992749281456,-0.334130639010674,-0.348785156033446,-0.383694677241223,-0.365092120323323,-0.368485341605615,-0.375933411236143,-0.357829275462392,-0.37716712452129,-0.375694162403755">
    </PIN>
    <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="767" nodename="Transform (Transform 3d Vector)" systemname="Transform (Transform 3d Vector)">
@@ -453,7 +455,7 @@
    </BOUNDS>
    <PIN pinname="Rotate XYZ" visible="1">
    </PIN>
-   <PIN pinname="Scale XYZ" visible="1">
+   <PIN pinname="Scale XYZ" visible="1" slicecount="1" values="0.002">
    </PIN>
    <PIN pinname="Translate XYZ" visible="1">
    </PIN>
@@ -603,7 +605,7 @@
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
-   <PIN encoded="0" pinname="Filename" slicecount="1" values="..\arrow3d_1.x">
+   <PIN encoded="0" pinname="Filename" slicecount="1" values="..\3D\TropicalFish_3ds\TropicalFish14.x">
    </PIN>
    <PIN pinname="Reload" slicecount="1" values="0">
    </PIN>
@@ -676,6 +678,8 @@
    <PIN pinname="Technique" slicecount="1" values="| TGouraudDirectional|">
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK dstnodeid="769" dstpinname="Mesh" srcnodeid="863" srcpinname="Mesh">
@@ -884,14 +888,10 @@
    </NODE>
    <LINK dstnodeid="985" dstpinname="Enabled" srcnodeid="992" srcpinname="Y Output Value">
    </LINK>
-   <LINK dstnodeid="766" dstpinname="X" srcnodeid="777" srcpinname="Pitch">
-   </LINK>
-   <LINK dstnodeid="766" dstpinname="Y" srcnodeid="777" srcpinname="Yaw">
-   </LINK>
    <NODE componentmode="InABox" id="994" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="18780" top="11100" type="Node" width="0">
+   <BOUNDS height="0" left="19155" top="9750" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="720" left="18780" top="11100" type="Box" width="795">
+   <BOUNDS height="720" left="19155" top="9750" type="Box" width="795">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.002">
    </PIN>
@@ -905,9 +905,9 @@
    </PIN>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Scale XYZ|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK dstnodeid="767" dstpinname="Scale XYZ" hiddenwhenlocked="1" srcnodeid="994" srcpinname="Y Output Value">
-   </LINK>
    <NODE componentmode="InABox" id="995" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="19305" top="1035" type="Node" width="0">
    </BOUNDS>
@@ -1305,5 +1305,63 @@
    <LINK srcnodeid="837" srcpinname="Layer" dstnodeid="1067" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="769" srcpinname="Layer" dstnodeid="1065" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="994" srcpinname="Y Output Value" dstnodeid="767" dstpinname="Scale XYZ" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="1070">
+   <BOUNDS type="Node" left="1605" top="11265" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" values="..\TropicalFish01.jpg">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1070" srcpinname="Texture Out" dstnodeid="769" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="1072">
+   <BOUNDS type="Node" left="2700" top="9450" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="777" srcpinname="Pitch" dstnodeid="1072" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1072" srcpinname="Output" dstnodeid="766" dstpinname="X">
+   </LINK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="1073">
+   <BOUNDS type="Node" left="3435" top="9450" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="0.25">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="777" srcpinname="Yaw" dstnodeid="1073" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1073" srcpinname="Output" dstnodeid="766" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1074" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="705" top="10200" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="705" top="10200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-1.10700025558472,0,2.35249645233154">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1074" srcpinname="Y Output Value" dstnodeid="769" dstpinname="Light Direction XYZ">
    </LINK>
    </PATCH>
