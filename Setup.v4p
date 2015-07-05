@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0117_Content\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="270" top="360" type="Window" width="25965">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -901,9 +901,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
-   <BOUNDS type="Node" left="10470" top="2235" width="100" height="100">
+   <BOUNDS type="Node" left="10470" top="2235" width="3630" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="13395" top="7200" width="14910" height="9810">
+   <BOUNDS type="Window" left="12270" top="7065" width="15720" height="10020">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1248,7 +1248,7 @@
    </LINK>
    <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="581" dstpinname="Backbuffer Width">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="684" dstpinname="Layers" linkstyle="Bezier">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="684" dstpinname="Layers" linkstyle="Bezier">
    <LINKPOINT x="10545" y="3985">
    </LINKPOINT>
    <LINKPOINT x="22890" y="4205">
@@ -2210,7 +2210,7 @@
    <LINKPOINT x="5985" y="1830">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="231" dstpinname="Layer 3" linkstyle="Bezier">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="231" dstpinname="Layer 3" linkstyle="Bezier">
    <LINKPOINT x="10485" y="6093">
    </LINKPOINT>
    <LINKPOINT x="6945" y="6313">
@@ -2358,29 +2358,9 @@
    <LINKPOINT x="20550" y="2685">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="832">
-   <BOUNDS type="Node" left="18030" top="1650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="693" srcpinname="Camera Planes" dstnodeid="832" dstpinname="XY" linkstyle="Bezier">
-   <LINKPOINT x="11340" y="1953">
-   </LINKPOINT>
-   <LINKPOINT x="18015" y="2173">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="699" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 4">
    </LINK>
    <LINK srcnodeid="700" srcpinname="Y Output Value" dstnodeid="695" dstpinname="Set 3">
-   </LINK>
-   <LINK srcnodeid="832" srcpinname="X" dstnodeid="830" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="832" srcpinname="Y" dstnodeid="831" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="833" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="21690" top="12495" width="480" height="480">
@@ -2566,19 +2546,19 @@
    <LINKPOINT x="7380" y="8275">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="581" dstpinname="Layers" linkstyle="Bezier">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="581" dstpinname="Layers" linkstyle="Bezier">
    <LINKPOINT x="10545" y="3985">
    </LINKPOINT>
    <LINKPOINT x="19485" y="4205">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="580" dstpinname="Layers" linkstyle="Bezier">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="580" dstpinname="Layers" linkstyle="Bezier">
    <LINKPOINT x="10545" y="3985">
    </LINKPOINT>
    <LINKPOINT x="15945" y="4205">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer" dstnodeid="579" dstpinname="Layers" linkstyle="Bezier">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="579" dstpinname="Layers" linkstyle="Bezier">
    <LINKPOINT x="10545" y="3993">
    </LINKPOINT>
    <LINKPOINT x="12600" y="4213">
