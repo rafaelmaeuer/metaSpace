@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1250_TrailerContent\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-1758_Unterwasser\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="7380" top="4035" width="13995" height="11040">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -289,7 +289,7 @@
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="94">
    <BOUNDS type="Node" left="8565" top="3240" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\03_Textures\backstein004_1400x1050.jpg" visible="1">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\..\..\03_Textures\backstein004_1400x1050.jpg">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -373,7 +373,7 @@
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="107">
    <BOUNDS type="Node" left="9915" top="3255" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\03_Textures\It__s_Wood_by_niklasK.jpg" visible="1">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\..\..\03_Textures\It__s_Wood_by_niklasK.jpg">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -435,7 +435,7 @@
    <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="116">
    <BOUNDS type="Node" left="9645" top="1965" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\03_Textures\grunge-wall.jpg">
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\02_Projection-Mapping\03_Textures\grunge-wall.jpg">
    </PIN>
    <PIN pinname="Path" visible="1">
    </PIN>
@@ -459,7 +459,7 @@
    <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="118">
    <BOUNDS type="Node" left="8775" top="1980" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\03_Textures\backstein004_1400x1050.jpg">
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\02_Projection-Mapping\03_Textures\backstein004_1400x1050.jpg">
    </PIN>
    <PIN pinname="Path" visible="1">
    </PIN>
@@ -545,7 +545,7 @@
    <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="127">
    <BOUNDS type="Node" left="12180" top="1965" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\03_Textures\Spray-Wall-Texture-06.jpg">
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\02_Projection-Mapping\03_Textures\Spray-Wall-Texture-06.jpg">
    </PIN>
    <PIN pinname="Path" visible="1">
    </PIN>
@@ -569,7 +569,7 @@
    <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="125">
    <BOUNDS type="Node" left="11310" top="1980" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\03_Textures\It__s_Wood_by_niklasK.jpg">
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\02_Projection-Mapping\03_Textures\It__s_Wood_by_niklasK.jpg">
    </PIN>
    <PIN pinname="Path" visible="1">
    </PIN>

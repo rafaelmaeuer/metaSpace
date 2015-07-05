@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150705-2022_Unterwasser\Subpatches\Content\Underwater\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="15">
-   <BOUNDS height="15525" left="2535" top="600" type="Window" width="25080">
+   <BOUNDS height="15525" left="3360" top="600" type="Window" width="25080">
    </BOUNDS>
    <NODE componentmode="InABox" id="67" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="7410" top="1965" type="Node" width="0">
@@ -407,7 +407,7 @@
    </BOUNDS>
    <PIN pinname="Z Position" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="0" top="480" width="11940" height="9405">
+   <BOUNDS type="Window" left="1545" top="6705" width="17340" height="9255">
    </BOUNDS>
    </NODE>
    <LINK dstnodeid="97" dstpinname="Z width" srcnodeid="86" srcpinname="Y Output Value">
@@ -1035,7 +1035,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Value" visible="1">
+   <PIN pinname="Value" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="124" dstpinname="Color" srcnodeid="331" srcpinname="Output">
@@ -1092,8 +1092,6 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|color strenght (change also physics)|">
    </PIN>
    </NODE>
-   <LINK dstnodeid="331" dstpinname="Value" srcnodeid="466" srcpinname="Y Output Value">
-   </LINK>
    <NODE componentmode="InABox" id="467" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="19590" top="5370" type="Node" width="2535">
    </BOUNDS>
@@ -1140,8 +1138,6 @@
    </NODE>
    <LINK srcnodeid="475" srcpinname="Transform Out" dstnodeid="124" dstpinname="Post Transform">
    </LINK>
-   <LINK srcnodeid="97" srcpinname="mesh out" dstnodeid="124" dstpinname="Mesh">
-   </LINK>
    <LINK srcnodeid="126" srcpinname="Output" dstnodeid="282" dstpinname="emitIndex">
    </LINK>
    <LINK srcnodeid="127" srcpinname="Output 1" dstnodeid="282" dstpinname="emitIndexPrev">
@@ -1156,10 +1152,6 @@
    <PIN pinname="Width" slicecount="1" values="1.5">
    </PIN>
    </NODE>
-   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Yaw">
-   </LINK>
-   <LINK srcnodeid="384" srcpinname="Texture Out" dstnodeid="124" dstpinname="Texture">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="478" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="19320" top="9315" width="480" height="480">
    </BOUNDS>
@@ -1183,5 +1175,11 @@
    <LINK srcnodeid="91" srcpinname="Texture Out" dstnodeid="124" dstpinname="Data Texture">
    </LINK>
    <LINK srcnodeid="478" srcpinname="Y Output Value" dstnodeid="126" dstpinname="Up">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="mesh out" dstnodeid="124" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="384" srcpinname="Texture Out" dstnodeid="124" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Yaw">
    </LINK>
    </PATCH>
