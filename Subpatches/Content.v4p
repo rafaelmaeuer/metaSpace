@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150704-1532_TrailerContent\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="30">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150705-1408_3Kinects\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="30">
    <BOUNDS type="Window" left="12795" top="6870" width="14910" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -23,7 +23,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
@@ -273,7 +273,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2400" top="1290" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -285,7 +285,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Switch|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="137" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Texture Switch">
@@ -368,24 +368,6 @@
    </NODE>
    <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Switch Floor">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="160" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="315" top="1125" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="315" top="1125" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="160" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
+   <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
    </LINK>
    </PATCH>
