@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0117_Content\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
-   <BOUNDS type="Window" left="13425" top="3045" width="12195" height="10845">
+   <BOUNDS type="Window" left="13425" top="3045" width="8685" height="10845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -211,9 +211,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2640" top="4005" width="795" height="240">
+   <BOUNDS type="Box" left="1950" top="4425" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2640" top="4005" width="0" height="0">
+   <BOUNDS type="Node" left="1950" top="4425" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="200">
    </PIN>
@@ -251,9 +251,9 @@
    <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="20" dstpinname="Transform">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="68" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3915" top="4560" width="795" height="240">
+   <BOUNDS type="Box" left="2655" top="3750" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3915" top="4560" width="0" height="0">
+   <BOUNDS type="Node" left="2655" top="3750" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="150">
    </PIN>
@@ -322,68 +322,10 @@
    </NODE>
    <LINK srcnodeid="72" srcpinname="Color Output" dstnodeid="20" dstpinname="Specular Color">
    </LINK>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="75" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="6105" top="7875" width="2250" height="270">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6105" top="7875" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Color Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="76" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="6120" top="8430" width="2250" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6120" top="8430" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Background Color|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="75" srcpinname="Color Output" dstnodeid="76" dstpinname="Color Input">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="77">
-   <BOUNDS type="Node" left="8910" top="7845" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8910" top="7845" width="795" height="480">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="-0.9,3">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0|">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Camera Planes|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="78" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8925" top="8655" width="795" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8925" top="8655" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values=",">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Camera Planes|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="77" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8880" top="6405" width="795" height="720">
+   <BOUNDS type="Box" left="3735" top="6855" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="8880" top="6405" width="0" height="0">
+   <BOUNDS type="Node" left="3735" top="6855" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-5,2">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0117_Content\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0336_3KinectMapping\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="15" scrolly="0">
    <BOUNDS type="Window" left="13425" top="3045" width="8685" height="10845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -13,7 +13,7 @@
    </PIN>
    <PIN pinname="Cycles" visible="1">
    </PIN>
-   <PIN pinname="Pause" slicecount="1" values="0" visible="1">
+   <PIN pinname="Pause" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" id="14">
@@ -363,17 +363,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Enabled">
-   </LINK>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="82">
-   <BOUNDS type="Node" left="4335" top="2295" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="82" srcpinname="Output" dstnodeid="12" dstpinname="Pause">
    </LINK>
    </PATCH>

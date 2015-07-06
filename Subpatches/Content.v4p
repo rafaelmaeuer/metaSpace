@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0117_Content\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0336_3KinectMapping\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="12270" top="7065" width="15720" height="10020">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -197,9 +197,9 @@
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Input 3" slicecount="1" visible="1" values="|0.05460,0.20068,0.21000,1.00000|">
    </PIN>
@@ -503,7 +503,7 @@
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="189">
    <BOUNDS type="Node" left="6345" top="4425" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="2">
+   <PIN pinname="Input 2" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
