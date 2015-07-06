@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1808_TouchOSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="8370" top="6690" width="15720" height="10020">
+   <BOUNDS type="Window" left="3105" top="7170" width="15720" height="10020">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -34,14 +34,14 @@
    <PIN pinname="Input 4" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="4Walls" filename="Content\4Walls.v4p" nodename="Content\4Walls.v4p" componentmode="InAWindow" id="90">
+   <NODE systemname="4Walls" filename="Content\4Walls.v4p" nodename="Content\4Walls.v4p" componentmode="Hidden" id="90">
    <BOUNDS type="Node" left="1785" top="3570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <BOUNDS type="Box" left="1785" top="3570">
    </BOUNDS>
-   <BOUNDS type="Window" left="12480" top="4110" width="13995" height="11040">
+   <BOUNDS type="Window" left="5760" top="5055" width="13995" height="11040">
    </BOUNDS>
    <PIN pinname="Pause" visible="1" slicecount="1" values="1">
    </PIN>
@@ -57,9 +57,9 @@
    </PIN>
    <PIN pinname="Texture Switch" visible="1">
    </PIN>
-   <PIN pinname="Walls" visible="1" slicecount="1" values="0">
+   <PIN pinname="Walls" visible="1">
    </PIN>
-   <PIN pinname="Floor" visible="1" slicecount="1" values="2">
+   <PIN pinname="Floor" visible="1">
    </PIN>
    <PIN pinname="Active" visible="1">
    </PIN>
@@ -203,13 +203,13 @@
    <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="75" dstpinname="Input 1">
    </LINK>
    <NODE systemname="AnimalBehaviors" filename="Content\Underwater\AnimalBehaviors.v4p" nodename="Content\Underwater\AnimalBehaviors.v4p" componentmode="InAWindow" id="159">
-   <BOUNDS type="Node" left="8505" top="3630" width="2430" height="270">
+   <BOUNDS type="Node" left="8505" top="3630" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6435" top="4905" width="20805" height="13815">
+   <BOUNDS type="Window" left="6315" top="270" width="20805" height="13815">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -243,7 +243,7 @@
    <LINK srcnodeid="159" srcpinname="Layer" dstnodeid="75" dstpinname="Input 3">
    </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="160">
-   <BOUNDS type="Node" left="8685" top="1995" width="100" height="100">
+   <BOUNDS type="Node" left="8700" top="2355" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
@@ -277,7 +277,7 @@
    <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Movement Trigger">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="176">
-   <BOUNDS type="Node" left="8805" top="2595" width="100" height="100">
+   <BOUNDS type="Node" left="8880" top="2925" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
@@ -311,6 +311,42 @@
    <LINK srcnodeid="91" srcpinname="EX9 Layer" dstnodeid="75" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="176" srcpinname="Up Edge" dstnodeid="159" dstpinname="Change Fish">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2490" top="2250" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2490" top="2250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Texture|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="178" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Walls">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="179" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2475" top="2805" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2475" top="2805" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Floor Texture|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Floor">
    </LINK>
    <LINK srcnodeid="176" srcpinname="Up Edge" dstnodeid="159" dstpinname="Update Particles">
    </LINK>
@@ -381,17 +417,13 @@
    <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="InAWindow" id="196">
    <BOUNDS type="Node" left="5580" top="270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="2535" top="4485" width="25770" height="10950">
+   <BOUNDS type="Window" left="5565" top="4740" width="21855" height="10950">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>
    <PIN pinname="Roomsize" visible="1">
    </PIN>
    <PIN pinname="Switch" visible="1">
-   </PIN>
-   <PIN pinname="Wall Texture Change" visible="1">
-   </PIN>
-   <PIN pinname="Floor Texture Change" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="197" systemname="IOBox (String)">
@@ -504,7 +536,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="196" srcpinname="Switch Scene" dstnodeid="203" dstpinname="Y Input Value">
+   <LINK srcnodeid="196" srcpinname="Switch" dstnodeid="203" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="190" dstpinname="Input 1">
    </LINK>
@@ -519,9 +551,5 @@
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="132" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Wall Texture Change" dstnodeid="90" dstpinname="Walls">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Floor Texture Change" dstnodeid="90" dstpinname="Floor">
    </LINK>
    </PATCH>

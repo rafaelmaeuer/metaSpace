@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1808_TouchOSC\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="15">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="15">
    <BOUNDS height="16005" left="4485" top="1455" type="Window" width="23640">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -1073,7 +1073,7 @@
    </BOUNDS>
    <PIN pinname="X" visible="1" slicecount="1" values="1.99020724045113">
    </PIN>
-   <PIN pinname="Y" slicecount="1" visible="1" values="-0.284304130123928">
+   <PIN pinname="Y" slicecount="1" visible="1" values="15.2074842830189">
    </PIN>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -1101,7 +1101,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="4">
+   <PIN pinname="Period" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Pause" visible="1">
    </PIN>
@@ -1191,7 +1191,7 @@
    <LINK srcnodeid="1033" srcpinname="Y Output Value" dstnodeid="1054" dstpinname="Input">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="1060">
-   <BOUNDS type="Node" left="12720" top="3015" width="100" height="100">
+   <BOUNDS type="Node" left="12660" top="3090" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1272,6 +1272,8 @@
    </LINK>
    <LINK srcnodeid="1062" srcpinname="Output" dstnodeid="1026" dstpinname="Z">
    </LINK>
+   <LINK srcnodeid="1060" srcpinname="Output" dstnodeid="1026" dstpinname="Y">
+   </LINK>
    <LINK srcnodeid="1054" srcpinname="Output" dstnodeid="1059" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="1059" srcpinname="Output" dstnodeid="1026" dstpinname="X">
@@ -1339,7 +1341,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5250" top="6330" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-100,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-1.10700025558472,0,2.35249645233154">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1879,21 +1881,5 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1135" srcpinname="Output" dstnodeid="1134" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="1136">
-   <BOUNDS type="Node" left="12645" top="3420" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Source Minimum" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Source Maximum" slicecount="1" values="0.5">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1060" srcpinname="Output" dstnodeid="1136" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1136" srcpinname="Output" dstnodeid="1026" dstpinname="Y">
    </LINK>
    </PATCH>

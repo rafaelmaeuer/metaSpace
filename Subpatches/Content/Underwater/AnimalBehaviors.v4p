@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1808_TouchOSC\Subpatches\Content\Underwater\AnimalBehaviors.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\AnimalBehaviors(Help).v4p" systemname="AnimalBehaviors (Help)" scrollx="0" scrolly="0">
-   <BOUNDS height="13815" left="6435" top="4905" type="Window" width="20805">
+   <BOUNDS height="13815" left="6315" top="270" type="Window" width="20805">
    </BOUNDS>
    <NODE componentmode="InABox" id="55" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5564" top="7645" type="Node" width="0">
@@ -301,7 +301,7 @@
    </PIN>
    <BOUNDS height="270" left="1724" top="6550" type="Node" width="12960">
    </BOUNDS>
-   <BOUNDS height="16005" left="4110" top="6360" type="Window" width="23640">
+   <BOUNDS height="16005" left="4485" top="1455" type="Window" width="23640">
    </BOUNDS>
    <PIN pinname="Landing" slicecount="1" visible="1" values="0">
    </PIN>
@@ -346,8 +346,6 @@
    <PIN pinname="Helper" visible="1">
    </PIN>
    <PIN pinname="Change Fish" visible="1">
-   </PIN>
-   <PIN pinname="Targetmovement" visible="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="99" dstpinname="Change Target" srcnodeid="166" srcpinname="Y Output Value">
@@ -777,23 +775,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="230" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Update">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="231" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4305" top="1725" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4305" top="1725" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Targetmovement">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="231" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Targetmovement">
    </LINK>
    </PATCH>
