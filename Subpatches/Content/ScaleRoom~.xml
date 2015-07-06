@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1609_TouchOSC\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="60" scrolly="0">
-   <BOUNDS type="Window" left="3810" top="2640" width="25590" height="11100">
+   <BOUNDS type="Window" left="3045" top="4845" width="25590" height="11100">
    </BOUNDS>
    <NODE id="15" systemname="Light (EX9 Direction)" filename="%VVVV%\lib\nodes\modules\EX9\Light (EX9 Direction).v4p" nodename="Light (EX9 Direction)" componentmode="Hidden">
    <BOUNDS type="Node" left="22140" top="6435" width="100" height="100">
@@ -1065,6 +1065,10 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Back|">
    </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
    </NODE>
    <LINK srcnodeid="386" srcpinname="Y Output Value" dstnodeid="359" dstpinname="Go To Position">
    </LINK>
@@ -1078,6 +1082,10 @@
    <PIN pinname="Y Input Value" slicecount="1" values="0.22">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Left|">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
    </PIN>
    </NODE>
    <LINK srcnodeid="387" srcpinname="Y Output Value" dstnodeid="329" dstpinname="Go To Position">
@@ -1093,6 +1101,10 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Front|">
    </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
    </NODE>
    <LINK srcnodeid="388" srcpinname="Y Output Value" dstnodeid="318" dstpinname="Go To Position">
    </LINK>
@@ -1107,7 +1119,29 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Right|">
    </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="3">
+   </PIN>
    </NODE>
    <LINK srcnodeid="389" srcpinname="Y Output Value" dstnodeid="332" dstpinname="Go To Position">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="390">
+   <BOUNDS type="Node" left="18255" top="3480" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18255" top="3480" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.22">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Floor">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="390" srcpinname="Y Output Value" dstnodeid="335" dstpinname="Go To Position">
    </LINK>
    </PATCH>
