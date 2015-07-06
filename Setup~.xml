@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1609_TouchOSC\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="16005" left="1185" top="1290" type="Window" width="23985">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1808_TouchOSC\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="16005" left="3000" top="975" type="Window" width="23985">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="12195" top="11970" type="Node" width="100">
@@ -903,7 +903,7 @@
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="3630" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2370" top="2790" width="15720" height="10020">
+   <BOUNDS type="Window" left="8370" top="6690" width="15720" height="10020">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
