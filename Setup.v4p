@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0117_Content\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0317_3KinectMapping\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
    <BOUNDS height="15795" left="270" top="360" type="Window" width="25965">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
@@ -1885,7 +1885,7 @@
    </BOUNDS>
    <PIN pinname="Index" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="xBox360">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|xBox360 rechts|">
    </PIN>
    <PIN pinname="Kinect Depth" visible="1">
    </PIN>
@@ -1928,12 +1928,12 @@
    <LINKPOINT x="6720" y="2738">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="KinectMapping" filename="Subpatches\Kinect\KinectMapping.v4p" nodename="Subpatches\Kinect\KinectMapping.v4p" componentmode="Hidden" id="692">
+   <NODE systemname="KinectMapping" filename="Subpatches\Kinect\KinectMapping.v4p" nodename="Subpatches\Kinect\KinectMapping.v4p" componentmode="InAWindow" id="692">
    <BOUNDS type="Node" left="2940" top="7350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Helper" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="10200" top="465" width="17175" height="16200">
+   <BOUNDS type="Window" left="9510" top="480" width="18885" height="16605">
    </BOUNDS>
    <PIN pinname="Kinect Windows" visible="1">
    </PIN>
@@ -1955,29 +1955,33 @@
    </PIN>
    <PIN pinname="Camera Out" visible="1">
    </PIN>
+   <PIN pinname="Kinect xBox360 links" visible="1">
+   </PIN>
+   <PIN pinname="Kinect xBox360 links tracking" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="704" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect Windows" linkstyle="Bezier">
-   <LINKPOINT x="4865" y="5460">
+   <LINKPOINT x="4965" y="5460">
    </LINKPOINT>
-   <LINKPOINT x="3070" y="5460">
+   <LINKPOINT x="3315" y="5460">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="703" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360" linkstyle="Bezier">
-   <LINKPOINT x="7450" y="5433">
+   <LINK srcnodeid="703" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360 rechts" linkstyle="Bezier">
+   <LINKPOINT x="7560" y="5430">
    </LINKPOINT>
-   <LINKPOINT x="4070" y="5443">
+   <LINKPOINT x="3690" y="5430">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="716" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect Windows tracking" linkstyle="Bezier">
    <LINKPOINT x="4065" y="5348">
    </LINKPOINT>
-   <LINKPOINT x="3285" y="5348">
+   <LINKPOINT x="3495" y="5348">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="717" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360 tracking" linkstyle="Bezier">
-   <LINKPOINT x="6660" y="5340">
+   <LINK srcnodeid="717" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360 rechts tracking" linkstyle="Bezier">
+   <LINKPOINT x="6645" y="5333">
    </LINKPOINT>
-   <LINKPOINT x="4275" y="5340">
+   <LINKPOINT x="3870" y="5333">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="818" systemname="IOBox (Value Advanced)">
@@ -2057,7 +2061,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="692" srcpinname="Camera Out" dstnodeid="819" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="4290" y="4155">
+   <LINKPOINT x="4215" y="4155">
    </LINKPOINT>
    <LINKPOINT x="16965" y="4155">
    </LINKPOINT>
@@ -2409,7 +2413,7 @@
    </PIN>
    <PIN pinname="Motor Angle" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="xBox360">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|xBox360 links|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="835" systemname="IOBox (Value Advanced)">
@@ -2489,6 +2493,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Active">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="834" srcpinname="Skeleton Count" dstnodeid="837" dstpinname="Y Input Value" linkstyle="Bezier">
    <LINKPOINT x="2115" y="2768">
@@ -2512,6 +2518,8 @@
    <PIN pinname="Y Input Value" slicecount="3" values=",,">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|User Head XYZ|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="834" srcpinname="User Head XYZ" dstnodeid="838" dstpinname="Y Input Value">
@@ -2570,6 +2578,18 @@
    <LINKPOINT x="11250" y="5588">
    </LINKPOINT>
    <LINKPOINT x="7155" y="5588">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="838" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360 links" linkstyle="Bezier">
+   <LINKPOINT x="2400" y="5468">
+   </LINKPOINT>
+   <LINKPOINT x="2955" y="5468">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="837" srcpinname="Y Output Value" dstnodeid="692" dstpinname="Kinect xBox360 links tracking" linkstyle="Bezier">
+   <LINKPOINT x="1605" y="5348">
+   </LINKPOINT>
+   <LINKPOINT x="3135" y="5348">
    </LINKPOINT>
    </LINK>
    </PATCH>
