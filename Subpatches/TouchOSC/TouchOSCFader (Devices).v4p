@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Lennart\Desktop\TouchOSC Edit\TouchOSCFader (Devices).v4p">
-   <BOUNDS height="9165" left="7725" top="1245" type="Window" width="7710">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\TouchOSC\TouchOSCFader (Devices).v4p" scrollx="0" scrolly="0">
+   <BOUNDS height="13200" left="13695" top="1755" type="Window" width="10260">
    </BOUNDS>
    <NODE componentmode="InABox" id="33" nodename="IOBOX (VALUE ADVANCED)">
    <BOUNDS height="0" left="765" top="6360" type="Node" width="0">

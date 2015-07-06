@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1808_TouchOSC\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2028_TouchOSC\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="-360">
    <BOUNDS height="16005" left="4110" top="6360" type="Window" width="23640">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -1861,11 +1861,13 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Source Minimum" slicecount="1" values="-1">
+   <PIN pinname="Source Minimum" slicecount="1" values="-0.5">
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" values="0.5">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="-1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1060" srcpinname="Output" dstnodeid="1136" dstpinname="Input">
@@ -1891,22 +1893,18 @@
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="1138">
    <BOUNDS type="Node" left="9195" top="3495" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="3" values="-0.213265560334548,-0.278989306185395,0.440557524329051">
+   <PIN pinname="Input 2" visible="1" slicecount="3" values="-4.05485106166452,0.479338910275449,0.0708483438938856">
    </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="3" values="-8.64691167054769,0.650826407596469,-2.49618079508399">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="980" srcpinname="XYZ" dstnodeid="1138" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="1138" srcpinname="Output" dstnodeid="1012" dstpinname="Go To Position">
    </LINK>
    <LINK srcnodeid="1136" srcpinname="Output" dstnodeid="980" dstpinname="Y">
-   </LINK>
-   <LINK srcnodeid="1026" srcpinname="XYZ" dstnodeid="1138" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1139" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5655" top="1755" width="795" height="240">
@@ -1925,5 +1923,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1139" srcpinname="Y Output Value" dstnodeid="1138" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="980" srcpinname="XYZ" dstnodeid="1138" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1026" srcpinname="XYZ" dstnodeid="1138" dstpinname="Input 1">
    </LINK>
    </PATCH>

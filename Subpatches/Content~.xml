@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2028_TouchOSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="6510" top="4335" width="15720" height="10020">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="6630" top="3645" width="15720" height="10020">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -41,7 +41,7 @@
    </PIN>
    <BOUNDS type="Box" left="1785" top="3570">
    </BOUNDS>
-   <BOUNDS type="Window" left="12480" top="4110" width="13995" height="11040">
+   <BOUNDS type="Window" left="12480" top="4110" width="13815" height="11040">
    </BOUNDS>
    <PIN pinname="Pause" visible="1" slicecount="1" values="1">
    </PIN>
@@ -71,7 +71,7 @@
    </PIN>
    <BOUNDS type="Box" left="11610" top="3645">
    </BOUNDS>
-   <BOUNDS type="Window" left="13425" top="3045" width="11115" height="10845">
+   <BOUNDS type="Window" left="4875" top="4365" width="11205" height="10845">
    </BOUNDS>
    <PIN pinname="Spread Width" slicecount="1" visible="1" values="100">
    </PIN>
@@ -83,13 +83,21 @@
    </PIN>
    <PIN pinname="Active" visible="1">
    </PIN>
+   <PIN pinname="Spread Count" visible="1">
+   </PIN>
+   <PIN pinname="Begrüßung" visible="1">
+   </PIN>
+   <PIN pinname="Begrüßung Reset" visible="1">
+   </PIN>
+   <PIN pinname="Radius" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="95" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11760" top="3210" width="795" height="240">
+   <BOUNDS type="Box" left="10800" top="1680" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11760" top="3210" width="0" height="0">
+   <BOUNDS type="Node" left="10800" top="1680" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="100">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -123,7 +131,7 @@
    </PIN>
    <PIN pinname="Yaw" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="2715" top="6900" width="25590" height="11100">
+   <BOUNDS type="Window" left="2235" top="195" width="2700" height="2520">
    </BOUNDS>
    <PIN pinname="Switch Walls" visible="1">
    </PIN>
@@ -209,7 +217,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6435" top="4905" width="20805" height="13815">
+   <BOUNDS type="Window" left="5070" top="195" width="2580" height="2865">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -361,7 +369,7 @@
    <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="InAWindow" id="196">
    <BOUNDS type="Node" left="5580" top="270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="465" top="4485" width="28335" height="10950">
+   <BOUNDS type="Window" left="-1245" top="1605" width="18255" height="14085">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>
@@ -376,6 +384,14 @@
    <PIN pinname="Target Movement" visible="1">
    </PIN>
    <PIN pinname="Trigger Enemy Movement" visible="1">
+   </PIN>
+   <PIN pinname="Begrüßung" visible="1">
+   </PIN>
+   <PIN pinname="Begrüßung Reset" visible="1">
+   </PIN>
+   <PIN pinname="Enable" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Ball Seetings" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="197" systemname="IOBox (String)">
@@ -511,5 +527,107 @@
    <LINK srcnodeid="196" srcpinname="Target Movement" dstnodeid="159" dstpinname="Targetmovement">
    </LINK>
    <LINK srcnodeid="196" srcpinname="Trigger Enemy Movement" dstnodeid="159" dstpinname="Movement Trigger">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="204" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11790" top="1680" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11790" top="1680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="200">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="204" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Begrüßung" dstnodeid="91" dstpinname="Begrüßung">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Begrüßung Reset" dstnodeid="91" dstpinname="Begrüßung Reset">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="206">
+   <BOUNDS type="Node" left="9015" top="750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Ball Seetings" dstnodeid="206" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="207">
+   <BOUNDS type="Node" left="9810" top="750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="208">
+   <BOUNDS type="Node" left="10605" top="750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Ball Seetings" dstnodeid="207" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Ball Seetings" dstnodeid="208" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="209">
+   <BOUNDS type="Node" left="10530" top="1245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.614503800868988">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="100">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="209" srcpinname="Output" dstnodeid="95" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="207" srcpinname="Output" dstnodeid="209" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="210">
+   <BOUNDS type="Node" left="11685" top="1245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.614503800868988">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="600">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="208" srcpinname="Output" dstnodeid="210" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="210" srcpinname="Output" dstnodeid="204" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="211">
+   <BOUNDS type="Node" left="9450" top="1260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.614503800868988">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="206" srcpinname="Output" dstnodeid="211" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Output" dstnodeid="91" dstpinname="Radius">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0317_3KinectMapping\Subpatches\Kinect\KinectMapping.v4p" systemname="KinectMapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\KinectMapping.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="9510" top="480" width="18885" height="16605">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Kinect\KinectMapping.v4p" systemname="KinectMapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\KinectMapping.v4p" scrollx="0" scrolly="360">
+   <BOUNDS type="Window" left="0" top="0" width="2175" height="3060">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6360" top="705" width="795" height="720">
@@ -1576,132 +1576,6 @@
    </LINK>
    <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Smooth Constant [0;1]">
    </LINK>
-   <NODE componentmode="InABox" id="209" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="14325" top="7860" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="4983" top="4466" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="1275" left="14325" top="7860" type="Box" width="1395">
-   </BOUNDS>
-   <PIN pinname="Slider Constraints" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Show Slider" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0">
-   </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="1" visible="1" values="-0.156521374980609">
-   </PIN>
-   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
-   </PIN>
-   <PIN pinname="X Output Value" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Slider Alignment" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Show Connections" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="-3">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|User Position|">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="210" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="2175" top="8070" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="4983" top="4466" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="1275" left="2175" top="8070" type="Box" width="1395">
-   </BOUNDS>
-   <PIN pinname="Slider Constraints" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Show Slider" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0.59">
-   </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="1" visible="1" values="-0.156521374980609">
-   </PIN>
-   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
-   </PIN>
-   <PIN pinname="X Output Value" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Slider Alignment" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Show Connections" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="-3">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|User Position|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="202" srcpinname="Output" dstnodeid="210" dstpinname="X Input Value">
-   </LINK>
-   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="210" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="209" dstpinname="X Input Value">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="209" dstpinname="Y Input Value">
-   </LINK>
-   <NODE componentmode="InABox" id="211" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="8220" top="7890" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="4983" top="4466" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="1275" left="8220" top="7890" type="Box" width="1395">
-   </BOUNDS>
-   <PIN pinname="Slider Constraints" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Show Slider" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0.59">
-   </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="1" visible="1" values="-0.156521374980609">
-   </PIN>
-   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
-   </PIN>
-   <PIN pinname="X Output Value" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Slider Alignment" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Show Connections" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="-3">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|User Position|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="211" dstpinname="X Input Value">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="211" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="207" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="81" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 4">
@@ -1709,5 +1583,131 @@
    <LINK srcnodeid="23" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="25" dstpinname="Layer 2">
+   </LINK>
+   <NODE id="209" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <PIN pinname="X Input Value" visible="1" slicecount="1" pintype="Input" values="0.76974906027317">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" pintype="Input" values="0.832835859722561">
+   </PIN>
+   <BOUNDS type="Node" height="0" left="14325" top="7860" width="0">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="4983" top="4466" width="215">
+   </BOUNDS>
+   <BOUNDS type="Box" height="1275" left="14325" top="7860" width="1395">
+   </BOUNDS>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1.5">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|User Position|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="209" dstpinname="X Input Value">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="209" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="211" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" height="0" left="8220" top="7890" width="0">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="4983" top="4466" width="215">
+   </BOUNDS>
+   <BOUNDS type="Box" height="1275" left="8220" top="7890" width="1395">
+   </BOUNDS>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0.59">
+   </PIN>
+   <PIN pinname="X Input Value" pintype="Input" slicecount="1" visible="1" values="-0.156521374980609">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1.5">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|User Position|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="211" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="211" dstpinname="X Input Value">
+   </LINK>
+   <NODE id="210" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" pintype="Input" values="1.14368229442173">
+   </PIN>
+   <PIN pinname="X Input Value" visible="1" slicecount="1" pintype="Input" values="1.12715825438499">
+   </PIN>
+   <BOUNDS type="Node" height="0" left="2175" top="8070" width="0">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="4983" top="4466" width="215">
+   </BOUNDS>
+   <BOUNDS type="Box" height="1275" left="2175" top="8070" width="1395">
+   </BOUNDS>
+   <PIN pinname="Slider Constraints" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-1.5">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|User Position|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="202" srcpinname="Output" dstnodeid="210" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="210" dstpinname="X Input Value">
    </LINK>
    </PATCH>
