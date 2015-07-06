@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0336_3KinectMapping\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15795" left="225" top="1890" type="Window" width="25965">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1609_TouchOSC\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="16005" left="1185" top="1290" type="Window" width="23985">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="12195" top="11970" type="Node" width="100">
@@ -900,10 +900,10 @@
    <LINKPOINT x="24180" y="4440">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="3630" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="12270" top="7065" width="15720" height="10020">
+   <BOUNDS type="Window" left="2370" top="2790" width="15720" height="10020">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -1899,7 +1899,7 @@
    </BOUNDS>
    <PIN pinname="Helper" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9690" top="195" width="18885" height="16605">
+   <BOUNDS type="Window" left="3240" top="210" width="2955" height="2685">
    </BOUNDS>
    <PIN pinname="Kinect Windows" visible="1">
    </PIN>
@@ -2627,8 +2627,6 @@
    </LINKPOINT>
    <LINKPOINT x="7320" y="2633">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="849" srcpinname="Output" dstnodeid="701" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="839" srcpinname="Bang" dstnodeid="840" dstpinname="Input">
    </LINK>

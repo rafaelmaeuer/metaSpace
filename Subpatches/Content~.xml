@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0336_3KinectMapping\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="12270" top="7065" width="15720" height="10020">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1609_TouchOSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="12870" top="7980" width="15720" height="10020">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -130,7 +130,7 @@
    <PIN pinname="Active" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="Hidden" id="118">
+   <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="InAWindow" id="118">
    <BOUNDS type="Node" left="5310" top="4890" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -141,21 +141,21 @@
    </PIN>
    <PIN pinname="Yaw" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="1740" top="300" width="25590" height="11100">
+   <BOUNDS type="Window" left="3810" top="2640" width="25590" height="11100">
    </BOUNDS>
    <PIN pinname="Switch Walls" visible="1">
    </PIN>
    <PIN pinname="Switch Floor" visible="1">
    </PIN>
-   <PIN pinname="Wall Behind" visible="1">
+   <PIN pinname="Wall Behind" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Wall Left" visible="1">
+   <PIN pinname="Wall Left" visible="1" slicecount="1" values="0.22">
    </PIN>
-   <PIN pinname="Wall Front" visible="1">
+   <PIN pinname="Wall Front" visible="1" slicecount="1" values="0.22">
    </PIN>
-   <PIN pinname="Wall Right" visible="1">
+   <PIN pinname="Wall Right" visible="1" slicecount="1" values="0.22">
    </PIN>
-   <PIN pinname="Floor" visible="1">
+   <PIN pinname="Floor" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Active" visible="1">
    </PIN>
@@ -222,14 +222,14 @@
    </LINK>
    <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Switch">
    </LINK>
-   <NODE systemname="AnimalBehaviors" filename="Content\Underwater\AnimalBehaviors.v4p" nodename="Content\Underwater\AnimalBehaviors.v4p" componentmode="Hidden" id="159">
+   <NODE systemname="AnimalBehaviors" filename="Content\Underwater\AnimalBehaviors.v4p" nodename="Content\Underwater\AnimalBehaviors.v4p" componentmode="InAWindow" id="159">
    <BOUNDS type="Node" left="8505" top="3630" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6990" top="3735" width="20985" height="12900">
+   <BOUNDS type="Window" left="6315" top="270" width="3105" height="2700">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -389,6 +389,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Behind|">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="180" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Wall Behind">
    </LINK>
@@ -409,13 +411,15 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Left|">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Wall Left">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="182" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5595" top="2235" width="480" height="480">
+   <BOUNDS type="Box" left="5580" top="2235" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5595" top="2235" width="0" height="0">
+   <BOUNDS type="Node" left="5580" top="2235" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -428,6 +432,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Front|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="182" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Wall Front">
@@ -449,6 +455,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Wall Right|">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Wall Right">
    </LINK>
@@ -457,7 +465,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5595" top="3150" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -468,6 +476,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Floor">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="184" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Floor">
@@ -543,5 +553,45 @@
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 5">
+   </LINK>
+   <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="InAWindow" id="196">
+   <BOUNDS type="Node" left="5580" top="270" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2580" top="6885" width="14595" height="8280">
+   </BOUNDS>
+   <PIN pinname="iPhone IP" visible="1">
+   </PIN>
+   <PIN pinname="Roomsize" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="197" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8595" top="15" width="1320" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8595" top="15" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.100">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="IP">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="197" srcpinname="Output String" dstnodeid="196" dstpinname="iPhone IP">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="198">
+   <BOUNDS type="Node" left="5580" top="795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Roomsize" dstnodeid="198" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Output" dstnodeid="118" dstpinname="Wall Front">
    </LINK>
    </PATCH>
