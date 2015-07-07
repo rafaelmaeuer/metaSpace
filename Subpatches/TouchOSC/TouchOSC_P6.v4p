@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-2053_OSC\Subpatches\TouchOSC\TouchOSC_P6.v4p" scrollx="0" scrolly="0" systemname="TouchOSC" filename="C:\Users\Lennart\Desktop\TouchOSC Edit\TouchOSC.v4p">
-   <BOUNDS height="11565" left="2010" top="5190" type="Window" width="26415">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-2129_2Kinects\Subpatches\TouchOSC\TouchOSC_P6.v4p" scrollx="4650" scrolly="0" systemname="TouchOSC" filename="C:\Users\Lennart\Desktop\TouchOSC Edit\TouchOSC.v4p">
+   <BOUNDS height="11565" left="5970" top="6435" type="Window" width="26415">
    </BOUNDS>
    <NODE componentmode="InABox" id="33" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="6360" top="1110" type="Node" width="0">
@@ -809,8 +809,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="77" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 1">
    </LINK>
    <NODE componentmode="InABox" id="82" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="18975" top="5700" type="Node" width="0">
@@ -1644,12 +1642,6 @@
    <LINKPOINT x="14250" y="3810">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 3">
-   </LINK>
-   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 0">
-   </LINK>
-   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 2">
-   </LINK>
    <NODE componentmode="InABox" id="126" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="26565" top="5700" type="Node" width="0">
    </BOUNDS>
@@ -2201,5 +2193,13 @@
    <LINK srcnodeid="20" srcpinname="y" dstnodeid="152" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="152" srcpinname="Up Edge" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 0">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 1">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 2">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Set 3">
    </LINK>
    </PATCH>
