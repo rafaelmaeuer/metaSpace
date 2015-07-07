@@ -34,7 +34,7 @@
    <PIN pinname="Input 4" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="4Walls" filename="Content\4Walls.v4p" nodename="Content\4Walls.v4p" componentmode="InAWindow" id="90">
+   <NODE systemname="4Walls" filename="Content\4Walls.v4p" nodename="Content\4Walls.v4p" componentmode="Hidden" id="90">
    <BOUNDS type="Node" left="1785" top="3570" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -64,7 +64,7 @@
    <PIN pinname="Active" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="InAWindow" id="91">
+   <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="Hidden" id="91">
    <BOUNDS type="Node" left="11610" top="3645" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -120,7 +120,7 @@
    <PIN pinname="Active" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="InAWindow" id="118">
+   <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="Hidden" id="118">
    <BOUNDS type="Node" left="5310" top="4890" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -131,7 +131,7 @@
    </PIN>
    <PIN pinname="Yaw" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="2235" top="195" width="2700" height="2520">
+   <BOUNDS type="Window" left="2235" top="195" width="25950" height="11250">
    </BOUNDS>
    <PIN pinname="Switch Walls" visible="1">
    </PIN>
@@ -210,14 +210,14 @@
    </LINK>
    <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="75" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="AnimalBehaviors" filename="Content\Underwater\AnimalBehaviors.v4p" nodename="Content\Underwater\AnimalBehaviors.v4p" componentmode="InAWindow" id="159">
+   <NODE systemname="AnimalBehaviors" filename="Content\Underwater\AnimalBehaviors.v4p" nodename="Content\Underwater\AnimalBehaviors.v4p" componentmode="Hidden" id="159">
    <BOUNDS type="Node" left="8505" top="3630" width="2430" height="270">
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="5070" top="195" width="2580" height="2865">
+   <BOUNDS type="Window" left="5070" top="195" width="22155" height="12270">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -366,10 +366,10 @@
    </LINK>
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 5">
    </LINK>
-   <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="InAWindow" id="196">
+   <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="Hidden" id="196">
    <BOUNDS type="Node" left="5580" top="270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1245" top="1605" width="18255" height="14085">
+   <BOUNDS type="Window" left="5070" top="2595" width="16245" height="11565">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>

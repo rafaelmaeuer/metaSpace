@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="6630" top="3645" width="15720" height="10020">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1456_Audiovis Balls\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4965" top="4470" width="15720" height="10020">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -64,14 +64,14 @@
    <PIN pinname="Active" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="Hidden" id="91">
+   <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="InAWindow" id="91">
    <BOUNDS type="Node" left="11610" top="3645" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <BOUNDS type="Box" left="11610" top="3645">
    </BOUNDS>
-   <BOUNDS type="Window" left="4875" top="4365" width="11205" height="10845">
+   <BOUNDS type="Window" left="7845" top="5040" width="17400" height="10845">
    </BOUNDS>
    <PIN pinname="Spread Width" slicecount="1" visible="1" values="100">
    </PIN>
@@ -369,7 +369,7 @@
    <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="Hidden" id="196">
    <BOUNDS type="Node" left="5580" top="270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="5070" top="2595" width="16245" height="11565">
+   <BOUNDS type="Window" left="7080" top="3435" width="16245" height="11565">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>
@@ -399,7 +399,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8595" top="15" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.100">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.101">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
