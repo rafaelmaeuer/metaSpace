@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\TouchOSC\TouchOSC_P6.v4p" scrollx="0" scrolly="720" systemname="TouchOSC" filename="C:\Users\Lennart\Desktop\TouchOSC Edit\TouchOSC.v4p">
-   <BOUNDS height="11565" left="5070" top="2595" type="Window" width="16245">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1628_ShaderFade\Subpatches\TouchOSC\TouchOSC_P6.v4p" scrollx="0" scrolly="720" systemname="TouchOSC" filename="C:\Users\Lennart\Desktop\TouchOSC Edit\TouchOSC.v4p">
+   <BOUNDS height="11565" left="300" top="3360" type="Window" width="28905">
    </BOUNDS>
    <NODE componentmode="InABox" id="33" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="6360" top="1110" type="Node" width="0">
@@ -285,7 +285,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname=".. To [" slicecount="1" values="4">
+   <PIN pinname=".. To [" slicecount="1" values="5">
    </PIN>
    <PIN pinname="[ From .." slicecount="1" values="1">
    </PIN>
@@ -307,7 +307,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="Columns" slicecount="1" values="3">
+   <PIN pinname="Columns" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
@@ -689,7 +689,7 @@
    </PIN>
    <PIN pinname="y" visible="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Page">
@@ -1899,5 +1899,115 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Reset">
+   </LINK>
+   <NODE componentmode="InABox" id="137" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="23820" top="8355" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="17265" top="9990" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="990" left="23820" top="8355" type="Box" width="1020">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
+   </PIN>
+   </NODE>
+   <NODE id="136" nodename="I (Spreads)" systemname="I (Spreads)">
+   <BOUNDS height="0" left="25590" top="7380" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname=".. To [" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="[ From .." slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="135" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="24465" top="7395" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9840" top="5370" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="24465" top="7395" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="134" nodename="TouchOSCButtons (Devices)" systemname="TouchOSCButtons (Devices)" filename="TouchOSCButtons (Devices).v4p">
+   <BOUNDS height="100" left="24090" top="7770" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="24090" top="7770" type="Box">
+   </BOUNDS>
+   <PIN pinname="Data In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="y" visible="1">
+   </PIN>
+   <PIN pinname="Button IDs" visible="1">
+   </PIN>
+   <PIN pinname="Page" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
+   </PIN>
+   <BOUNDS height="10935" left="8430" top="2535" type="Window" width="12855">
+   </BOUNDS>
+   <PIN pinname="Reset Message" visible="1">
+   </PIN>
+   <PIN pinname="Bang | Toggle" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="137" dstpinname="Y Input Value" linkstyle="VHV" srcnodeid="134" srcpinname="y">
+   </LINK>
+   <LINK dstnodeid="134" dstpinname="Button IDs" srcnodeid="136" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="134" dstpinname="Page" srcnodeid="135" srcpinname="Y Output Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="133" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="25230" top="6780" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="25230" top="6780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Y Output Value" dstnodeid="134" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="134" dstpinname="Data In">
+   <LINKPOINT x="310" y="3775">
+   </LINKPOINT>
+   <LINKPOINT x="24575" y="3860">
+   </LINKPOINT>
    </LINK>
    </PATCH>

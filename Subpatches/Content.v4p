@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5175" top="1140" width="22785" height="12600">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1628_ShaderFade\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4590" top="6240" width="22785" height="12600">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -55,7 +55,7 @@
    </PIN>
    <BOUNDS type="Box" left="16650" top="6930">
    </BOUNDS>
-   <BOUNDS type="Window" left="7845" top="5040" width="17400" height="10845">
+   <BOUNDS type="Window" left="3075" top="6540" width="17400" height="10845">
    </BOUNDS>
    <PIN pinname="Spread Width" slicecount="1" visible="1" values="100">
    </PIN>
@@ -80,6 +80,10 @@
    <PIN pinname="EX9 Layer" visible="1">
    </PIN>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="BallSpeed" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="95" systemname="IOBox (Value Advanced)">
@@ -342,14 +346,12 @@
    </LINK>
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 4">
-   </LINK>
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 5">
    </LINK>
    <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="Hidden" id="196">
    <BOUNDS type="Node" left="7320" top="1380" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="7080" top="3435" width="16245" height="11565">
+   <BOUNDS type="Window" left="-105" top="3270" width="28905" height="11565">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>
@@ -374,6 +376,8 @@
    <PIN pinname="Ball Seetings" visible="1">
    </PIN>
    <PIN pinname="Switch Scene" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="197" systemname="IOBox (String)">
@@ -601,9 +605,9 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="0.05">
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.5">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.3">
    </PIN>
    </NODE>
    <LINK srcnodeid="206" srcpinname="Output" dstnodeid="211" dstpinname="Input">
@@ -991,5 +995,77 @@
    <LINK srcnodeid="253" srcpinname="Output" dstnodeid="240" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="238" srcpinname="Up Edge" dstnodeid="237" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="212" srcpinname="Y Output Value" dstnodeid="203" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="254" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="16005" top="2325" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16005" top="2325" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="254" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Play">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="264" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="12360" top="5550" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12360" top="5550" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="264" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 4">
+   </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="265">
+   <BOUNDS type="Node" left="15075" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Play" dstnodeid="265" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="265" srcpinname="Output" dstnodeid="254" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="267">
+   <BOUNDS type="Node" left="18645" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Ball Seetings" dstnodeid="267" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="268">
+   <BOUNDS type="Node" left="18555" top="3615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="268" srcpinname="Output" dstnodeid="91" dstpinname="BallSpeed">
    </LINK>
    </PATCH>
