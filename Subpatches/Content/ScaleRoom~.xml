@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2028_TouchOSC\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="60" scrolly="15">
-   <BOUNDS type="Window" left="1995" top="3180" width="25590" height="11100">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="60" scrolly="15">
+   <BOUNDS type="Window" left="2235" top="195" width="25950" height="11250">
    </BOUNDS>
    <NODE id="15" systemname="Light (EX9 Direction)" filename="%VVVV%\lib\nodes\modules\EX9\Light (EX9 Direction).v4p" nodename="Light (EX9 Direction)" componentmode="Hidden">
    <BOUNDS type="Node" left="22140" top="6435" width="100" height="100">
@@ -56,6 +56,8 @@
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.85000,0.85000,0.85000,1.00000|">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="36">
@@ -183,6 +185,8 @@
    </PIN>
    <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.35391,0.35391,0.35391,1.00000|">
    </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="253">
    <BOUNDS type="Node" left="9450" top="6165" width="100" height="100">
@@ -285,6 +289,8 @@
    </PIN>
    <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.85000,0.85000,0.85000,1.00000|">
    </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="271">
    <BOUNDS type="Node" left="13710" top="6135" width="100" height="100">
@@ -386,6 +392,8 @@
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.85000,0.85000,0.85000,1.00000|">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="307">
@@ -656,6 +664,8 @@
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Diffuse Color" visible="1" slicecount="1" values="|0.35391,0.35391,0.35391,1.00000|">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="377">
@@ -1143,5 +1153,51 @@
    <LINK srcnodeid="306" srcpinname="Transform Out" dstnodeid="308" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="376" srcpinname="Transform Out" dstnodeid="378" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="391" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="24900" top="1305" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="24900" top="1305" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="378" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="24900" y="4320">
+   </LINKPOINT>
+   <LINKPOINT x="2820" y="4320">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="308" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="24900" y="4343">
+   </LINKPOINT>
+   <LINKPOINT x="6870" y="4343">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="24900" y="4328">
+   </LINKPOINT>
+   <LINKPOINT x="11085" y="4328">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="272" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="24900" y="4313">
+   </LINKPOINT>
+   <LINKPOINT x="15345" y="4313">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="24885" y="4335">
+   </LINKPOINT>
+   <LINKPOINT x="19740" y="4335">
+   </LINKPOINT>
    </LINK>
    </PATCH>

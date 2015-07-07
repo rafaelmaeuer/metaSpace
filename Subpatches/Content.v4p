@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1628_ShaderFade\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4590" top="6240" width="22785" height="12600">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1720_OSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4470" top="3735" width="22785" height="12600">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -55,7 +55,7 @@
    </PIN>
    <BOUNDS type="Box" left="16650" top="6930">
    </BOUNDS>
-   <BOUNDS type="Window" left="3075" top="6540" width="17400" height="10845">
+   <BOUNDS type="Window" left="6165" top="4770" width="17400" height="10845">
    </BOUNDS>
    <PIN pinname="Spread Width" slicecount="1" visible="1" values="100">
    </PIN>
@@ -114,7 +114,7 @@
    <PIN pinname="Active" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="Hidden" id="118">
+   <NODE systemname="ScaleRoom" filename="Content\ScaleRoom.v4p" nodename="Content\ScaleRoom.v4p" componentmode="InAWindow" id="118">
    <BOUNDS type="Node" left="5775" top="7515" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -125,7 +125,7 @@
    </PIN>
    <PIN pinname="Yaw" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="2235" top="195" width="25950" height="11250">
+   <BOUNDS type="Window" left="1995" top="3015" width="25950" height="11250">
    </BOUNDS>
    <PIN pinname="Switch Walls" visible="1">
    </PIN>
@@ -209,7 +209,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="5070" top="195" width="22155" height="12270">
+   <BOUNDS type="Window" left="5355" top="3195" width="22155" height="12270">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -810,13 +810,9 @@
    </NODE>
    <LINK srcnodeid="234" srcpinname="Output" dstnodeid="232" dstpinname="Reset">
    </LINK>
-   <LINK srcnodeid="228" srcpinname="Up Edge" dstnodeid="232" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="228" srcpinname="Down Edge" dstnodeid="234" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="190" srcpinname="Output" dstnodeid="228" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="232" srcpinname="Output" dstnodeid="90" dstpinname="Active">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="238">
    <BOUNDS type="Node" left="7170" top="6240" width="100" height="100">
@@ -996,8 +992,6 @@
    </LINK>
    <LINK srcnodeid="238" srcpinname="Up Edge" dstnodeid="237" dstpinname="Set">
    </LINK>
-   <LINK srcnodeid="212" srcpinname="Y Output Value" dstnodeid="203" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="254" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="16005" top="2325" width="480" height="480">
    </BOUNDS>
@@ -1067,5 +1061,29 @@
    <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="268" srcpinname="Output" dstnodeid="91" dstpinname="BallSpeed">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="269">
+   <BOUNDS type="Node" left="615" top="3330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="270">
+   <BOUNDS type="Node" left="600" top="2835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="270" srcpinname="Bang" dstnodeid="269" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="232" srcpinname="Output" dstnodeid="90" dstpinname="Active">
+   </LINK>
+   <LINK srcnodeid="228" srcpinname="Up Edge" dstnodeid="269" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="269" srcpinname="Output" dstnodeid="232" dstpinname="Set">
    </LINK>
    </PATCH>
