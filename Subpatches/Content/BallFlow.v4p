@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1628_ShaderFade\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="30" scrolly="0">
-   <BOUNDS type="Window" left="3075" top="6540" width="17400" height="10845">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1927_OSC\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="30" scrolly="0">
+   <BOUNDS type="Window" left="1455" top="5865" width="17400" height="10845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -21,9 +21,9 @@
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
-   <PIN pinname="Resolution X" slicecount="1" values="10" visible="1">
+   <PIN pinname="Resolution X" slicecount="1" visible="1" values="10">
    </PIN>
-   <PIN pinname="Resolution Y" slicecount="1" values="10" visible="1">
+   <PIN pinname="Resolution Y" slicecount="1" visible="1" values="10">
    </PIN>
    <PIN pinname="Radius" slicecount="1" visible="1" values="0.02">
    </PIN>
@@ -551,7 +551,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="0.05" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.05">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="0.5">
    </PIN>
@@ -776,138 +776,6 @@
    </LINK>
    <LINK srcnodeid="125" srcpinname="Position Out" dstnodeid="83" dstpinname="Saturation">
    </LINK>
-   <NODE systemname="FileStream (DShow9)" nodename="FileStream (DShow9)" componentmode="Hidden" id="135">
-   <BOUNDS type="Node" left="1125" top="2580" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" visible="1" values="|Tinush - Cowboy Schiff (Original).mp3|">
-   </PIN>
-   <PIN pinname="Audio" visible="1">
-   </PIN>
-   <PIN pinname="Play" visible="1">
-   </PIN>
-   <PIN pinname="Do Seek" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="133" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1110" top="1845" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1110" top="1845" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="133" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Play">
-   </LINK>
-   <NODE systemname="AudioOut (DShow9)" nodename="AudioOut (DShow9)" componentmode="Hidden" id="132">
-   <BOUNDS type="Node" left="2550" top="3300" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Driver" slicecount="1" values="|AMD HDMI Output (AMD High Definition Audio Device)|">
-   </PIN>
-   <PIN pinname="Audio" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="FileStream (DShow9)" nodename="FileStream (DShow9)" componentmode="Hidden" id="131">
-   <BOUNDS type="Node" left="2565" top="2595" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Audio" visible="1">
-   </PIN>
-   <PIN pinname="Play" visible="1">
-   </PIN>
-   <PIN pinname="Do Seek" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="130" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2250" top="1935" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2250" top="1935" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\11_Audio\RUWA - Scared to Be Alone.mp3|">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="file.avi">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|All Streams (*.aif, *.avi, *.avs, *.mid, *.mka, *.mkv, *.mov, *.mpg, *.ogg, *.rm, *.wmv, *.mp3, *.wav, *.wma)||*.aif;*.aiff;*.avi;*.avs;*.mov;*.mpg;*.mka;*.mkv;*.mpeg;*.ogg;*.rm;*.wmv;*.mid;*.wma;*.mp3;*.wav||AVI (*.avi)||*.avi||AviSynth (*.avs)||*.avs||Quicktime (*.mov, *.aif)||*.mov;*.aif;*.aiff||Ogg Media (*.ogg)||*.ogg||Matroska (*.mka, *.mkv)||*.mka;*.mkv||RealMedia (*.rm)||*.rm||WindowsMedia (*.wmv, *.wma)||*.wmv;*.wma||MIDI (*.mid)||*.mid||MPEG (*.mpg, *.mpeg)||*.mpg;*.mpeg||MP3 (*.mp3)||*.mp3||Wave (*.wav)||*.wav|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="130" srcpinname="Output String" dstnodeid="135" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="130" srcpinname="Output String" dstnodeid="131" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="131" srcpinname="Audio" dstnodeid="132" dstpinname="Audio">
-   </LINK>
-   <LINK srcnodeid="133" srcpinname="Y Output Value" dstnodeid="131" dstpinname="Play">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="129" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3480" top="1845" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3480" top="1845" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Do Seek|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Do Seek">
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="131" dstpinname="Do Seek">
-   </LINK>
-   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="128">
-   <BOUNDS type="Node" left="3495" top="1335" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="OnChange" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="133" srcpinname="Y Output Value" dstnodeid="128" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="128" srcpinname="OnChange" dstnodeid="129" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="FFT (DShow9 4Channels)" filename="FFT (DShow9 4Channels).v4p" nodename="FFT (DShow9 4Channels)" componentmode="Hidden" id="138">
-   <BOUNDS type="Node" left="1125" top="3330" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="FileStream" visible="1">
-   </PIN>
-   <PIN pinname="BassOut" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="135" srcpinname="Audio" dstnodeid="138" dstpinname="FileStream">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="139">
    <BOUNDS type="Node" left="8820" top="6105" width="100" height="100">
    </BOUNDS>
@@ -935,9 +803,9 @@
    <LINK srcnodeid="140" srcpinname="Output" dstnodeid="33" dstpinname="ScaleZ">
    </LINK>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="141">
-   <BOUNDS type="Node" left="2775" top="4815" width="100" height="100">
+   <BOUNDS type="Node" left="2925" top="5475" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1" slicecount="1" values="4.07209821830418E-006">
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0.267703543024867">
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -949,19 +817,17 @@
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="143">
    <BOUNDS type="Node" left="2490" top="4365" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0.0263929982717032">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.892343935272728">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Destination Maximum" slicecount="1" values="0.3">
    </PIN>
    </NODE>
-   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="141" dstpinname="Go To Position">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="146" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1125" top="1065" width="480" height="480">
+   <BOUNDS type="Box" left="3525" top="3780" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1125" top="1065" width="0" height="0">
+   <BOUNDS type="Node" left="3525" top="3780" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -977,11 +843,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="146" srcpinname="Y Output Value" dstnodeid="133" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="138" srcpinname="BassOut" dstnodeid="143" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="15930" top="855" width="795" height="240">
    </BOUNDS>
@@ -1145,5 +1009,33 @@
    <LINK srcnodeid="158" srcpinname="Y Output Value" dstnodeid="160" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="66" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="161">
+   <BOUNDS type="Node" left="3540" top="4875" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="161" srcpinname="Output" dstnodeid="141" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="146" srcpinname="Y Output Value" dstnodeid="161" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="161" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="FFT (DShow9 4Channels)" nodename="FFT (DShow9 4Channels)" componentmode="Hidden" id="162" filename="%VVVV%\lib\nodes\modules\DShow9\FFT (DShow9 4Channels).v4p">
+   <BOUNDS type="Node" left="2340" top="3810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="AudioDriver" slicecount="1" values="|Digitalaudio (S/PDIF) (High Definition Audio-Gerät)|">
+   </PIN>
+   <PIN pinname="BassOut" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="162" srcpinname="BassOut" dstnodeid="143" dstpinname="Input">
    </LINK>
    </PATCH>

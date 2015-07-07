@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1838_MultiMedia\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2220" top="2835" width="25665" height="12600">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1927_OSC\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2310" top="2115" width="25665" height="12600">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -55,7 +55,7 @@
    </PIN>
    <BOUNDS type="Box" left="16650" top="6930">
    </BOUNDS>
-   <BOUNDS type="Window" left="6165" top="4770" width="17400" height="10845">
+   <BOUNDS type="Window" left="1455" top="5865" width="17400" height="10845">
    </BOUNDS>
    <PIN pinname="Spread Width" slicecount="1" visible="1" values="100">
    </PIN>
@@ -81,7 +81,7 @@
    </PIN>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Play" visible="1">
+   <PIN pinname="Play" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="BallSpeed" visible="1">
    </PIN>
@@ -351,7 +351,7 @@
    <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="Hidden" id="196">
    <BOUNDS type="Node" left="7320" top="1380" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="-105" top="3270" width="28905" height="11565">
+   <BOUNDS type="Window" left="2565" top="2715" width="26415" height="11565">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>
@@ -613,24 +613,6 @@
    <LINK srcnodeid="206" srcpinname="Output" dstnodeid="211" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="211" srcpinname="Output" dstnodeid="91" dstpinname="Radius">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="212" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="615" top="4245" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="615" top="4245" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Scene|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="196" srcpinname="Switch Scene" dstnodeid="212" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="213" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3090" top="5580" width="795" height="240">
@@ -990,26 +972,6 @@
    </LINK>
    <LINK srcnodeid="238" srcpinname="Up Edge" dstnodeid="237" dstpinname="Set">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="254" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="16005" top="2325" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="16005" top="2325" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="254" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Play">
-   </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="264" systemname="IOBox (Color)">
    <BOUNDS type="Box" left="12360" top="5550" width="2250" height="480">
    </BOUNDS>
@@ -1019,18 +981,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="264" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 4">
-   </LINK>
-   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="265">
-   <BOUNDS type="Node" left="15075" top="1230" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="196" srcpinname="Play" dstnodeid="265" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="265" srcpinname="Output" dstnodeid="254" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="267">
    <BOUNDS type="Node" left="18645" top="3165" width="100" height="100">
@@ -1206,6 +1156,42 @@
    </NODE>
    <LINK srcnodeid="286" srcpinname="Y Output Value" dstnodeid="271" dstpinname="Do Seek">
    </LINK>
-   <LINK srcnodeid="212" srcpinname="Y Output Value" dstnodeid="203" dstpinname="Y Input Value">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="287" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8265" top="2640" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8265" top="2640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Switch Scene|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Switch Scene" dstnodeid="287" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Play" dstnodeid="91" dstpinname="Play">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="288" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="15960" top="6705" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15960" top="6705" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Play" dstnodeid="288" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Switch Scene" dstnodeid="203" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1628_ShaderFade\Subpatches\TouchOSC\TouchOSC_P6.v4p" scrollx="0" scrolly="720" systemname="TouchOSC" filename="C:\Users\Lennart\Desktop\TouchOSC Edit\TouchOSC.v4p">
-   <BOUNDS height="11565" left="-105" top="3435" type="Window" width="28905">
+   <BOUNDS height="11565" left="300" top="3360" type="Window" width="28905">
    </BOUNDS>
    <NODE componentmode="InABox" id="33" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="6360" top="1110" type="Node" width="0">
@@ -285,7 +285,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname=".. To [" slicecount="1" values="4">
+   <PIN pinname=".. To [" slicecount="1" values="5">
    </PIN>
    <PIN pinname="[ From .." slicecount="1" values="1">
    </PIN>
@@ -307,7 +307,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="Columns" slicecount="1" values="3">
+   <PIN pinname="Columns" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>

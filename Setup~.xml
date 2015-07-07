@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1838_OSC\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15870" left="1665" top="1110" type="Window" width="26145">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1927_OSC\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="15870" left="1785" top="1215" type="Window" width="26415">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="12195" top="11970" type="Node" width="100">
@@ -153,7 +153,7 @@
    </PIN>
    <PIN pinname="Inital Distance" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Initial Pitch" slicecount="1" values="0.25">
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.03">
    </PIN>
    <PIN pinname="Initial Yaw" slicecount="1" values="0">
    </PIN>
@@ -898,10 +898,10 @@
    <LINKPOINT x="24180" y="4440">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="3630" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2010" top="4185" width="25665" height="12600">
+   <BOUNDS type="Window" left="2220" top="2835" width="25665" height="12600">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -916,6 +916,12 @@
    <PIN pinname="Particle" visible="1">
    </PIN>
    <PIN pinname="Helper" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="switch" visible="1">
+   </PIN>
+   <PIN pinname="Switch Scene" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="703" systemname="IOBox (Value Advanced)">
@@ -1143,11 +1149,13 @@
    </PIN>
    <PIN pinname="OSC XZ" visible="1">
    </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="783" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2295" top="9930" width="480" height="480">
+   <BOUNDS type="Box" left="2430" top="9735" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2295" top="9930" width="0" height="0">
+   <BOUNDS type="Node" left="2430" top="9735" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -2378,18 +2386,6 @@
    <LINKPOINT x="19485" y="4205">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="580" dstpinname="Layers" linkstyle="Bezier">
-   <LINKPOINT x="10545" y="3985">
-   </LINKPOINT>
-   <LINKPOINT x="15945" y="4205">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="579" dstpinname="Layers" linkstyle="Bezier">
-   <LINKPOINT x="10545" y="3993">
-   </LINKPOINT>
-   <LINKPOINT x="12600" y="4213">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="798" srcpinname="Layer" dstnodeid="12" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="693" srcpinname="Helper" dstnodeid="390" dstpinname="Layer 1" linkstyle="Bezier">
@@ -2499,5 +2495,67 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="632" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Translate Camera">
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="850">
+   <BOUNDS type="Node" left="12600" top="5130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="850" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="10530" y="3810">
+   </LINKPOINT>
+   <LINKPOINT x="12855" y="3810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="Layer" dstnodeid="850" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="14040" y="3818">
+   </LINKPOINT>
+   <LINKPOINT x="13125" y="3818">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="580" dstpinname="Layers" linkstyle="Bezier">
+   <LINKPOINT x="10545" y="3985">
+   </LINKPOINT>
+   <LINKPOINT x="15945" y="4205">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="850" srcpinname="Output" dstnodeid="579" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="693" srcpinname="switch" dstnodeid="850" dstpinname="Switch" linkstyle="Bezier">
+   <LINKPOINT x="13335" y="3818">
+   </LINKPOINT>
+   <LINKPOINT x="12630" y="3818">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="851" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2280" top="9015" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2280" top="9015" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Scene#">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="693" srcpinname="Switch Scene" dstnodeid="851" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="11190" y="5745">
+   </LINKPOINT>
+   <LINKPOINT x="2340" y="5745">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="851" srcpinname="Y Output Value" dstnodeid="781" dstpinname="Input">
    </LINK>
    </PATCH>
