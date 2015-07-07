@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content\Underwater\AnimalBehaviors.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\AnimalBehaviors(Help).v4p" systemname="AnimalBehaviors (Help)" scrollx="0" scrolly="0">
-   <BOUNDS height="2865" left="5070" top="195" type="Window" width="2580">
+   <BOUNDS height="2265" left="5070" top="195" type="Window" width="2730">
    </BOUNDS>
    <NODE componentmode="InABox" id="55" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5564" top="7645" type="Node" width="0">
@@ -250,7 +250,7 @@
    <PIN pinname="Y Input Value" slicecount="3" values="0,1,2">
    </PIN>
    </NODE>
-   <NODE componentmode="InAWindow" filename="Behaviorss\AnimalBehavior_subPatch.v4p" hiddenwhenlocked="0" id="99" nodename="Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch">
+   <NODE componentmode="Hidden" filename="Behaviorss\AnimalBehavior_subPatch.v4p" hiddenwhenlocked="0" id="99" nodename="Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch">
    <PIN pinname="Run" visible="1">
    </PIN>
    <PIN pinname="InitFlock" visible="1" slicecount="1" values="0">
@@ -301,7 +301,7 @@
    </PIN>
    <BOUNDS height="270" left="1724" top="6550" type="Node" width="12960">
    </BOUNDS>
-   <BOUNDS height="16005" left="5370" top="6585" type="Window" width="23640">
+   <BOUNDS height="15840" left="2235" top="1155" type="Window" width="23565">
    </BOUNDS>
    <PIN pinname="Landing" slicecount="1" visible="1" values="0">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="0">
    <BOUNDS height="15840" left="2235" top="1155" type="Window" width="23565">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -661,7 +661,7 @@
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="| TGouraudDirectional|">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="1">
+   <PIN pinname="Alpha" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1931,5 +1931,25 @@
    <LINK srcnodeid="1094" srcpinname="Y Output Value" dstnodeid="1091" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="1132" srcpinname="Output" dstnodeid="1101" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1140" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="22230" top="1575" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="22230" top="1575" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1140" srcpinname="Y Output Value" dstnodeid="769" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="22230" y="7178">
+   </LINKPOINT>
+   <LINKPOINT x="3480" y="7178">
+   </LINKPOINT>
    </LINK>
    </PATCH>

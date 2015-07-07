@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-1609_TouchOSC\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="60" scrolly="0">
-   <BOUNDS type="Window" left="3045" top="4845" width="25590" height="11100">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2028_TouchOSC\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="60" scrolly="15">
+   <BOUNDS type="Window" left="1995" top="3180" width="25590" height="11100">
    </BOUNDS>
    <NODE id="15" systemname="Light (EX9 Direction)" filename="%VVVV%\lib\nodes\modules\EX9\Light (EX9 Direction).v4p" nodename="Light (EX9 Direction)" componentmode="Hidden">
    <BOUNDS type="Node" left="22140" top="6435" width="100" height="100">
@@ -219,11 +219,9 @@
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="252" srcpinname="Transform Out" dstnodeid="254" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="241" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="9435" top="5775" width="795" height="240">
    </BOUNDS>
@@ -326,8 +324,6 @@
    <PIN pinname="Transform In" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="270" srcpinname="Transform Out" dstnodeid="272" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="259" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="14085" top="5745" width="795" height="240">
    </BOUNDS>
@@ -427,11 +423,9 @@
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="306" srcpinname="Transform Out" dstnodeid="308" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="295" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5610" top="5805" width="795" height="240">
    </BOUNDS>
@@ -475,8 +469,6 @@
    <LINK srcnodeid="15" srcpinname="Light Direction Out" dstnodeid="272" dstpinname="Light Direction XYZ">
    </LINK>
    <LINK srcnodeid="15" srcpinname="Light Direction Out" dstnodeid="254" dstpinname="Light Direction XYZ">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Light Direction Out" dstnodeid="308" dstpinname="Light Direction XYZ">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="310" systemname="IOBox (Color)">
    <BOUNDS type="Box" left="21555" top="6900" width="2250" height="480">
@@ -564,10 +556,6 @@
    <PIN pinname="TranslateY" slicecount="1" visible="1" values="0.999999589251701">
    </PIN>
    </NODE>
-   <LINK srcnodeid="313" srcpinname="Transform Out" dstnodeid="306" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="314" srcpinname="Transform Out" dstnodeid="252" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="315" srcpinname="Transform Out" dstnodeid="270" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="316" srcpinname="Transform Out" dstnodeid="41" dstpinname="Transform In">
@@ -705,11 +693,9 @@
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="376" srcpinname="Transform Out" dstnodeid="378" dstpinname="Transform">
-   </LINK>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="375">
    <BOUNDS type="Node" left="21825" top="5670" width="100" height="100">
    </BOUNDS>
@@ -962,8 +948,6 @@
    <PIN pinname="TranslateZ" slicecount="1" visible="1" values="-2.71">
    </PIN>
    </NODE>
-   <LINK srcnodeid="361" srcpinname="Transform Out" dstnodeid="376" dstpinname="Transform In">
-   </LINK>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="359">
    <BOUNDS type="Node" left="1335" top="3960" width="100" height="100">
    </BOUNDS>
@@ -1143,5 +1127,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="390" srcpinname="Y Output Value" dstnodeid="335" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="314" srcpinname="Transform Out" dstnodeid="252" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="313" srcpinname="Transform Out" dstnodeid="306" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="361" srcpinname="Transform Out" dstnodeid="376" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Light Direction Out" dstnodeid="308" dstpinname="Light Direction XYZ">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Transform Out" dstnodeid="272" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Transform Out" dstnodeid="254" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="306" srcpinname="Transform Out" dstnodeid="308" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="376" srcpinname="Transform Out" dstnodeid="378" dstpinname="Transform">
    </LINK>
    </PATCH>

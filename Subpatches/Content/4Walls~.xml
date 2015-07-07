@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0117_Content\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5760" top="5055" width="13995" height="11040">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="12480" top="4110" width="13815" height="11040">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -461,6 +461,8 @@
    </PIN>
    <PIN pinname="Filenames" visible="1">
    </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="130">
    <BOUNDS type="Node" left="9945" top="2115" width="100" height="100">
@@ -468,6 +470,8 @@
    <PIN pinname="Directory" slicecount="1" values="..\..\..\..\09_Textures\Floor">
    </PIN>
    <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="134">

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1456_Audiovis Balls\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="30" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\BallFlow.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="30" scrolly="0">
    <BOUNDS type="Window" left="7845" top="5040" width="17400" height="10845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -49,7 +49,7 @@
    </PIN>
    <PIN pinname="Ambient Color" slicecount="1" visible="1" values="|0.78982,0.78982,0.78982,1.00000|">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="1">
+   <PIN pinname="Alpha" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -904,7 +904,7 @@
    </LINK>
    <LINK srcnodeid="128" srcpinname="OnChange" dstnodeid="129" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="FFT (DShow9 4Channels)" filename="FFT (DShow9 4Channels).v4p" nodename="FFT (DShow9 4Channels)" componentmode="InAWindow" id="138">
+   <NODE systemname="FFT (DShow9 4Channels)" filename="FFT (DShow9 4Channels).v4p" nodename="FFT (DShow9 4Channels)" componentmode="Hidden" id="138">
    <BOUNDS type="Node" left="1125" top="3330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="FileStream" visible="1">
@@ -989,5 +989,25 @@
    <LINK srcnodeid="146" srcpinname="Y Output Value" dstnodeid="133" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="138" srcpinname="BassOut" dstnodeid="143" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="15930" top="855" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15930" top="855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="15915" y="4740">
+   </LINKPOINT>
+   <LINKPOINT x="10275" y="4740">
+   </LINKPOINT>
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content\Underwater\AnimalBehaviors.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\AnimalBehaviors(Help).v4p" systemname="AnimalBehaviors (Help)" scrollx="0" scrolly="0">
-   <BOUNDS height="2265" left="5070" top="195" type="Window" width="2730">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\Underwater\AnimalBehaviors.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\AnimalBehaviors(Help).v4p" systemname="AnimalBehaviors (Help)" scrollx="0" scrolly="0">
+   <BOUNDS height="12270" left="5070" top="195" type="Window" width="22155">
    </BOUNDS>
    <NODE componentmode="InABox" id="55" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5564" top="7645" type="Node" width="0">
@@ -349,6 +349,8 @@
    </PIN>
    <PIN pinname="Targetmovement" visible="1">
    </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
    </NODE>
    <LINK dstnodeid="99" dstpinname="Change Target" srcnodeid="166" srcpinname="Y Output Value">
    </LINK>
@@ -597,6 +599,8 @@
    </PIN>
    <PIN pinname="repulsion  force (attraction if positive)" slicecount="1" values="-0.59">
    </PIN>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="221" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="16725" top="4815" width="795" height="480">
@@ -795,5 +799,33 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="231" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Targetmovement">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="232" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="20565" top="1710" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20565" top="1710" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="232" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="20535" y="4160">
+   </LINKPOINT>
+   <LINKPOINT x="14715" y="4315">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="232" srcpinname="Y Output Value" dstnodeid="220" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="20535" y="4138">
+   </LINKPOINT>
+   <LINKPOINT x="18525" y="4293">
+   </LINKPOINT>
    </LINK>
    </PATCH>

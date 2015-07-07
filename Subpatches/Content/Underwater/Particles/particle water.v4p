@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-0009_Content\Subpatches\Content\Underwater\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\Underwater\Particles\particle water.v4p" filename="C:\Users\sanch\Downloads\ParticlesGPU_Shader_Library 0.3.2\ParticlesGPU_Shader_Library 0.3.2\Behaviours\ParticlesGPU_2d_Dynamic_FieldTexture\particle water.v4p" systemname="particle water" scrollx="0" scrolly="0">
    <BOUNDS height="15525" left="3360" top="600" type="Window" width="25080">
    </BOUNDS>
    <NODE componentmode="InABox" id="67" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
@@ -937,7 +937,7 @@
    </BOUNDS>
    <BOUNDS height="0" left="8235" top="12420" type="Box" width="0">
    </BOUNDS>
-   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Position" visible="1">
    </PIN>
@@ -1039,7 +1039,7 @@
    </PIN>
    <PIN pinname="Hue" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="1">
+   <PIN pinname="Alpha" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Value" visible="1" slicecount="1" values="1">
    </PIN>
@@ -1203,5 +1203,25 @@
    <LINK srcnodeid="143" srcpinname="Texture Out" dstnodeid="282" dstpinname="RG=Pos,BA=Vel Reset Value">
    </LINK>
    <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Yaw">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="480" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="23610" top="1200" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="23610" top="1200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="480" srcpinname="Y Output Value" dstnodeid="331" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="23610" y="6720">
+   </LINKPOINT>
+   <LINKPOINT x="5670" y="6720">
+   </LINKPOINT>
    </LINK>
    </PATCH>

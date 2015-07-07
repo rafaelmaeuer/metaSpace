@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150706-2144_TouchOSC\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="12480" top="4110" width="13815" height="11040">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="6150" top="2955" width="21270" height="11040">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -38,6 +38,8 @@
    <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="1">
    </PIN>
    </NODE>
    <NODE id="71" systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden">
@@ -373,6 +375,8 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Light Direction Out" dstnodeid="106" dstpinname="Light Direction XYZ">
    </LINK>
@@ -568,6 +572,34 @@
    <LINKPOINT x="12495" y="3338">
    </LINKPOINT>
    <LINKPOINT x="7365" y="3338">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="139" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7275" top="2730" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7275" top="2730" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="7275" y="4035">
+   </LINKPOINT>
+   <LINKPOINT x="2580" y="4035">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="106" dstpinname="Alpha" linkstyle="Bezier">
+   <LINKPOINT x="7290" y="4065">
+   </LINKPOINT>
+   <LINKPOINT x="6870" y="4065">
    </LINKPOINT>
    </LINK>
    </PATCH>
