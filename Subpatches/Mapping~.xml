@@ -41,9 +41,9 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.777777777777777,0.811965811965812,-0.829059829059829,-0.743589743589744">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.76068376068376,0.811965811965812,-0.794871794871795,-0.658119658119659">
    </PIN>
-   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.687150837988826,0.776536312849163,0.843575418994414,-0.810055865921789">
+   <PIN pinname="X Input Value" pintype="Input" slicecount="4" visible="0" values="-0.664804469273742,0.776536312849163,0.798882681564246,-0.798882681564248">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150708-0151_App Reset\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
-   <BOUNDS height="15870" left="2235" top="1335" type="Window" width="23145">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150708-0915_Presentation\Setup.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="0">
+   <BOUNDS height="15870" left="1710" top="960" type="Window" width="26130">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="12195" top="11970" type="Node" width="100">
@@ -273,7 +273,7 @@
    </PIN>
    <PIN pinname="Screen Middle Out" visible="1">
    </PIN>
-   <PIN pinname="Screen Left mapped Points" slicecount="4" visible="1" values="1,1,-0.76068376068376,-0.948717948717949">
+   <PIN pinname="Screen Left mapped Points" slicecount="4" visible="1" values="0.982905982905983,0.965811965811966,-0.76068376068376,-1">
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="390">
@@ -741,7 +741,7 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Background Color" visible="1">
+   <PIN pinname="Background Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="690" systemname="IOBox (Color)">
@@ -898,10 +898,10 @@
    <LINKPOINT x="24180" y="4440">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="InAWindow" id="693">
+   <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="10470" top="2235" width="3630" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1560" top="6390" width="25665" height="12600">
+   <BOUNDS type="Window" left="2040" top="3375" width="25665" height="12600">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -2090,12 +2090,6 @@
    <LINKPOINT x="20055" y="4433">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="827" srcpinname="Color Output" dstnodeid="684" dstpinname="Background Color" linkstyle="Bezier">
-   <LINKPOINT x="20610" y="4418">
-   </LINKPOINT>
-   <LINKPOINT x="23415" y="4418">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="828" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3030" top="1620" width="480" height="480">
    </BOUNDS>
@@ -2533,11 +2527,15 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="864">
-   <BOUNDS type="Node" left="855" top="8385" width="100" height="100">
+   <BOUNDS type="Node" left="990" top="7005" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="855" top="8385" width="795" height="240">
+   <BOUNDS type="Box" left="990" top="7005" width="795" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="693" srcpinname="Reset" dstnodeid="861" dstpinname="Y Input Value">
+   <LINK srcnodeid="693" srcpinname="Reset" dstnodeid="861" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="12000" y="5603">
+   </LINKPOINT>
+   <LINKPOINT x="810" y="5603">
+   </LINKPOINT>
    </LINK>
    </PATCH>
