@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150708-0151_App Reset\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="15">
-   <BOUNDS type="Window" left="1095" top="2790" width="25665" height="12600">
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150708-0915_Presentation\Subpatches\Content.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="15">
+   <BOUNDS type="Window" left="2040" top="3375" width="25665" height="12600">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -346,10 +346,10 @@
    </LINK>
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 5">
    </LINK>
-   <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="InAWindow" id="196">
+   <NODE systemname="TouchOSC_P6" filename="TouchOSC\TouchOSC_P6.v4p" nodename="TouchOSC\TouchOSC_P6.v4p" componentmode="Hidden" id="196">
    <BOUNDS type="Node" left="7320" top="1380" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1275" top="3765" width="30780" height="11565">
+   <BOUNDS type="Window" left="2520" top="2880" width="33660" height="11565">
    </BOUNDS>
    <PIN pinname="iPhone IP" visible="1">
    </PIN>
@@ -385,7 +385,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9075" top="825" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.101">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.105">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1180,10 +1180,6 @@
    </NODE>
    <LINK srcnodeid="196" srcpinname="Play" dstnodeid="288" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="196" srcpinname="Switch Scene" dstnodeid="203" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 4">
-   </LINK>
    <LINK srcnodeid="195" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 3">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="289" systemname="IOBox (Value Advanced)">
@@ -1199,5 +1195,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="196" srcpinname="Reset" dstnodeid="289" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Color Output" dstnodeid="132" dstpinname="Input 4">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Switch Scene" dstnodeid="203" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
