@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Subpatches\Kinect\Kinect.v4p" systemname="Kinect" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\01_Kinect\01_Patches\Kinect.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5505" top="870" width="11685" height="14325">
+   <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Kinect\Kinect.v4p" systemname="Kinect" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\01_Kinect\01_Patches\Kinect.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="6555" top="435" width="11685" height="14325">
    </BOUNDS>
    <NODE componentmode="InABox" id="31" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="9540" top="3195" type="Node" width="100">
@@ -222,11 +222,19 @@
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0.38566929101944">
    </PIN>
    </NODE>
-   <LINK srcnodeid="46" srcpinname="X" dstnodeid="51" dstpinname="Y Input Value">
+   <LINK srcnodeid="46" srcpinname="X" dstnodeid="51" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="2880" y="7650">
+   </LINKPOINT>
+   <LINKPOINT x="2115" y="7650">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Y" dstnodeid="52" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Z" dstnodeid="53" dstpinname="Y Input Value">
+   <LINK srcnodeid="46" srcpinname="Z" dstnodeid="53" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="3450" y="7650">
+   </LINKPOINT>
+   <LINKPOINT x="4140" y="7650">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="54">
    <BOUNDS type="Node" left="2040" top="8355" width="100" height="100">
@@ -306,9 +314,17 @@
    <PIN pinname="Set" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="65" dstpinname="Default">
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="65" dstpinname="Default" linkstyle="Bezier">
+   <LINKPOINT x="1980" y="9825">
+   </LINKPOINT>
+   <LINKPOINT x="2565" y="9825">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="65" dstpinname="Input">
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="65" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="2055" y="9255">
+   </LINKPOINT>
+   <LINKPOINT x="1725" y="9255">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="67">
    <BOUNDS type="Node" left="2445" top="8355" width="100" height="100">
@@ -342,9 +358,17 @@
    </NODE>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="69" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="66" dstpinname="Input">
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="66" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="2055" y="9075">
+   </LINKPOINT>
+   <LINKPOINT x="1950" y="9075">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="66" dstpinname="Set">
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="66" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="2280" y="9458">
+   </LINKPOINT>
+   <LINKPOINT x="2280" y="9458">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="65" srcpinname="Output" dstnodeid="60" dstpinname="Go To Position">
    </LINK>
@@ -380,7 +404,11 @@
    <PIN pinname="Set" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="74" dstpinname="Default">
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="74" dstpinname="Default" linkstyle="Bezier">
+   <LINKPOINT x="3060" y="9840">
+   </LINKPOINT>
+   <LINKPOINT x="3630" y="9840">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="72">
    <BOUNDS type="Node" left="3525" top="8370" width="100" height="100">
@@ -412,7 +440,11 @@
    </NODE>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="70" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="73" dstpinname="Set">
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="73" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="3360" y="9458">
+   </LINKPOINT>
+   <LINKPOINT x="3360" y="9458">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="74" srcpinname="Output" dstnodeid="75" dstpinname="Go To Position">
    </LINK>
@@ -440,7 +472,11 @@
    <PIN pinname="Set" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="79" srcpinname="Output" dstnodeid="80" dstpinname="Default">
+   <LINK srcnodeid="79" srcpinname="Output" dstnodeid="80" dstpinname="Default" linkstyle="Bezier">
+   <LINKPOINT x="4095" y="9825">
+   </LINKPOINT>
+   <LINKPOINT x="4680" y="9825">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="4560" top="8370" width="100" height="100">
@@ -472,17 +508,37 @@
    </NODE>
    <LINK srcnodeid="77" srcpinname="Output" dstnodeid="76" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="79" dstpinname="Set">
+   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="79" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="4395" y="9450">
+   </LINKPOINT>
+   <LINKPOINT x="4395" y="9450">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="56" srcpinname="Output" dstnodeid="77" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="73" dstpinname="Input">
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="73" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3150" y="9083">
+   </LINKPOINT>
+   <LINKPOINT x="3030" y="9083">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="79" dstpinname="Input">
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="79" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="4170" y="9075">
+   </LINKPOINT>
+   <LINKPOINT x="4065" y="9075">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="74" dstpinname="Input">
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="74" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3150" y="9270">
+   </LINKPOINT>
+   <LINKPOINT x="2790" y="9270">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="80" dstpinname="Input">
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="80" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="4170" y="9263">
+   </LINKPOINT>
+   <LINKPOINT x="3840" y="9263">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="80" srcpinname="Output" dstnodeid="63" dstpinname="Go To Position">
    </LINK>
@@ -558,13 +614,29 @@
    </NODE>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Bin Size">
    </LINK>
-   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="46" dstpinname="XYZ">
+   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="46" dstpinname="XYZ" linkstyle="Bezier">
+   <LINKPOINT x="3000" y="7125">
+   </LINKPOINT>
+   <LINKPOINT x="2910" y="7125">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="60" srcpinname="Position Out" dstnodeid="91" dstpinname="X">
+   <LINK srcnodeid="60" srcpinname="Position Out" dstnodeid="91" dstpinname="X" linkstyle="Bezier">
+   <LINKPOINT x="1755" y="10913">
+   </LINKPOINT>
+   <LINKPOINT x="2475" y="10913">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="75" srcpinname="Position Out" dstnodeid="91" dstpinname="Y">
+   <LINK srcnodeid="75" srcpinname="Position Out" dstnodeid="91" dstpinname="Y" linkstyle="Bezier">
+   <LINKPOINT x="2775" y="10928">
+   </LINKPOINT>
+   <LINKPOINT x="2775" y="10928">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="63" srcpinname="Position Out" dstnodeid="91" dstpinname="Z">
+   <LINK srcnodeid="63" srcpinname="Position Out" dstnodeid="91" dstpinname="Z" linkstyle="Bezier">
+   <LINKPOINT x="3810" y="10913">
+   </LINKPOINT>
+   <LINKPOINT x="3060" y="10913">
+   </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" id="22" nodename="Kinect2 (Devices Microsoft)" systemname="Kinect2 (Devices Microsoft)">
    <BOUNDS height="270" left="6735" top="4200" type="Node" width="3405">
@@ -696,7 +768,11 @@
    <PIN pinname="Joint PositionXYZ" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="22" srcpinname="Kinect Runtime" dstnodeid="128" dstpinname="Kinect Runtime">
+   <LINK srcnodeid="22" srcpinname="Kinect Runtime" dstnodeid="128" dstpinname="Kinect Runtime" linkstyle="Bezier">
+   <LINKPOINT x="6735" y="5063">
+   </LINKPOINT>
+   <LINKPOINT x="1590" y="5063">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="128" srcpinname="Skeleton Count" dstnodeid="85" dstpinname="Y Input Value">
    </LINK>
@@ -706,7 +782,11 @@
    </LINK>
    <LINK srcnodeid="128" srcpinname="Joint ID" dstnodeid="94" dstpinname="Joint ID">
    </LINK>
-   <LINK srcnodeid="128" srcpinname="Joint PositionXYZ" dstnodeid="94" dstpinname="Joint PositionXYZ">
+   <LINK srcnodeid="128" srcpinname="Joint PositionXYZ" dstnodeid="94" dstpinname="Joint PositionXYZ" linkstyle="Bezier">
+   <LINKPOINT x="2520" y="6330">
+   </LINKPOINT>
+   <LINKPOINT x="2670" y="6330">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="137" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="5670" top="6990" width="1095" height="240">
