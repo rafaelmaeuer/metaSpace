@@ -431,6 +431,8 @@
    </PIN>
    <PIN pinname="Clear" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="580">
    <BOUNDS type="Node" left="12630" top="5130" width="100" height="100">
@@ -458,6 +460,8 @@
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Background Color" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="581">
@@ -861,7 +865,7 @@
    <NODE systemname="Content" filename="Subpatches\Content.v4p" nodename="Subpatches\Content.v4p" componentmode="Hidden" id="693">
    <BOUNDS type="Node" left="4170" top="1995" width="3630" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="15" top="300" width="19185" height="14460">
+   <BOUNDS type="Window" left="15" top="0" width="19185" height="14460">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -2449,7 +2453,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7755" top="540" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="1.86,4.58,-0.66,5,5">
+   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="1.86,4.58,0.25,5,5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

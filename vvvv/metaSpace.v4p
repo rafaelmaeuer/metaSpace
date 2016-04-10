@@ -891,7 +891,7 @@
    </PIN>
    <PIN pinname="Reset" visible="1">
    </PIN>
-   <PIN pinname="Grid" slicecount="1" values="0" visible="1">
+   <PIN pinname="Grid" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="OSC" visible="1">
    </PIN>
@@ -2291,7 +2291,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="435" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2582,7 +2582,11 @@
    </LINK>
    <LINK srcnodeid="691" srcpinname="Helper Screen Right" dstnodeid="648" dstpinname="Layer 3">
    </LINK>
-   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="231" dstpinname="Layer 3">
+   <LINK srcnodeid="693" srcpinname="EX9 Layer Out" dstnodeid="231" dstpinname="Layer 3" linkstyle="Bezier">
+   <LINKPOINT x="4200" y="5865">
+   </LINKPOINT>
+   <LINKPOINT x="4530" y="5865">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="897" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5580" top="990" width="480" height="480">
