@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\vvvv\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Content\ScaleRoom.v4p" systemname="ScaleRoom" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\Content\ScaleRoom.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="495" top="585" width="17865" height="13680">
    </BOUNDS>
    <NODE id="15" systemname="Light (EX9 Direction)" filename="%VVVV%\lib\nodes\modules\EX9\Light (EX9 Direction).v4p" nodename="Light (EX9 Direction)" componentmode="Hidden">
@@ -139,8 +139,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Width">
-   </LINK>
-   <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Depth">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="30" dstpinname="Input Node">
    </LINK>
@@ -781,7 +779,7 @@
    </PIN>
    <PIN pinname="Height" slicecount="1" visible="1" values="2048">
    </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|" visible="1">
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <BOUNDS type="Window" left="5640" top="2610" width="15960" height="9150">
    </BOUNDS>
@@ -905,6 +903,8 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Count">
+   </PIN>
    </NODE>
    <LINK srcnodeid="367" srcpinname="Y Output Value" dstnodeid="368" dstpinname="Spread Count" linkstyle="Bezier">
    <LINKPOINT x="13455" y="1335">
@@ -951,28 +951,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="365" srcpinname="Y Output Value" dstnodeid="377" dstpinname="Width">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="364" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="12780" top="675" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="12780" top="675" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="364" srcpinname="Y Output Value" dstnodeid="368" dstpinname="Width" linkstyle="Bezier">
-   <LINKPOINT x="12780" y="1200">
-   </LINKPOINT>
-   <LINKPOINT x="12465" y="1200">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="364" srcpinname="Y Output Value" dstnodeid="374" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="367" srcpinname="Y Output Value" dstnodeid="374" dstpinname="Spread Count">
    </LINK>
@@ -1375,13 +1353,39 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14340" top="4590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.86899,0.86899,0.86899,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="394" srcpinname="Color Output" dstnodeid="375" dstpinname="Background Color" linkstyle="Bezier">
    <LINKPOINT x="14105" y="5278">
    </LINKPOINT>
    <LINKPOINT x="12775" y="5283">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Depth">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="397" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12420" top="990" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12420" top="990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Width">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="397" srcpinname="Y Output Value" dstnodeid="368" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="397" srcpinname="Y Output Value" dstnodeid="374" dstpinname="Width" linkstyle="Bezier">
+   <LINKPOINT x="12450" y="1830">
+   </LINKPOINT>
+   <LINKPOINT x="12795" y="1830">
    </LINKPOINT>
    </LINK>
    </PATCH>

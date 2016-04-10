@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Content\4Walls.v4p" systemname="150622_Projecttest1" filename="C:\Users\Lennart\Desktop\vvvv\150622_Projecttest1\150622_Projecttest1.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2655" top="2370" width="14505" height="10200">
+   <BOUNDS type="Window" left="315" top="795" width="14505" height="10200">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -393,7 +393,7 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="2.6" visible="1">
    </PIN>
-   <PIN pinname="Height" slicecount="1" values="0.01" visible="1">
+   <PIN pinname="Height" slicecount="1" values="0.01">
    </PIN>
    <PIN pinname="Mesh" visible="1">
    </PIN>
@@ -453,7 +453,7 @@
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="129">
    <BOUNDS type="Node" left="9060" top="3840" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Directory" slicecount="1" values="..\..\..\..\Assets\Images\Walls">
+   <PIN pinname="Directory" slicecount="1" values="..\..\Textures\Walls">
    </PIN>
    <PIN pinname="Filenames" visible="1">
    </PIN>
@@ -463,7 +463,7 @@
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="130">
    <BOUNDS type="Node" left="10440" top="3840" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Directory" slicecount="1" values="..\..\..\..\Assets\Images\Floor">
+   <PIN pinname="Directory" slicecount="1" values="..\..\Textures\Floor">
    </PIN>
    <PIN pinname="Filenames" visible="1">
    </PIN>
