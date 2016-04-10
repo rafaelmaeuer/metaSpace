@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Kinect\KinectMapping.v4p" systemname="KinectMapping" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150628-1222_3Walls&amp;Floor\Subpatches\KinectMapping.v4p" scrollx="15" scrolly="-360">
-   <BOUNDS type="Window" left="26745" top="3180" width="13065" height="10815">
+   <BOUNDS type="Window" left="3465" top="2160" width="13065" height="10815">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2145" top="345" width="795" height="720">
@@ -311,11 +311,11 @@
    </PIN>
    <PIN pinname="Source Minimum" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Source Maximum" slicecount="1" values="-1.22">
+   <PIN pinname="Source Maximum" slicecount="1" values="-1.5">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="0.5">
+   <PIN pinname="Destination Minimum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="-0.5">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.5">
    </PIN>
    </NODE>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="110">
@@ -329,9 +329,9 @@
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="0.5">
+   <PIN pinname="Destination Minimum" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="-0.5">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.7">
    </PIN>
    </NODE>
    <LINK srcnodeid="112" srcpinname="Z" dstnodeid="110" dstpinname="Input">

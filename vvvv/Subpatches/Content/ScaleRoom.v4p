@@ -93,7 +93,7 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" visible="1" values="3">
    </PIN>
-   <PIN pinname="Height" slicecount="1" values="0.0001" visible="1">
+   <PIN pinname="Height" slicecount="1" visible="1" values="0.0001">
    </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Mesh" dstnodeid="35" dstpinname="Mesh">
@@ -769,7 +769,7 @@
    </PIN>
    </NODE>
    <NODE systemname="RenderTarget (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\RenderTarget\RenderTarget (EX9.Texture Source).v4p" nodename="RenderTarget (EX9.Texture Source)" componentmode="Hidden" id="375">
-   <BOUNDS type="Node" left="11835" top="5520" width="100" height="100">
+   <BOUNDS type="Node" left="11880" top="5925" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -893,7 +893,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13455" top="990" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="50">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="25">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -917,7 +917,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13050" top="3390" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -931,9 +931,9 @@
    <LINK srcnodeid="366" srcpinname="Y Output Value" dstnodeid="371" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="375" srcpinname="Texture Out" dstnodeid="378" dstpinname="Texture" linkstyle="Bezier">
-   <LINKPOINT x="11835" y="8205">
+   <LINKPOINT x="11865" y="8475">
    </LINKPOINT>
-   <LINKPOINT x="2220" y="8205">
+   <LINKPOINT x="2235" y="8340">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="365" systemname="IOBox (Value Advanced)">
@@ -1059,23 +1059,23 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="375" srcpinname="Texture Out" dstnodeid="308" dstpinname="Texture" linkstyle="Bezier">
-   <LINKPOINT x="11835" y="8228">
+   <LINKPOINT x="11865" y="8498">
    </LINKPOINT>
-   <LINKPOINT x="6270" y="8228">
+   <LINKPOINT x="6285" y="8363">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="375" srcpinname="Texture Out" dstnodeid="254" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="375" srcpinname="Texture Out" dstnodeid="272" dstpinname="Texture" linkstyle="Bezier">
-   <LINKPOINT x="11895" y="8213">
+   <LINKPOINT x="11925" y="8483">
    </LINKPOINT>
-   <LINKPOINT x="14685" y="8213">
+   <LINKPOINT x="14700" y="8348">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="375" srcpinname="Texture Out" dstnodeid="35" dstpinname="Texture" linkstyle="Bezier">
-   <LINKPOINT x="11835" y="5310">
+   <LINKPOINT x="11865" y="5580">
    </LINKPOINT>
-   <LINKPOINT x="6915" y="5310">
+   <LINKPOINT x="6930" y="5445">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="380" systemname="IOBox (Value Advanced)">
@@ -1357,9 +1357,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="394" srcpinname="Color Output" dstnodeid="375" dstpinname="Background Color" linkstyle="Bezier">
-   <LINKPOINT x="14105" y="5278">
+   <LINKPOINT x="14120" y="5413">
    </LINKPOINT>
-   <LINKPOINT x="12775" y="5283">
+   <LINKPOINT x="12805" y="5553">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Depth">

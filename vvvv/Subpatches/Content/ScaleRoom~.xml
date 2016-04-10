@@ -93,7 +93,7 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" visible="1" values="3">
    </PIN>
-   <PIN pinname="Height" slicecount="1" values="0.01">
+   <PIN pinname="Height" slicecount="1" values="0.0001" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Mesh" dstnodeid="35" dstpinname="Mesh">
@@ -893,7 +893,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13455" top="990" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="150">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="50">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1386,6 +1386,52 @@
    <LINKPOINT x="12450" y="1830">
    </LINKPOINT>
    <LINKPOINT x="12795" y="1830">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="398" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4110" top="3480" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4110" top="3480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0001">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Thickness">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Height" linkstyle="Bezier">
+   <LINKPOINT x="4095" y="3795">
+   </LINKPOINT>
+   <LINKPOINT x="6030" y="3780">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="377" dstpinname="Depth" linkstyle="Bezier">
+   <LINKPOINT x="4035" y="6705">
+   </LINKPOINT>
+   <LINKPOINT x="1560" y="6690">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="307" dstpinname="Width" linkstyle="Bezier">
+   <LINKPOINT x="4065" y="6720">
+   </LINKPOINT>
+   <LINKPOINT x="5205" y="6705">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="253" dstpinname="Depth" linkstyle="Bezier">
+   <LINKPOINT x="4095" y="6705">
+   </LINKPOINT>
+   <LINKPOINT x="9795" y="6690">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="271" dstpinname="Width" linkstyle="Bezier">
+   <LINKPOINT x="4095" y="6683">
+   </LINKPOINT>
+   <LINKPOINT x="13665" y="6668">
    </LINKPOINT>
    </LINK>
    </PATCH>
