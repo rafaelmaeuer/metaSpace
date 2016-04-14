@@ -1262,7 +1262,7 @@
    </LINK>
    <LINK srcnodeid="203" srcpinname="Y Output Value" dstnodeid="309" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="Hidden" id="91">
+   <NODE systemname="BallFlow" filename="Content\BallFlow.v4p" nodename="Content\BallFlow.v4p" componentmode="InAWindow" id="91">
    <BOUNDS type="Node" left="11010" top="7350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -1375,7 +1375,7 @@
    <NODE systemname="Dots" filename="Content\Dots.v4p" nodename="Content\Dots.v4p" componentmode="Hidden" id="316" debug="0">
    <BOUNDS type="Node" left="10020" top="10965" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="885" top="1950" width="13470" height="12345">
+   <BOUNDS type="Window" left="5265" top="1035" width="11445" height="12810">
    </BOUNDS>
    <PIN pinname="Output for Renderer" visible="1">
    </PIN>
