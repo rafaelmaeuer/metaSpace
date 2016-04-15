@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\metaSpace.v4p" filename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\02_Projection-Mapping\01_Patches\150624_ViewProjection\Setup2.v4p" systemname="Setup2" scrollx="0" scrolly="-360">
-   <BOUNDS height="14865" left="675" top="150" type="Window" width="19260">
+   <BOUNDS height="14865" left="-60" top="-105" type="Window" width="19260">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="12" nodename="Renderer (EX9)" systemname="Renderer (EX9)" border="0">
    <BOUNDS height="100" left="11100" top="12240" type="Node" width="100">
@@ -279,7 +279,7 @@
    </PIN>
    <PIN pinname="Screen Middle Out" visible="1">
    </PIN>
-   <PIN pinname="Screen Left mapped Points" slicecount="4" visible="1" values="1,1,-0.965811965811965,-0.965811965811966">
+   <PIN pinname="Screen Left mapped Points" slicecount="4" visible="1" values="1,0.982905982905983,-1,-1">
    </PIN>
    <BOUNDS type="Box" left="12720" top="4425">
    </BOUNDS>
@@ -635,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7845" top="8340" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-33.77,-8.65,46.18">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,1.49,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2313,7 +2313,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9030" top="8865" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.07">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2707,5 +2707,65 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="781" srcpinname="Max Output" dstnodeid="907" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="908" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="15075" top="1350" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15075" top="1350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="2.46,2.25,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Left">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="908" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Scale Screen Left">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="909" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="16170" top="1350" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16170" top="1350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="2.46,2.25,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Middle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="909" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Scale Screen Middle">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="910" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="17250" top="1350" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17250" top="1350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="2.5,1.82,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Floor">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="910" srcpinname="Y Output Value" dstnodeid="691" dstpinname="Scale Screen Floor">
    </LINK>
    </PATCH>
