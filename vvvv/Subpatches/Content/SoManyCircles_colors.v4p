@@ -1,0 +1,159 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Content\SoManyCircles_colors.v4p" systemname="SoManyCircles_colors" filename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Content\SoManyCircles_colors.v4p">
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="0" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="1785" top="810" width="2250" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1785" top="810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.32063,0.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="1" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="3960" top="2910" width="2250" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3960" top="2910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.53658,0.53658,0.53658,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="2" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="6345" top="2955" width="2265" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6345" top="2955" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="150" visible="1" values="|1.00000,1.00000,1.00000,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|,|1.00000,0.00000,0.55349,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2460" top="3345" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2460" top="3345" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Alpha">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1230" top="2010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Hue" visible="1">
+   </PIN>
+   <PIN pinname="Lightness" slicecount="1" values="0.14">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1155" top="1350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.47">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="930" top="810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color Output|">
+   </PIN>
+   <BOUNDS type="Box" left="6345" top="3590" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6345" top="3590" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Color Output" dstnodeid="7" dstpinname="Color Input">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Hue">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Color">
+   </PIN>
+   <BOUNDS type="Box" left="1440" top="3755" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1440" top="3755" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="8" dstpinname="Color Input">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="lightness">
+   </PIN>
+   <BOUNDS type="Box" left="3975" top="3620" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3975" top="3620" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Color Output" dstnodeid="9" dstpinname="Color Input">
+   </LINK>
+   <BOUNDS type="Window" left="4395" top="4320" width="9300" height="5190">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="5040" top="585" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5040" top="585" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="head_pos">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4230" top="2160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Hue" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Lightness" visible="1" slicecount="1" values="0.519126899686254">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="1" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="4845" top="1425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Source Minimum" slicecount="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Source Maximum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.69">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="11" dstpinname="Lightness">
+   </LINK>
+   </PATCH>

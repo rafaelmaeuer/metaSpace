@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\metaSpace\Desktop\metaSpace\Patches\vvvv\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="0">
-   <BOUNDS height="15840" left="-2760" top="210" type="Window" width="23565">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Fertig Für Heute\Google Drive\FertigFürHeute\03_Realisation\02_vvvv\00_Patches\150707-1537_ShaderFade\Subpatches\Content\Underwater\Behaviorss\AnimalBehavior_subPatch.v4p" filename="C:\Users\Raul\Desktop\FlockingBehavior\Behaviorss\AnimalBehavior_subPatch.v4p" systemname="AnimalBehavior_subPatch" scrollx="0" scrolly="0">
+   <BOUNDS height="15840" left="2235" top="1155" type="Window" width="23565">
    </BOUNDS>
    <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="12330" top="6060" type="Node" width="100">
@@ -541,7 +541,7 @@
    </PIN>
    <PIN pinname="SortingArea_Scale XYZ" visible="1">
    </PIN>
-   <PIN pinname="Target_XYZ" visible="1" slicecount="3" values="-0.111137632644981,0.0450297471073371,8.88477858317132">
+   <PIN pinname="Target_XYZ" visible="1" slicecount="3" values="4.02065135305747,4.89787108381279,2.29005966335535">
    </PIN>
    <PIN pinname="Enemy_Scale" visible="1">
    </PIN>
@@ -661,7 +661,7 @@
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="| TGouraudDirectional|">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" visible="1" values="1">
+   <PIN pinname="Alpha" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -935,7 +935,7 @@
    </PIN>
    <PIN pinname="InitXYZ" slicecount="3" visible="1" values="0,0,0">
    </PIN>
-   <PIN pinname="TargetXYZ" visible="1" slicecount="3" values="0.748898476080194,-0.245596310419515,-6.87848386785503">
+   <PIN pinname="TargetXYZ" visible="1" slicecount="3" values="4.34364077984355,-2.51663100672886,0.0471097289118916">
    </PIN>
    <PIN pinname="EnemyXYZ" visible="1">
    </PIN>
@@ -1036,7 +1036,7 @@
    </LINK>
    <LINK srcnodeid="1005" srcpinname="Output" dstnodeid="837" dstpinname="Enemy_Scale" hiddenwhenlocked="1">
    </LINK>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="1012">
    <BOUNDS type="Node" left="9405" top="4140" width="100" height="100">
@@ -1124,6 +1124,8 @@
    </LINK>
    <LINK srcnodeid="1034" srcpinname="Output" dstnodeid="1033" dstpinname="Y Input Value">
    </LINK>
+   <LINK srcnodeid="1012" srcpinname="Position Out" dstnodeid="1004" dstpinname="TargetXYZ">
+   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1035" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10860" top="4770" width="795" height="240">
    </BOUNDS>
@@ -1135,6 +1137,8 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1012" srcpinname="Position Out" dstnodeid="1035" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1012" srcpinname="Position Out" dstnodeid="837" dstpinname="Target_XYZ">
    </LINK>
    <LINK srcnodeid="982" srcpinname="Y Output Value" dstnodeid="1031" dstpinname="Width">
    </LINK>
@@ -1947,135 +1951,5 @@
    </LINKPOINT>
    <LINKPOINT x="3480" y="7178">
    </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1142" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8115" top="3510" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8115" top="3510" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="0,,">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1012" srcpinname="Position Out" dstnodeid="1142" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="1147">
-   <BOUNDS type="Node" left="7605" top="4455" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="1148">
-   <BOUNDS type="Node" left="8100" top="4860" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Index" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1142" srcpinname="Y Output Value" dstnodeid="1147" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1142" srcpinname="Y Output Value" dstnodeid="1148" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="1149">
-   <BOUNDS type="Node" left="8085" top="5265" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Source Minimum" slicecount="1" values="-10">
-   </PIN>
-   <PIN pinname="Source Maximum" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="1150">
-   <BOUNDS type="Node" left="7605" top="5625" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Source Minimum" slicecount="1" values="-10">
-   </PIN>
-   <PIN pinname="Source Maximum" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="-10">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1147" srcpinname="Output" dstnodeid="1150" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1148" srcpinname="Output" dstnodeid="1149" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="1151">
-   <BOUNDS type="Node" left="7620" top="6090" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Z" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="XYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1150" srcpinname="Output" dstnodeid="1151" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="1149" srcpinname="Output" dstnodeid="1151" dstpinname="Z">
-   </LINK>
-   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="1152">
-   <BOUNDS type="Node" left="8460" top="4440" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Index" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1142" srcpinname="Y Output Value" dstnodeid="1152" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1152" srcpinname="Output" dstnodeid="1151" dstpinname="Y">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1153" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7635" top="6495" width="795" height="720">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7635" top="6495" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values=",,">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1151" srcpinname="XYZ" dstnodeid="1153" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="1153" srcpinname="Y Output Value" dstnodeid="1004" dstpinname="TargetXYZ">
-   </LINK>
-   <LINK srcnodeid="1153" srcpinname="Y Output Value" dstnodeid="837" dstpinname="Target_XYZ">
    </LINK>
    </PATCH>
