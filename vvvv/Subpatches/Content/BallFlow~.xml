@@ -181,9 +181,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="64" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="5745" top="9345" width="795" height="240">
+   <BOUNDS type="Box" left="8490" top="8955" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5745" top="9345" width="0" height="0">
+   <BOUNDS type="Node" left="8490" top="8955" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|EX9 Layer|">
    </PIN>
@@ -221,6 +221,8 @@
    <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Period">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Mesh" dstnodeid="20" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Layer" dstnodeid="64" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="20" dstpinname="Transform">
    </LINK>
@@ -1105,45 +1107,5 @@
    <LINK srcnodeid="176" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Bin Size">
    </LINK>
    <LINK srcnodeid="176" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Bin Size">
-   </LINK>
-   <NODE systemname="Text (EX9)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Text (EX9)" componentmode="Hidden" id="177">
-   <BOUNDS type="Node" left="3225" top="7980" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Text" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="178" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3525" top="7455" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3525" top="7455" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="vvvv">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="vvvv">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="178" srcpinname="Output String" dstnodeid="177" dstpinname="Text">
-   </LINK>
-   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="179">
-   <BOUNDS type="Node" left="5760" top="8745" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1">
-   </PIN>
-   <PIN pinname="Layer 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="179" srcpinname="Layer" dstnodeid="64" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Layer" dstnodeid="179" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="177" srcpinname="Layer" dstnodeid="179" dstpinname="Layer 1">
    </LINK>
    </PATCH>
